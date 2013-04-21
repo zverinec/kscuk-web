@@ -1,0 +1,26 @@
+{extends layout.phtml}
+
+{block #content}
+
+	{if !empty($image)}
+	<div id="person-image">
+		<img src="{$baseUri}{$image}" alt="Účastníkova fotka"  />
+	</div>
+	{/if}
+
+	{foreach $questions AS $name => $category}
+		<h2>{$categories[$name]}</h2>
+		<table class="answers-in-category">
+		{foreach $category AS $question}
+			<tr{if $iterator->isEven()} class="even"{/if}>
+
+			<th>{$question->question}</th>
+			<td>
+			{if !empty($people[$question->id_question])}
+				{!$people[$question->id_question]->answer|texy}
+			{/if}
+			</td>
+		{/foreach}
+		</table>
+	{/foreach}
+{/block}

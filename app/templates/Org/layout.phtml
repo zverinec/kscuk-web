@@ -1,0 +1,20 @@
+{extends ../layout.phtml}
+
+{block #header}
+	<link rel="stylesheet" href="{$baseUri}css/backend2012.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{$baseUri}css/frontend2012.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{$baseUri}css/backend-print.css" type="text/css" media="print" />
+{/block}
+
+{block #body}
+	{if $presenter->getAction() != "auth"}
+		<ul class="admin-menu">
+			<li><a href="{link Org:default}">Seznam účastníků</a></li>
+			<li><a href="{link Org:reset}" onclick="return (confirm('Určitě chceš vymazat obsah databáze?'))" >Vymazat databázi</a></li>
+			<li class="last"><a href="{link Org:logout}">Odhlásit se</a></li>
+		</ul>
+	{/if}
+	<div class="container-inner2" /><div class="container-inner">
+		{block #content}{/block}
+	</div></div>
+{/block}

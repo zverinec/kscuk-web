@@ -1,0 +1,21 @@
+<p>
+	Ahoj,
+</p>
+
+<p>
+	na KSCUK se zaregistroval účastník a bylo by dobré mu poslat nějaké další informace.
+</p>
+
+<p>
+	S pozdravem,<br/>
+	KSCUK web
+</p>
+
+<hr />
+
+{foreach $questions AS $question}
+	<h3>{$question->question}</h3>
+	{if !empty($answers[$question->id_question])}
+		{!$answers[$question->id_question]->answer|texy}
+	{/if}
+{/foreach}

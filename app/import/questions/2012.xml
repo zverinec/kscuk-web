@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qustions>
+	<question category="personal" required="true" form="text">
+		<text>Jaké je tvé jméno a příjmení?</text>
+		<info></info>
+	</question>
+	<question category="personal" required="true" form="selectbox">
+		<text>Od kterého roku jsi na světě?</text>
+		<choices>
+			<choice>1990</choice>
+			<choice>1991</choice>
+			<choice>1992</choice>
+			<choice>1993</choice>
+			<choice>1994</choice>
+			<choice>1995</choice>
+			<choice>1996</choice>
+			<choice>1997</choice>
+			<choice>1999</choice>
+			<choice>2000</choice>
+		</choices>
+	</question>
+	<question category="personal" required="true" form="text">
+		<text>Odkud jsi?</text>
+		<info>Město postačí</info>
+	</question>
+	<question category="personal" required="true" form="text">
+		<text>Jakou školu studuješ?</text>
+		<info>Jsi-li čerstvý maturant, uveď školu, jejíž studium jsi úspěšně ukončil(a).</info>
+	</question>
+	<question category="personal" form="checkbox">
+		<text>Který seminář jsi řešil(a) či které akce jsi se účastnil(a)?</text>
+		<choices>
+			<choice>KEKS</choice>
+			<choice>KSI</choice>
+			<choice>Intersob</choice>
+			<choice>Interlos</choice>
+			<choice>minulý K-SCUK</choice>
+		</choices>
+	</question>
+
+
+	<question category="interesting" required="true" form="textarea">
+		<text>Co podnikáš ve svém volném čase?</text>
+		<info>Zajímají nás Tvé koníčky, zájmy, ale i akce, které pořádáš nebo se jich účastníš, uskupení, kterých jsi součástí (klidně sem haž i odkazy na jejich weby). NEBOJ SE ROZEPSAT!</info>
+	</question>
+	<question category="interesting" required="true" form="text">
+		<text>Ve kterých 3 oblastech se vyznáš?</text>
+		<info>Piš pouze heslovitě (například Homer Simpson by sem napsal: jaderná energetika, gastronomie, gaučing).  </info>
+	</question>
+	<question category="interesting" required="true" form="text">
+		<text>Ve kterých 3 oblastech by ses vyznat chtěl(a)?</text>
+		<info>Piš pouze heslovitě (například Líza Simpsonová by sem napsala: hra na saxofon, buddhismus, enviromentalistika).  </info>
+	</question>
+	<question category="interesting" required="true" form="text">
+		<text>Která oblast vědy Tě nejvíc přitahuje?</text>
+		<info>Třeba o ní zatím nic moc nevíš, ale určitě musí být cool.</info>
+	</question>
+	<question category="interesting" required="true" form="textarea">
+		<text>Co sis vždycky chtěl(a) vyzkoušet?</text>
+	</question>
+
+
+	<question category="organization" required="false" form="text">
+		<text>Máš nějaké zdravotní omezení?</text>
+		<info>Pokud ano, jaké?</info>
+	</question>
+	<question category="organization" required="false" form="text">
+		<text>Máš nějaké stravovací omezení?</text>
+		<info>Pokud ano, jaké?</info>
+	</question>
+	<question category="organization" required="true" form="text">
+		<text>Jaká je Tvá e-mailová adresa?</text>
+		<info>Použijeme pro zaslání dalších informací o K-SCUKu.</info>
+	</question>
+	<question category="organization" required="true" form="text">
+		<text>Jaké je Tvé mobilně-telefonní číslo?</text>
+		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
+	</question>
+
+</qustions>

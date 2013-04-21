@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>K-SCUK 2012 | Soustředění korespondečních seminářů</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="{$baseUri}css/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{$baseUri}css/main-print.css" type="text/css" media="print" />
+		{block #header}{/block}
+	</head>
+	<body>
+		<div id="page-name">
+			<a href="{plink Default:}"><img src="{$baseUri}img/logo.png" alt="Logo K-SCUKu" id="logo" /></a>
+			<h1><a href="{plink Default:}">Soustředění pro řešitele seminářů KEKS a KSI</a></h1>
+			<?php $wholeName = $presenter->getName().":".$presenter->getAction(); ?>
+			{var $config => Environment::getConfig('registration')}
+			{if $wholeName != "Default:registration" && $presenter->getName() != "Forms" && new DateTime53() >= DateTime53::from($config['start']) && new DateTime53() <= DateTime53::from($config['end'])}
+				<div class="sign-up">
+					<a href="{plink Default:registration}">Přihlásit se</a>
+				</div>
+			{/if}
+		</div>
+		<div class="cleaner">&nbsp;</div>
+		<div id="container"><div class="container-inner">
+				<div id="flashes">
+					{foreach $flashes AS $flash}
+					<div class="flash {$flash->type}">
+						{!$flash->message}
+					</div>
+					{/foreach}
+				</div>
+				{block #body}{/block}
+		</div></div>
+	</body>
+</html>

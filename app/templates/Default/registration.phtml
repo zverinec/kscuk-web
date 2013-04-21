@@ -1,0 +1,18 @@
+{extends layout-empty.phtml}
+
+{block #content}
+	<div class="container-inner2" /><div class="container-inner">
+		<h2>Registrace</h2>
+
+		<p>Vyplňte dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu. Použijeme je výhradně pro organizaci, abychom ti mohli poslat další (nezbytné) informace.</p>
+
+		{var $config => Environment::getConfig('registration')}
+		{if new DateTime53() < DateTime53::from($config['start'])}
+			<p><strong>Registrace účastníků ještě nezačala</strong></p>
+		{elseif new DateTime53() > DateTime53::from($config['end'])}
+			<p><strong>Registrace účastníků již skončila</strong></p>
+		{else}
+			{widget registration}
+		{/if}
+	</div></div>
+{/block}

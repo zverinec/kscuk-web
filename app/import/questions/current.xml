@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qustions>
+	<question category="personal" required="true" form="text">
+		<text>Jaké je Tvé jméno a příjmení?</text>
+		<info></info>
+	</question>
+	<question category="personal" required="true" form="selectbox">
+		<text>Od kterého roku jsi na světě?</text>
+		<choices>
+			<choice>1990</choice>
+			<choice>1991</choice>
+			<choice>1992</choice>
+			<choice>1993</choice>
+			<choice>1994</choice>
+			<choice>1995</choice>
+			<choice>1996</choice>
+			<choice>1997</choice>
+			<choice>1999</choice>
+			<choice>2000</choice>
+			<choice>2001</choice>
+		</choices>
+	</question>
+	<question category="personal" required="true" form="text">
+		<text>Odkud jsi?</text>
+		<info>Město postačí</info>
+	</question>
+	<question category="personal" form="checkbox">
+		<text>Který seminář jsi řešil(a) či které akce jsi se účastnil(a)?</text>
+		<choices>
+			<choice>KEKS</choice>
+			<choice>KSI</choice>
+			<choice>Intersob</choice>
+			<choice>Interlos</choice>
+			<choice>minulý K-SCUK</choice>
+		</choices>
+	</question>
+
+	<question category="organization" required="true" form="text">
+		<text>Jaká je Tvá e-mailová adresa?</text>
+		<info>Použijeme pro zaslání dalších informací o K-SCUKu.</info>
+	</question>
+	<question category="organization" required="true" form="text">
+		<text>Jaké je Tvé mobilně-telefonní číslo?</text>
+		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
+	</question>
+
+</qustions>
