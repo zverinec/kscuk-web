@@ -41,7 +41,7 @@ $application = Environment::getApplication();
 $router = $application->getRouter();
 
 $router[] = new Route (
-	"/<presenter>/<action>",
+	"/kscuk/<presenter>/<action>",
 	array(
 		"presenter" => "Default",
 		"action" => "default"
@@ -61,6 +61,9 @@ if (empty($tables)) {
 // session
 Environment::getSession()->setExpiration("+7 days");
 Environment::getSession()->start();
+
+// smtp mailer
+Environment::getServiceLocator()->addService('mailer', new SmtpMailer(Environment::getConfig("mailer")->toArray()));
 
 // Step 8: Run the application!
 $application->run();

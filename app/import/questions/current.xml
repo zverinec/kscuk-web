@@ -35,6 +35,26 @@
 		</choices>
 	</question>
 
+        <question category="interesting" required="true" form="textarea">
+                <text>Jak bys popsal svoji osobnost a osobnostní rysy?</text>
+                <info>Zajímají nás čeho si na své osobnosti ceníš a kým se snažíš být. Neboj se, sme jen trošínku zvědaví ;-)</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Jakému oboru se chceš v budoucnu věnovat a proč?</text>
+                <info>Proč ti přijde zajímavý a čím by tě to naplňovalo?</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co podnikáš ve volném čase?</text>
+                <info>Piš stručně, o každém svém podnikání napiš větu až dvě.</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co tě na sobě nejvíc štve?</text>
+                <info>... a ostatní si toho už taky asi mohli všimnout.</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co chceš, aby o tobě ostatní věděli?</text>
+        </question>
+
 	<question category="organization" required="true" form="text">
 		<text>Jaká je Tvá e-mailová adresa?</text>
 		<info>Použijeme pro zaslání dalších informací o K-SCUKu.</info>
