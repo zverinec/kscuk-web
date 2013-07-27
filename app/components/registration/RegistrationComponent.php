@@ -81,11 +81,14 @@ class RegistrationComponent extends BaseComponent
 		if (isset($config->mail)) {
 			try {
 				$mail = new Mail();
+				$mail->setMailer(Environment::getService('mailer'));
 				$mail->setSubject('K-SCUK: přihlášený účastník');
 				$mail->setEncoding('UTF-8');
 				$mail->addTo($config->mail);
 				if($targetMail != null) {
 					$mail->setFrom($targetMail);
+				} else {
+					$mail->setFrom($config->mail);
 				}
 				$template = new Template();
 				$template->questions = $this->getQuestions()->findAll();
@@ -98,6 +101,7 @@ class RegistrationComponent extends BaseComponent
 				// Send mail to attendee
 				if($targetMail != null) {
 					$mail2 = new Mail();
+					$mail2->setMailer(Environment::getService('mailer'));
 					$mail2->addTo($targetMail);
 					$mail2->setSubject('K-SCUK: potvrzení přihlášení');
 					$mail2->setFrom($config->mail);

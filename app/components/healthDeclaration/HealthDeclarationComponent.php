@@ -194,6 +194,8 @@ class HealthDeclarationComponent extends BaseComponent {
 		// Send e-mail
 		$config = Environment::getConfig('admin');
 		$mail = new Mail();
+		$mail->setFrom($config->mail);
+		$mail->setMailer(Environment::getService('mailer'));
 		$mail->setSubject('KSCUK - zdravotní deklarace k tisku');
 		$mail->setEncoding('UTF-8');
 		$mail->addTo($config->mail);

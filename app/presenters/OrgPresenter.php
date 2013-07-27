@@ -18,6 +18,12 @@ class OrgPresenter extends BasePresenter
 	}
 
 	public function actionReset() {
+		$config = Environment::getConfig('registration');
+		if(!$config->deletable) {
+			$this->flashMessage('Databázi nelze vymazat.', 'error');
+			$this->redirect('default');
+			return;
+		}
 		$import = new Import();
 		$import->clearDatabase();
 		$this->flashMessage("Databáze byla restartována.", "success");
