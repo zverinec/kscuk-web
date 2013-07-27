@@ -1,0 +1,5 @@
+www/storage
+!www/storage/people/.placeholder
+!www/storage/health-declaration/.placeholder
+app/temp/
+app/logs/
