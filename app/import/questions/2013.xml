@@ -7,6 +7,8 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
+			<choice>1990</choice>
+			<choice>1991</choice>
 			<choice>1992</choice>
 			<choice>1993</choice>
 			<choice>1994</choice>
@@ -16,8 +18,6 @@
 			<choice>1999</choice>
 			<choice>2000</choice>
 			<choice>2001</choice>
-			<choice>2002</choice>
-			<choice>2003</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
@@ -34,6 +34,11 @@
 			<choice>minulý K-SCUK</choice>
 		</choices>
 	</question>
+
+        <question category="interesting" required="true" form="textarea">
+                <text>Jak bys popsal svoji osobnost a osobnostní rysy?</text>
+                <info>Zajímají nás čeho si na své osobnosti ceníš a kým se snažíš být. Neboj se, sme jen trošínku zvědaví ;-)</info>
+        </question>
         <question category="interesting" required="true" form="textarea">
                 <text>Jakému oboru se chceš v budoucnu věnovat a proč?</text>
                 <info>Proč ti přijde zajímavý a čím by tě to naplňovalo?</info>
@@ -41,6 +46,10 @@
         <question category="interesting" required="true" form="textarea">
                 <text>Co podnikáš ve volném čase?</text>
                 <info>Piš stručně, o každém svém podnikání napiš větu až dvě.</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co tě na sobě nejvíc štve?</text>
+                <info>... a ostatní si toho už taky asi mohli všimnout.</info>
         </question>
         <question category="interesting" required="true" form="textarea">
                 <text>Co chceš, aby o tobě ostatní věděli?</text>
