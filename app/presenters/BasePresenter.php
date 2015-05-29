@@ -5,6 +5,7 @@ use App\Model\Person;
 use App\Model\Question;
 use App\Utils\Helpers;
 use App\Utils\Parameters;
+use Nette\Application\BadRequestException;
 use Nette\Application\UI\Presenter;
 
 class BasePresenter extends Presenter

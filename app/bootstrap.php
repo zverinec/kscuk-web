@@ -22,5 +22,4 @@ if (empty($tables)) {
 	$import =$container->getByType('\\App\\Model\\Import');
 	$import->installDatabase();
 }
-
 return $container;
