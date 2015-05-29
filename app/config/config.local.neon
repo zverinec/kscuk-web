@@ -1,7 +1,0 @@
-parameters:
-
-services:
-	nette.mailer: JanDrabek\MailPanel\SessionMailer
-
-tracy:
-	bar: [JanDrabek\MailPanel\MailPanel]
