@@ -1,6 +1,7 @@
 <?php
 namespace App\Presenters;
 
+use Alchemy\Zippy\Zippy;
 use App\Components\IAuthFormFactory;
 use App\Components\IPeopleFactory;
 use App\Model\Import;
@@ -76,9 +77,13 @@ class OrgPresenter extends BasePresenter
 
 	public function actionDownload()
 	{
-		$phar = new PharData(__DIR__  . '/../../temp/health_declaration.zip');
-		$phar->buildFromDirectory(__DIR__ . '/../../www/storage/health_declaration', '/\.pdf$/');
-		$this->sendResponse(new FileResponse(__DIR__  . '/../../temp/health_declaration.zip'));
+		$destination = __DIR__  . '/../../temp/health_declaration.tar';
+		$input = __DIR__ . '/../../www/storage/health_declaration';
+		$zippy = Zippy::load();
+		$archive = $zippy->create($destination, array(
+			'folder' => $input
+		));
+		$this->sendResponse(new FileResponse($destination));
 	}
 
 	public function renderAuth() {}
