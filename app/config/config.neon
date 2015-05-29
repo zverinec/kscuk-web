@@ -25,7 +25,7 @@ parameters:
 			personal: "0"
 			organization: "1"
 			interesting: "2"
-		photo: true
+		photo: false
 
 php:
 	date.timezone: Europe/Prague
