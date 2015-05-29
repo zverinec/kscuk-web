@@ -5,3 +5,5 @@
 /log/
 /vendor/
 /app/config/config.local.neon
+/.idea/
+composer.lock

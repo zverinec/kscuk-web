@@ -4,6 +4,11 @@ namespace App\Presenters;
 use App\Components\IAuthFormFactory;
 use App\Components\IPeopleFactory;
 use App\Model\Import;
+use DibiConnection;
+use MySQLDump;
+use mysqli;
+use Nette\Application\Responses\FileResponse;
+use PharData;
 
 class OrgPresenter extends BasePresenter
 {
@@ -14,12 +19,15 @@ class OrgPresenter extends BasePresenter
 	private $authFormFactory;
 	/** @var IPeopleFactory */
 	private $peopleFactory;
+	/** @var DibiConnection */
+	private $connection;
 
-	public function injectOrg(Import $import, IAuthFormFactory $authFormFactory, IPeopleFactory $peopleFactory)
+	public function injectOrg(Import $import, IAuthFormFactory $authFormFactory, IPeopleFactory $peopleFactory, DibiConnection $connection)
 	{
 		$this->import = $import;
 		$this->authFormFactory = $authFormFactory;
 		$this->peopleFactory = $peopleFactory;
+		$this->connection = $connection;
 	}
 
 	protected function startUp()
@@ -52,9 +60,30 @@ class OrgPresenter extends BasePresenter
 		$this->redirect("default");
 	}
 
+	public function actionDump()
+	{
+		$connection = $this->connection;
+
+		$dump = new MySQLDump(new mysqli($connection->getConfig('host'), $connection->getConfig('username'), $connection->getConfig('password'), $connection->getConfig('database')));
+		$dump->tables['search_cache'] = MySQLDump::DROP | MySQLDump::CREATE;
+		$dump->tables['log'] = MySQLDump::NONE;
+		$name = 'kscuk_' . date('Y-m-d-H-i') . '.sql';
+		$this->getHttpResponse()->setContentType('application/octet-stream');
+		$this->getHttpResponse()->setHeader('Content-Disposition', 'attachment; filename="' . $name . '"');
+		$dump->write();
+		$this->terminate();
+	}
+
+	public function actionDownload()
+	{
+		$phar = new PharData(__DIR__  . '/../../temp/health_declaration.zip');
+		$phar->buildFromDirectory(__DIR__ . '/../../www/storage/health_declaration', '/\.pdf$/');
+		$this->sendResponse(new FileResponse(__DIR__  . '/../../temp/health_declaration.zip'));
+	}
+
 	public function renderAuth() {}
 
-	public function renderDefault(){}
+	public function renderDefault() {}
 
 	public function renderDetail($person)
 	{
