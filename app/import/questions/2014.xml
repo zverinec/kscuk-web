@@ -7,6 +7,7 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
+			<choice>1992</choice>
 			<choice>1993</choice>
 			<choice>1994</choice>
 			<choice>1995</choice>
@@ -16,6 +17,7 @@
 			<choice>2000</choice>
 			<choice>2001</choice>
 			<choice>2002</choice>
+			<choice>2003</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
@@ -32,11 +34,17 @@
 			<choice>minulý K-SCUK</choice>
 		</choices>
 	</question>
-
-	<question category="interesting" required="true" form="textarea">
-			<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co považuješ za své silné stránky...</text>
-			<info>Prostě něco krátkého o tobě samém :-)</info>
-	</question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Jakému oboru se chceš v budoucnu věnovat a proč?</text>
+                <info>Proč ti přijde zajímavý a čím by tě to naplňovalo?</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co podnikáš ve volném čase?</text>
+                <info>Piš stručně, o každém svém podnikání napiš větu až dvě.</info>
+        </question>
+        <question category="interesting" required="true" form="textarea">
+                <text>Co chceš, aby o tobě ostatní věděli?</text>
+        </question>
 
 	<question category="organization" required="true" form="text">
 		<text>Jaká je Tvá e-mailová adresa?</text>

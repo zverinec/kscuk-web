@@ -1,63 +1,66 @@
 <?php
-abstract class BaseComponent extends Control {
-	
-	private $questions;
+namespace App\Components;
 
-	private $people;
-	
-	private $hd;
+use App\Utils\Helpers;
+use Nette\Application\UI\Control;
+use Nette\Templating\ITemplate;
 
-	public function  __construct(IComponentContainer $parent = NULL, $name = NULL) {
-		parent::__construct($parent, $name);
-		$this->startUp();
-	}
+abstract class BaseComponent extends Control
+{
 
 	protected function beforeRender() {}
 
 	protected function startUp() {}
 
-	public function render() {
+	public function render()
+	{
+		// Add one stage of lifecycle
 		$this->beforeRender();
-		return $this->getTemplate()->render();
+
+		// Automatic rendering in case of no render method
+		$this->getTemplate()->render();
 	}
 
-	protected function createTemplate() {
-		$template = new Template();
-		$name = strtr($this->getReflection()->getName(), array("Component" => ""));
-		$componentName = substr_replace($name, strtolower(substr($name, 0, 1)), 0, 1);
+	/**
+	 * Returns path to directory of component
+	 *
+	 * @return string Path to directory
+	 */
+	protected function getPath()
+	{
+		$reflector = new \ReflectionClass(get_class($this));
+		return dirname($reflector->getFileName());
+	}
 
-		$template->setFile(dirname(__FILE__) . '/' . $componentName . '/' . $componentName . ".phtml");
+	/**
+	 * Returns name of component (based on file name)
+	 *
+	 * @return string Name of component
+	 */
+	protected function getBaseName()
+	{
+		$reflector = new \ReflectionClass(get_class($this));
+		return str_replace('.php','', basename($reflector->getFileName()));
+	}
 
-		$template->registerFilter(new LatteFilter());
-		$template->registerHelper('texy', Helpers::getHelper('texy'));
-		$template->control = $this;
-		$template->presenter = $this->getPresenter();
-
+	protected function createTemplate($class = NULL)
+	{
+		$template = $this->getControlTemplate($this->getBaseName(),$class);
 		return $template;
 	}
 
-	/** @return Question */
-	protected final function getQuestions() {
-		if (!isset($this->questions)) {
-			$this->questions = new Question();
-		}
-		return $this->questions;
+	/**
+	 * Create and return template with given name from control's class directory
+	 *
+	 * @param string $name Filename of template without extensions
+	 * @param string $class Class name of template to use (e.g. FileTemplate)
+	 * @return ITemplate
+	 */
+	protected function getControlTemplate($name, $class = NULL)
+	{
+		$template = parent::createTemplate($class);
+		$template->setFile($this->getPath(). '/'. $name . '.latte');
+		$template->registerHelper('texy', Helpers::getHelper('texy'));
+		return $template;
 	}
-
-	/** @return Person */
-	protected final function getPeople() {
-		if (!isset($this->people)) {
-			$this->people = new Person();
-		}
-		return $this->people;
-	}
-	
-	/** @return HealthDeclaration */
-	protected final function getHealthDeclaration() {
-		if (!isset($this->hd)) {
-			$this->hd = new HealthDeclaration();
-		}
-		return $this->hd;
-	}
-		
 }

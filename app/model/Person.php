@@ -1,4 +1,9 @@
 <?php
+namespace App\Model;
+
+use DibiDataSource;
+use Nette\InvalidArgumentException;
+
 class Person extends AbstractModel
 {
 

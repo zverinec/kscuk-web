@@ -1,0 +1,63 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# http://nette.org/security-warning
+#
+parameters:
+	admin:
+			pass: superTajneHeslo
+			mail: test@dispostable.com
+	event:
+		title: 'K-SCUK 2015'
+		period: '6. - 13. září 2015 (od neděle do neděle)'
+		place: '<a href="http://mapy.cz/s/ikqX">Mohelenský mlýn</a>'
+		lodging: 'v pevné budově, spaní ve vlastním spacáku na postelích'
+		price: '0 Kč (financováno <a href="http://www.sci.muni.cz">Masarykovou univerzitou</a>)'
+
+	# Registration settings
+	# - Categories: order (the numbers after :) must be sequence starting from 0
+	# - Dates in YYYY-mm-dd hh:mm:ss format
+	# - Photos = FALSE - users won't be ask to load photo
+	registration:
+		start: "2014-06-01 0:00:00"
+		end: "2015-08-31 23:59:59"
+		deletable: true
+		categories:
+			personal: "0"
+			organization: "1"
+			interesting: "2"
+		photo: true
+
+php:
+	date.timezone: Europe/Prague
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+session:
+	expiration: 14 days
+
+services:
+	- App\Model\UserAuthenticator
+	- App\Model\HealthDeclaration
+	- App\Model\Import
+	- App\Model\Person
+	- App\Model\Question
+	- App\Utils\Parameters(@container::getParameters())
+	router: App\RouterFactory::createRouter
+	- App\Components\IAuthFormFactory
+	- App\Components\IPeopleFactory
+	- App\Components\IRegistrationFactory
+	- App\Components\IHealthDeclarationFactory
+
+dibi:
+	driver: mysql
+	host: localhost
+	database: kscuk2013
+	username: 'root'
+	password: ''
+	lazy: TRUE
+
+extensions:
+	dibi: Dibi\Bridges\Nette\DibiExtension22

@@ -1,4 +1,9 @@
 <?php
+namespace App\Model;
+
+use Nette\InvalidArgumentException;
+use Nette\Utils\ArrayHash;
+
 class HealthDeclaration extends AbstractModel
 {
 	
@@ -10,7 +15,7 @@ class HealthDeclaration extends AbstractModel
 	}
 	
 	public function save($data) {
-		if(!is_array($data)) {
+		if(!is_array($data) && ! ($data instanceof ArrayHash)) {
 			throw new InvalidArgumentException;
 		}
 		return $this->getConnection()->insert("health_declaration", $data)->execute();

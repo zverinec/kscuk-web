@@ -1,45 +1,47 @@
 <?php
-class BasePresenter extends Presenter {
+namespace App\Presenters;
 
-	private $questions;
+use App\Model\Person;
+use App\Model\Question;
+use App\Utils\Helpers;
+use App\Utils\Parameters;
+use Nette\Application\UI\Presenter;
 
-	private $people;
+class BasePresenter extends Presenter
+{
 
-	protected function startUp() {
+	/** @var Question */
+	protected $question;
+	/** @var Person */
+	protected $person;
+	/** @var Parameters */
+	protected $parameters;
+
+	public function injectBase(Question $question, Person $person, Parameters $parameters)
+	{
+		$this->question = $question;
+		$this->person = $person;
+		$this->parameters = $parameters;
+	}
+
+	protected function startUp()
+	{
 		parent::startup();
 	}
 
-	protected function createTemplate() {
+	protected function createTemplate()
+	{
 		$template = parent::createTemplate();
 
-		$this->oldLayoutMode = false;
-
-		$user = Environment::getUser();
-		if ($user->isLoggedIn()) {
+		if ($this->user->isLoggedIn()) {
 			$template->logged = TRUE;
-		}
-		else {
+		} else {
 			$template->logged = FALSE;
 		}
-		$template->registerFilter(new LatteFilter());
+		$template->registration = $this->parameters->getRegistration();
+		$template->event = $this->parameters->getEvent();
 		$template->registerHelper('texy', Helpers::getHelper('texy'));
 		return $template;
-	}
-
-	/** @return Question */
-	protected final function getQuestions() {
-		if (!isset($this->questions)) {
-			$this->questions = new Question();
-		}
-		return $this->questions;
-	}
-
-	/** @return Person */
-	protected final function getPeople() {
-		if (!isset($this->people)) {
-			$this->people = new Person();
-		}
-		return $this->people;
 	}
 
 }

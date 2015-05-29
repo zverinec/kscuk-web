@@ -1,4 +1,11 @@
 <?php
+namespace App\Utils;
+
+use Nette\InvalidArgumentException;
+use Nette\InvalidStateException;
+use Nette\Utils\Html;
+use Texy;
+
 class Helpers
 {
 	/** @var Texy */
@@ -6,7 +13,7 @@ class Helpers
 
 	public static function getHelper($helper) {
 		if (empty($helper)) {
-			throw NullPointerException("helper");
+			throw new InvalidArgumentException("helper");
 		}
 		switch ($helper) {
 			case "texy": return array(get_class(), 'texyHelper');

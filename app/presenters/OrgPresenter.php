@@ -1,10 +1,31 @@
 <?php
+namespace App\Presenters;
+
+use App\Components\IAuthFormFactory;
+use App\Components\IPeopleFactory;
+use App\Model\Import;
+
 class OrgPresenter extends BasePresenter
 {
 
-	protected function startUp() {
+	/** @var Import */
+	private $import;
+	/** @var IAuthFormFactory */
+	private $authFormFactory;
+	/** @var IPeopleFactory */
+	private $peopleFactory;
+
+	public function injectOrg(Import $import, IAuthFormFactory $authFormFactory, IPeopleFactory $peopleFactory)
+	{
+		$this->import = $import;
+		$this->authFormFactory = $authFormFactory;
+		$this->peopleFactory = $peopleFactory;
+	}
+
+	protected function startUp()
+	{
 		parent::startUp();
-		if (!Environment::getUser()->isLoggedIn()) {
+		if (!$this->user->isLoggedIn()) {
 			if ($this->getAction() != 'auth') {
 				$this->flashMessage("Neoprávnění přístup do organizátorské sekce!", "error");
 				$this->redirect("auth");
@@ -12,63 +33,59 @@ class OrgPresenter extends BasePresenter
 		}
 	}
 
-	public function actionLogout() {
-		Environment::getUser()->logout(true);
+	public function actionLogout()
+	{
+		$this->user->logout(true);
 		$this->getPresenter()->redirect('this');
 	}
 
-	public function actionReset() {
-		$config = Environment::getConfig('registration');
-		if(!$config->deletable) {
+	public function actionReset()
+	{
+		$config = $this->parameters->getRegistration();
+		if (!$config->deletable) {
 			$this->flashMessage('Databázi nelze vymazat.', 'error');
 			$this->redirect('default');
 			return;
 		}
-		$import = new Import();
-		$import->clearDatabase();
+		$this->import->clearDatabase();
 		$this->flashMessage("Databáze byla restartována.", "success");
 		$this->redirect("default");
 	}
 
-	public function renderAuth() {
-	}
+	public function renderAuth() {}
 
-	public function renderDefault() {
-		
-	}
+	public function renderDefault(){}
 
-	public function renderDetail($person) {
+	public function renderDetail($person)
+	{
 		if (empty($person)) {
 			$this->flashMessage('Nebylo zadáno ID účastníka, na kterého se chceš podívat.', 'error');
 			$this->redirect('default');
 		}
-		Tools::tryError();
-		$files = glob(WWW_DIR . '/storage/people/' . $person . '.*');
-		if (Tools::catchError($msg)) {
-			$this->flashMessage('Stala se neočekávaná chyba při nahrávání obrázku.', 'error');
-		}
+		$files = glob(__DIR__ . '/../../www/storage/people/' . $person . '.*');
 		if (!empty($files)) {
-			$this->getTemplate()->image = strtr($files[0], array(WWW_DIR . '/' => ''));
-		}
-		else {
+			$this->getTemplate()->image = strtr($files[0], array(__DIR__ . '/../../www' => ''));
+		} else {
 			$this->flashMessage('Obrázek účastníka není k dispozici.', 'error');
 		}
-		$this->getTemplate()->questions		= $this->getQuestions()->findAll()->fetchAssoc('category,id_question');
-		$this->getTemplate()->people		= $this->getPeople()->findAnswers($person, NULL)->fetchAssoc('id_question');
-		$this->getTemplate()->categories	= array(
-			'personal'		=> 'Personálie',
-			'interesting'	=> 'Zvídavé otázky',
-			'organization'	=> 'Organizační záležitosti'
+		$this->getTemplate()->questions = $this->question->findAll()->fetchAssoc('category,id_question');
+		$this->getTemplate()->people = $this->person->findAnswers($person, NULL)->fetchAssoc('id_question');
+		$this->getTemplate()->categories = array(
+			'personal' => 'Personálie',
+			'interesting' => 'Zvídavé otázky',
+			'organization' => 'Organizační záležitosti'
 		);
 	}
 
-	public function createComponentAuthForm($name) {
-		$form = new AuthForm($this, $name);
+	public function createComponentAuthForm()
+	{
+		$form = $this->authFormFactory->create();
 		$form->setRedirect('Org:default');
 		return $form;
 	}
 
-	public function createComponentPeople($name) {
-		return new PeopleComponent($this, $name);
+	public function createComponentPeople()
+	{
+		return $this->peopleFactory->create();
 	}
 }
