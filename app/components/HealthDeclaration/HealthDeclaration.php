@@ -81,12 +81,7 @@ class HealthDeclaration extends BaseComponent
 	public function createComponentDeclaration($name)
 	{
 		$person = $this->person->findByEmail($this->email);
-		$personName = null;
-		foreach ($person as $key => $item) {
-			if (strpos(strtolower($key), 'jméno a příjmení') !== FALSE) {
-				$personName = $item;
-			}
-		}
+		$personName = $this->extractName($person);
 		$form = new Form($this, $name);
 
 		$group = $form->addGroup("Kurz");
@@ -195,15 +190,19 @@ class HealthDeclaration extends BaseComponent
 		return $form;
 	}
 
+	public function extractName($person)
+	{
+		foreach ($person as $key => $item) {
+			if (mb_strpos(mb_strtolower($key), 'jméno a příjmení') !== FALSE) {
+				return $item;
+			}
+		}
+	}
+
 	public function declarationSubmitted(Form $form)
 	{
 		$person = $this->person->findByEmail(strtolower($this->email));
-		$personName = null;
-		foreach ($person as $key => $item) {
-			if (strpos(strtolower($key), 'jméno a příjmení') !== FALSE) {
-				$personName = $item;
-			}
-		}
+		$personName = $this->extractName($person);
 		if (count($person) == 0) {
 			$form->addError("Tato e-mailová adresa nenáleží žádné přihlášce.");
 			return;

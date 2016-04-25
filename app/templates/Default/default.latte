@@ -102,10 +102,10 @@
 	<div id="info"><div class="inner">
 		<h2>Základní informace</h2>
 		<ul>
-			<li><span class="prolog">Termín:</span><span class="answer">{$event->period|noEscape}</span></li>
-			<li><span class="prolog">Místo:</span><span class="answer">{$event->place|noEscape}</span></li>
-			<li><span class="prolog">Ubytování:</span><span class="answer">{$event->lodging|noEscape}</span></li>
-			<li><span class="prolog">Cena:</span><span class="answer">{$event->price|noEscape}</span></li>
+			<li n:ifset="$event->period"><span class="prolog">Termín:</span><span class="answer">{$event->period|noEscape}</span></li>
+			<li n:ifset="$event->place"><span class="prolog">Místo:</span><span class="answer">{$event->place|noEscape}</span></li>
+			<li n:ifset="$event->lodging"><span class="prolog">Ubytování:</span><span class="answer">{$event->lodging|noEscape}</span></li>
+			<li n:ifset="$event->price"><span class="prolog">Cena:</span><span class="answer">{$event->price|noEscape}</span></li>
 			<li><span class="prolog">Kontakt:</span><span class="answer"><a href="mailto:kscuk@fi.muni.cz">kscuk@fi.muni.cz</a><br />Máte-li jakékoliv dotazy či pochybnosti, neváhejte nám napsat.</span></li>
 		</ul>
 		<div class="cleaner">&nbsp;</div>
