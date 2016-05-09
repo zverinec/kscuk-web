@@ -128,7 +128,10 @@ u {
 	text-indent:-9999px;
 	border:0;
 }
-.nivo-directionNav a:hover {
+a.nivo-prevNav :hover {
+	background: transparent url('../img/slider_arrows.png') no-repeat;
+}
+a.nivo-nextNav :hover {
 	background: transparent url('../img/slider_arrows.png') no-repeat;
 	background-position:-30px 0;
 }
