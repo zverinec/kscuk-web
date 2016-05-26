@@ -10,8 +10,8 @@ parameters:
 		title: 'K-SCUK 2016'
 		period: '11. – 18. 9. 2016 (od neděle do neděle)'
 		place: '<a href="http://mapy.cz/s/ikqX">Mohelenský mlýn</a>'
-		#lodging: 'v pevné budově, spaní ve vlastním spacáku na postelích'
-		#price: '0 Kč (financováno <a href="http://www.sci.muni.cz">Masarykovou univerzitou</a>)'
+		lodging: 'v budově, spaní na postelích'
+		price: '0 Kč (financováno <a href="http://www.sci.muni.cz">Masarykovou univerzitou</a>)'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
