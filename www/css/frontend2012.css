@@ -120,6 +120,7 @@ span.answer {
 	width: 365px;
 	display: block;
 	float: left;
+	margin-left: 10px;
 }
 #tags {
 	padding: 10px;
