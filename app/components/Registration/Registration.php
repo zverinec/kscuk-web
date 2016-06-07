@@ -131,7 +131,7 @@ class Registration extends BaseComponent
 				$mail->setHtmlBody($template);
 				$this->mailer->send($mail);
 				// Send mail to attendee
-				if ($targetMail != null) {
+				if (($targetMail != null) && ($this->parameters->getRegistration()->sendMailToAttendee)) {
 					$mail2 = new Message();
 					$mail2->addTo($targetMail);
 					$mail2->setSubject('K-SCUK: potvrzení přihlášení');

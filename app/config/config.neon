@@ -26,6 +26,7 @@ parameters:
 			organization: "1"
 			interesting: "2"
 		photo: false
+		sendMailToAttendee: false
 
 php:
 	date.timezone: Europe/Prague
