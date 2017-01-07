@@ -3,8 +3,8 @@
 	<head>
 		<title>{$event->title} | Soustředění korespondečních seminářů</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="K-SCUK je společné soustředění pro řešitele seminářů KEKS a KSI Masarykovy univerzity." />
-		<meta name="keywords" content="K-SCUK,KSI,KEKS,FIMU,FI,soustředění,Masarykova univerzita" />
+		<meta name="description" content="K-SCUK je společné soustředění pro řešitele seminářů IBIS a KSI Masarykovy univerzity." />
+		<meta name="keywords" content="K-SCUK,KSI,IBIS,KEKS,FIMU,FI,soustředění,Masarykova univerzita" />
 		<meta name="author" content="Jan Drábek, Jan Papoušek" />
 
 		<link rel="stylesheet" href="{$basePath}/css/main.css" type="text/css" media="screen" />
@@ -14,7 +14,7 @@
 	<body>
 		<div id="page-name">
 			<a href="{plink Default:}"><img src="{$basePath}/img/logo.png" alt="Logo K-SCUKu" id="logo" /></a>
-			<h1><a href="{plink Default:}">Soustředění pro řešitele seminářů KEKS a KSI</a></h1>
+			<h1><a href="{plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1>
 			<?php $wholeName = $presenter->getName().":".$presenter->getAction(); ?>
 			{if $wholeName != "Default:registration" && $presenter->getName() != "Forms" && new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
 				<div class="sign-up">
