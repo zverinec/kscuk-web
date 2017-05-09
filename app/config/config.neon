@@ -46,7 +46,7 @@ services:
 	- App\Model\Person
 	- App\Model\Question
 	- App\Utils\Parameters(@container::getParameters())
-	router: App\RouterFactory::createRouter
+	#router: App\RouterFactory::createRouter
 	- App\Components\IAuthFormFactory
 	- App\Components\IPeopleFactory
 	- App\Components\IRegistrationFactory
