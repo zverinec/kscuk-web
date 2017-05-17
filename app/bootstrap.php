@@ -26,7 +26,7 @@ if ($httpRequest->isSecured()) {
 }
 
 // Setup router
-$container->router[] = App\RouterFactory::createRouter();
+$container->addService('router', App\RouterFactory::createRouter());
 
 // Auto import when needed
 $tables = $container->getByType('\\DibiConnection')->getDatabaseInfo()->getTables();
