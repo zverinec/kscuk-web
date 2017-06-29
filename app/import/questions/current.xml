@@ -26,19 +26,19 @@
 			<choice>KSI</choice>
 			<choice>InterSoB</choice>
 			<choice>InterLos</choice>
-			<choice>PoznejFI</choice>
+			<choice>Poznej FI!</choice>
 			<choice>minulý K-SCUK</choice>
 		</choices>
 	</question>
 
 	<question category="interesting" required="true" form="textarea">
 		<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co považuješ za své silné stránky...</text>
-		<info>Prostě něco krátkého o tobě samém :-)</info>
+		<info>Prostě něco krátkého o tobě samém. :-)</info>
 	</question>
 
 	<question category="organization" required="true" form="text">
 		<text>Jaká je Tvá e-mailová adresa?</text>
-		<info>Použijeme pro zaslání dalších informací o K-SCUKu.</info>
+		<info>Použijeme ji pro zaslání dalších informací o K-SCUKu.</info>
 	</question>
 	<question category="organization" required="true" form="text">
 		<text>Jaké je Tvé mobilně-telefonní číslo?</text>
