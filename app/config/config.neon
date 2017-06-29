@@ -10,8 +10,8 @@ parameters:
 		title: 'K-SCUK 2017'
 		period: '3.–10. 9. 2017 (od neděle do neděle)'
 		place: '<a href="http://www.strazna.trinactka.com/">Skautská základna Strážná</a>'
-		#lodging: 'v budově, spaní na postelích'
-		#price: '0 Kč (financováno <a href="http://www.sci.muni.cz">Masarykovou univerzitou</a>)'
+		lodging: 'v budově ve vlastním spacáku na zemi'
+		price: '0 Kč (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
