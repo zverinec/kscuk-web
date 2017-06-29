@@ -7,16 +7,12 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
-			<choice>1996</choice>
 			<choice>1997</choice>
 			<choice>1998</choice>
 			<choice>1999</choice>
 			<choice>2000</choice>
 			<choice>2001</choice>
 			<choice>2002</choice>
-			<choice>2003</choice>
-			<choice>2004</choice>
-			<choice>2005</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
@@ -26,17 +22,18 @@
 	<question category="personal" form="checkbox">
 		<text>Který seminář jsi řešil(a) či které akce jsi se účastnil(a)?</text>
 		<choices>
-			<choice>KEKS</choice>
+			<choice>IBIS</choice>
 			<choice>KSI</choice>
-			<choice>Intersob</choice>
-			<choice>Interlos</choice>
+			<choice>InterSoB</choice>
+			<choice>InterLos</choice>
+			<choice>PoznejFI</choice>
 			<choice>minulý K-SCUK</choice>
 		</choices>
 	</question>
 
 	<question category="interesting" required="true" form="textarea">
-			<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co považuješ za své silné stránky...</text>
-			<info>Prostě něco krátkého o tobě samém :-)</info>
+		<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co považuješ za své silné stránky...</text>
+		<info>Prostě něco krátkého o tobě samém :-)</info>
 	</question>
 
 	<question category="organization" required="true" form="text">
