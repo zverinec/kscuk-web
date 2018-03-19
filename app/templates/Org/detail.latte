@@ -17,7 +17,7 @@
 			<th>{$question->question}</th>
 			<td>
 			{if !empty($people[$question->id_question])}
-				{!$people[$question->id_question]->answer|texy}
+				{$people[$question->id_question]->answer|texy|noescape}
 			{/if}
 			</td>
 		{/foreach}

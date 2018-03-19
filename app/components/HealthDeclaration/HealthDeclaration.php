@@ -57,7 +57,7 @@ class HealthDeclaration extends BaseComponent
 			->addRule(Form::EMAIL, "Zadejte prosím vaši e-mailovou adresu ve tvaru nekdo@nekde.koncovka.");
 		$form->addGroup();
 		$form->addSubmit("continue", "Pokračovat");
-		$form->onSuccess[] = $this->mailFormSubmitted;
+		$form->onSuccess[] = [$this, 'mailFormSubmitted'];
 		Helpers::changeRenderer($form);
 		return $form;
 	}
@@ -233,7 +233,7 @@ class HealthDeclaration extends BaseComponent
 		$template = $this->createTemplate();
 		$template->setFile(__DIR__ . '/../../templates/mail/health_declaration.latte');
 		$template->link = $this->getPresenter()->link("//Forms:filledForm", $values["email"], $values["code"]);
-		$template->registerHelper('texy', Helpers::getHelper('texy'));
+		$template->getLatte()->addFilter('texy', Helpers::getHelper('texy'));
 		$mail->setHtmlBody($template);
 		$this->mailer->send($mail);
 		// End up

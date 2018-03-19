@@ -1,9 +1,9 @@
 <?php
 namespace App\Utils;
 
-use Nette\Object;
+use Nette\SmartObject;
 
-class Parameters extends Object
+class Parameters
 {
 	private $config;
 

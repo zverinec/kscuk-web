@@ -211,7 +211,7 @@ class Registration extends BaseComponent
 
 		$form->addGroup();
 		$form->addSubmit('register', 'Přihlásit se.');
-		$form->onSuccess[] = $this->imageFormSubmitted;
+		$form->onSuccess[] = [$this, 'imageFormSubmitted'];
 
 		return $form;
 	}

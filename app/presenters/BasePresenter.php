@@ -41,7 +41,7 @@ class BasePresenter extends Presenter
 		}
 		$template->registration = $this->parameters->getRegistration();
 		$template->event = $this->parameters->getEvent();
-		$template->registerHelper('texy', Helpers::getHelper('texy'));
+		$template->getLatte()->addFilter('texy', Helpers::getHelper('texy'));
 		return $template;
 	}
 

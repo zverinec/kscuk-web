@@ -75,7 +75,7 @@ class People extends BaseComponent
 		}
 
 		$form->addSubmit("filter", "Zobrazit");
-		$form->onSuccess[] = $this->questionFormSubmitted;
+		$form->onSuccess[] = [$this, 'questionFormSubmitted'];
 
 		return $form;
 	}

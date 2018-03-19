@@ -60,7 +60,7 @@ abstract class BaseComponent extends Control
 	{
 		$template = parent::createTemplate($class);
 		$template->setFile($this->getPath(). '/'. $name . '.latte');
-		$template->registerHelper('texy', Helpers::getHelper('texy'));
+		$template->getLatte()->addFilter('texy', Helpers::getHelper('texy'));
 		return $template;
 	}
 }

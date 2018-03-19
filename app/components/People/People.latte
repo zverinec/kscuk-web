@@ -19,7 +19,7 @@
 			{foreach $questions AS $question}
 				<td>
 					{if !empty($answers[$question->id_question])}
-						{!$answers[$question->id_question]->answer|texy}
+						{$answers[$question->id_question]->answer|texy|noescape}
 					{/if}
 				</td>
 			{/foreach}

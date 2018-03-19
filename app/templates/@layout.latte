@@ -15,7 +15,7 @@
 		<div id="page-name">
 			<a href="{plink Default:}"><img src="{$basePath}/img/logo.png" alt="Logo K-SCUKu" id="logo" /></a>
 			<h1><a href="{plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1>
-			<?php $wholeName = $presenter->getName().":".$presenter->getAction(); ?>
+			{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
 			{if $wholeName != "Default:registration" && $presenter->getName() != "Forms" && new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
 				<div class="sign-up">
 					<a href="{plink Default:registration}">Přihlásit se</a>
@@ -27,7 +27,7 @@
 				<div id="flashes">
 					{foreach $flashes AS $flash}
 					<div class="flash {$flash->type}">
-						{!$flash->message}
+						{$flash->message|noescape}
 					</div>
 					{/foreach}
 				</div>

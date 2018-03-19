@@ -43,7 +43,7 @@ class AuthForm extends BaseComponent
 
 		$form->addPassword('password', 'Heslo:');
 		$form->addSubmit('login', 'Přihlásit se');
-		$form->onSuccess[] = $this->formSubmitted;
+		$form->onSuccess[] = [$this, 'formSubmitted'];
 
 		return $form;
 	}
