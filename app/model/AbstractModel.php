@@ -1,23 +1,23 @@
 <?php
 namespace App\Model;
 
-use DibiConnection;
+use Dibi\Connection;
 use Nette\InvalidArgumentException;
 
 abstract class AbstractModel
 {
 
-	/** @var DibiConnection */
+	/** @var Dibi\Connection */
 	private $connection;
 
-	public function __construct(DibiConnection $connection)
+	public function __construct(\Dibi\Connection $connection)
 	{
 		$this->connection = $connection;
 	}
 
 	/**
 	 *
-	 * @return DibiConnection
+	 * @return Dibi\Connection
 	 */
 	protected final function getConnection()
 	{

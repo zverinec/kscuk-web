@@ -5,7 +5,7 @@ use Alchemy\Zippy\Zippy;
 use App\Components\IAuthFormFactory;
 use App\Components\IPeopleFactory;
 use App\Model\Import;
-use DibiConnection;
+use Dibi\Connection;
 use MySQLDump;
 use mysqli;
 use Nette\Application\Responses\FileResponse;
@@ -20,10 +20,10 @@ class OrgPresenter extends BasePresenter
 	private $authFormFactory;
 	/** @var IPeopleFactory */
 	private $peopleFactory;
-	/** @var DibiConnection */
+	/** @var Dibi\Connection */
 	private $connection;
 
-	public function injectOrg(Import $import, IAuthFormFactory $authFormFactory, IPeopleFactory $peopleFactory, DibiConnection $connection)
+	public function injectOrg(Import $import, IAuthFormFactory $authFormFactory, IPeopleFactory $peopleFactory, \Dibi\Connection $connection)
 	{
 		$this->import = $import;
 		$this->authFormFactory = $authFormFactory;

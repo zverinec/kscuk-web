@@ -29,7 +29,7 @@ if ($httpRequest->isSecured()) {
 $container->addService('router', App\RouterFactory::createRouter());
 
 // Auto import when needed
-$tables = $container->getByType('\\DibiConnection')->getDatabaseInfo()->getTables();
+$tables = $container->getByType('\\Dibi\Connection')->getDatabaseInfo()->getTables();
 if (empty($tables)) {
 	$import =$container->getByType('\\App\\Model\\Import');
 	$import->installDatabase();
