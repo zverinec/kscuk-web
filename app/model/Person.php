@@ -10,7 +10,7 @@ class Person extends AbstractModel
 	public function create() {
 		$this->getConnection()->insert('registered', array('id_registered' => 0))
 			->execute(TRUE);
-		return $this->getConnection()->insertId();
+		return $this->getConnection()->getInsertId();
 	}
 	
 	public function findByEmail($email) {
