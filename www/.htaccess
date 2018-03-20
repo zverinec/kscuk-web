@@ -1,6 +1,6 @@
 # configure PHP
- php_flag magic_quotes_gpc off
- php_flag register_globals off
+php_flag magic_quotes_gpc off
+php_flag register_globals off
 
 # mod_rewrite
 RewriteEngine On
@@ -9,4 +9,12 @@ RewriteEngine On
 # front controller
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|tar\.gz)$ index.php [L]
+RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|sh|tar\.gz)$ index.php [L]
+
+<FilesMatch deploy.sh>
+	AddHandler cgi-script .sh
+	AuthType Basic
+	AuthName "Restricted Content!"
+	AuthUserFile /etc/apache2/.htpasswd
+	Require valid-user
+</FilesMatch>
