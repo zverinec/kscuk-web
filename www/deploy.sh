@@ -11,4 +11,4 @@ if [ $? -eq 0 ]; then
 	OUTPUT+=$(cd .. && rm -rf ./temp/cache 2>&1)$'\n\n'
 fi
 
-echo "$OUTPUT" | mail "me@apophis.cz" -s "[kscuk-web] Deploy status"
+echo "$OUTPUT" | mail "me@apophis.cz" "v.nem.co@mail.muni.cz" -s "[kscuk-web] Deploy status"
