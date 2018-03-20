@@ -1,0 +1,69 @@
+{php
+
+    $orgs = array(
+        ['seminar' => 'ksi',
+            'photo' => '698.jpg',
+            'name' => 'Anna Řechtáčková',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ibis',
+            'photo' => '699.jpg',
+            'name' => 'Ondra Svoboda',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ksi',
+            'photo' => '309.jpg',
+            'name' => 'Viki Vozárová',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ksi',
+            'photo' => '697.png',
+            'name' => 'Ondra Borýsek',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ksi',
+            'photo' => '27.jpg',
+            'name' => 'Dominika Krejčí',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ibis',
+            'photo' => '21.jpg',
+            'name' => 'Honza Horáček',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ibis',
+            'photo' => '429.jpg',
+            'name' => 'David Dobrovolný',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ksi',
+            'photo' => '20.jpg',
+            'name' => 'Vladimír Still',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+        ['seminar' => 'ksi',
+            'photo' => '701.jpg',
+            'name' => 'Matěj Žáček',
+            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+        ],
+    );
+}
+
+<div id="organizators">
+    <h2>Organizátoři</h2>
+
+    <div id="organizatorGrid">
+
+        {foreach $orgs as $org}
+            <div class="organizator">
+                <div class="frame {$org['seminar']}">
+                    <div class="trcorner"></div>
+                    <img src="img/{$org['photo']}" width="100">
+                    <div class="blcorner"></div>
+                </div>
+                <div class="bio">{$org['bio']}</div>
+            </div>
+        {/foreach}
+
+    </div>
+</div>

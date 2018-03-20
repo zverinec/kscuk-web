@@ -7,19 +7,16 @@
 		<meta name="keywords" content="K-SCUK,KSI,IBIS,KEKS,FIMU,FI,soustředění,Masarykova univerzita" />
 		<meta name="author" content="Jan Drábek, Jan Papoušek" />
 
-		<link rel="stylesheet" href="{$basePath}/css/main.css" type="text/css" media="screen" />
+		<!-- link rel="stylesheet" href="{$basePath}/css/main.css" type="text/css" media="screen" / -->
 		<link rel="stylesheet" href="{$basePath}/css/main-print.css" type="text/css" media="print" />
 		{block #header}{/block}
 	</head>
 	<body>
 		<div id="page-name">
-			<a href="{plink Default:}"><img src="{$basePath}/img/logo.png" alt="Logo K-SCUKu" id="logo" /></a>
-			<h1><a href="{plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1>
+			<!-- h1><a href="{ plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1 -->
 			{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
 			{if $wholeName != "Default:registration" && $presenter->getName() != "Forms" && new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
-				<div class="sign-up">
-					<a href="{plink Default:registration}">Přihlásit se</a>
-				</div>
+				{var $registrationOpen = true;}
 			{/if}
 		</div>
 		<div class="cleaner">&nbsp;</div>
