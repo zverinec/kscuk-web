@@ -205,11 +205,19 @@ div.organizator {
 
 }
 
-div.organizator div.bio {
+div.organizator div.info {
     width: 45%;
     margin-left: 5%;
     display: inline-block;
     text-align: left;
+}
+
+div.organizator div.name {
+    margin-bottom: 0.5em;
+}
+
+div.organizator div.bio {
+    color: #939597;
 }
 
 div.frame {
