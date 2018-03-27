@@ -22,9 +22,9 @@ a {
     }
     #header #menu ul#links li p#menuButton {
         display: block !important;
-        font-size: 200%;
+        font-size: 180%;
         margin: 0;
-        padding: 0 1em;
+        padding: 0 0.3em;
     }
 
     #header #menu ul#links li ul {
@@ -177,7 +177,7 @@ div.separator {
 
 div.button {
     display: table;
-    margin: 0 auto;
+    margin: 3em auto 5em auto;
     padding: 1% 5%;
 }
 
@@ -197,6 +197,7 @@ div#organizators {
 }
 
 div#organizators h2 {
+    margin-top: 2em;
     font-weight: 300;
     color: #939597;
 }
@@ -276,7 +277,7 @@ div.button .trcorner, div.button .blcorner {
 
 #footer {
     width: 90%;
-    padding: 1% 5%;
+    padding: 0.5em 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -285,7 +286,7 @@ div.button .trcorner, div.button .blcorner {
 }
 
 #footer #logos {
-    min-width: 365px;
+    min-width: 340px;
 }
 #footer #logos a {
     width: 50px;
@@ -294,6 +295,10 @@ div.button .trcorner, div.button .blcorner {
 #footer #logos a img {
     width: 50px;
     margin-right: 5%;
+}
+
+#footer #logos a:last-child img {
+    margin-right: 0;
 }
 
 #footer #email {
