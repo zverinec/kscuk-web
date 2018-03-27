@@ -22,6 +22,7 @@ a {
     }
     #header #menu ul#links li p#menuButton {
         display: block !important;
+        font-size: 200%;
         margin: 0;
         padding: 0 1em;
     }
@@ -41,6 +42,14 @@ a {
     }
     #header #menu ul#links li:hover ul li {
         float: none;
+    }
+
+    #cover #tldr {
+        font-size: 120% !important;
+    }
+
+    #footer {
+        justify-content: space-around !important;
     }
 }
 
@@ -268,12 +277,15 @@ div.button .trcorner, div.button .blcorner {
 #footer {
     width: 90%;
     padding: 1% 5%;
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: #b7b8b9;
 }
 
 #footer #logos {
-    display: table-cell;
+    min-width: 365px;
 }
 #footer #logos a {
     width: 50px;
@@ -285,8 +297,6 @@ div.button .trcorner, div.button .blcorner {
 }
 
 #footer #email {
-    display: table-cell;
-    vertical-align: middle;
     text-align: right;
     color: #fff;
 }
