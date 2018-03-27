@@ -30,7 +30,7 @@
 			<td>Kdy?</td>
 			<td>{if isSet($event->period)}{$event->period|noEscape}{else}K-SCUK bude.{/if}</td>
 		</tr>
-		<tr n:ifset="$event->place, $event->lodging"">
+		<tr n:ifset="$event->place, $event->lodging">
 			<td>Kde?</td>
 			<td>{$event->place|noEscape}, {$event->lodging|noEscape}</td>
 		</tr>
@@ -47,7 +47,7 @@
 		<a n:href="Default:registration">
 			<div class="button">
 				<div class="trcorner"></div>
-				<p>zúčastním se</p>
+				<p>Chci se zúčastnit!</p>
 				<div class="blcorner"></div>
 			</div>
 		</a>
