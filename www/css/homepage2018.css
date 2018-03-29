@@ -308,3 +308,24 @@ div.button .trcorner, div.button .blcorner {
     text-align: right;
     color: #fff;
 }
+
+#flashes .flash {
+    padding: 0.5% 5%;
+    margin: 10px 0;
+    position: relative;
+    top: 2.5em;
+    z-index: 1000;
+}
+
+#flashes .error {
+    color: white;
+    background-color: #b20616;
+}
+#flashes .success {
+    color: white;
+    background-color: #00a67a;
+}
+#flashes .info {
+    color: white;
+    background-color: #fbaf40;
+}
