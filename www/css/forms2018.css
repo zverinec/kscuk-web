@@ -1,0 +1,48 @@
+legend {
+    display: block;
+    font-size: 1.2em;
+    font-style:italic;
+    margin-bottom: 0;
+}
+fieldset {
+    margin-bottom: 10px;
+    border: 1px dashed #bdbdbd;
+    padding: 10px;
+}
+fieldset.required {
+    border-color: #fbaf40; /*#0969A2;*/
+}
+fieldset.required legend::after {
+    content: " *";
+    color: #fbaf40; /*#0969A2;*/
+}
+form p {
+    font-size: smaller;
+}
+form small {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+input[type=text], textarea, input[type=password] {
+    border: 1px solid #bdbdbd;
+    padding: 5px 5px;
+}
+input[type=text]:active {
+    border: 1px solid gray;
+}
+input[type=submit] {
+    padding: 5px;
+    margin-top: 10px;
+}
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+label.checked {
+    color: #00a67a;
+}
+
+textarea {
+    width: 100%;
+}

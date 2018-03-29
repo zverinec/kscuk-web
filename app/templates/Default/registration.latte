@@ -1,17 +1,35 @@
 {extends @layout-empty.latte}
 
 {block #content}
-	<div class="container-inner2"><div class="container-inner">
-		<h2>Registrace</h2>
+	<div id="content">
+		<div class="container-inner2"><div class="container-inner">
+				<h2>Registrace</h2>
 
-		<p>Vyplňte dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu. Použijeme je výhradně pro organizaci, abychom ti mohli poslat další (nezbytné) informace.</p>
+				<p>Vyplňte dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu. Použijeme je výhradně pro organizaci, abychom ti mohli poslat další (nezbytné) informace.</p>
 
-		{if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
-			<p><strong>Registrace účastníků ještě nezačala</strong></p>
-		{elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
-			<p><strong>Registrace účastníků již skončila</strong></p>
-		{else}
-			{control registration}
-		{/if}
-	</div></div>
+                {if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
+					<p><strong>Registrace účastníků ještě nezačala</strong></p>
+                {elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
+					<p><strong>Registrace účastníků již skončila</strong></p>
+                {else}
+                    {control registration}
+                {/if}
+			</div></div>
+	</div>
+
+	<script>
+		let inputs = document.getElementsByTagName("input");
+		for (let i = 0; i < inputs.length; i++) {
+		    if (inputs[i].type === "checkbox") {
+                inputs[i].addEventListener("click", function (e) {
+                    let label = e.target.parentElement;
+                    if (label.classList.contains("checked")) {
+                        label.classList.remove("checked");
+                    } else {
+                        label.classList.add("checked");
+                    }
+                });
+			}
+		}
+	</script>
 {/block}
