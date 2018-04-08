@@ -1,9 +1,15 @@
 {layout @layout-empty.latte}
  
 {block #content}
-<link rel="stylesheet" type="text/css" href="{$basePath}/css/jqcloud.css" />
-<script type="text/javascript" src="{$basePath}/js/jqcloud-1.0.3.min.js"></script>
 	<script type="text/javascript">
+        $('#menu-about, #menu-organizators').on('click', function(e) {
+            e.preventDefault();
+            console.log(e.target);
+            let target = (e.target.id === "menu-about")? $("#about") : $("#organizators");
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        });
 	</script>
 
 <div id="cover">
