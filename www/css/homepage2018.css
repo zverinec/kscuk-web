@@ -208,31 +208,28 @@ div.button {
     padding: 1% 5%;
 }
 
-div.button .middle {
+div.button p {
     margin: 0 auto;
-    padding: 0.7em 1.5em;
+    padding: 0 1em;
     text-align: center;
     font-size: 180%;
     color: #fff;
     cursor: pointer;
-    background-color: #b7b8b9;
 }
 
-div.button.even .middle, div.button.odd:hover .middle {
-    border-right: 15px solid #00a67a;
-    border-left: 15px solid #fbaf40;
+div.button.even p, div.button.odd:hover p {
+    background-color: #fbaf40;
 }
 
-div.button.odd .middle, div.button.even:hover .middle {
-    border-right: 15px solid #fbaf40;
-    border-left: 15px solid #00a67a;
+div.button.odd p, div.button.even:hover p {
+    background-color: #00a67a;
 }
 
-div.button.even .blcorner, div.button.odd .trcorner, div.button.odd:hover .blcorner, div.button.even:hover .trcorner  {
+div.button.even .corner, div.button.odd:hover .corner  {
     border: 15px solid #fbaf40;
 }
 
-div.button.even .trcorner, div.button.odd .blcorner, div.button.odd:hover .trcorner, div.button.even:hover .blcorner {
+div.button.odd .corner, div.button.even:hover .corner {
     border: 15px solid #00a67a;
 }
 
