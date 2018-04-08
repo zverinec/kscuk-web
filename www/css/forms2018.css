@@ -44,5 +44,6 @@ label.checked {
 }
 
 textarea {
-    width: 100%;
+    width: 98%;
+    height: 15em;
 }
