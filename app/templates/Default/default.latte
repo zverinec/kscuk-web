@@ -54,11 +54,15 @@
 	</table>
 	{if isset($registrationOpen)}
 		<a n:href="Default:registration">
-			<div class="button">
-				<div class="trcorner"></div>
-				<p>Chci se zúčastnit!</p>
-				<div class="blcorner"></div>
-			</div>
+			{if time() % 2 == 0}
+				<div class="button even">
+			{else}
+				<div class="button odd">
+			{/if}
+					<div class="trcorner corner"></div>
+					<p>Chci se zúčastnit!</p>
+					<div class="blcorner corner"></div>
+				</div>
 		</a>
 	{/if}
 	{include orgs.latte}

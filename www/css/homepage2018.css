@@ -211,11 +211,26 @@ div.button {
 div.button p {
     margin: 0 auto;
     padding: 0 1em;
-    background-color: #b7b8b9;
     text-align: center;
     font-size: 180%;
     color: #fff;
     cursor: pointer;
+}
+
+div.button.even p, div.button.odd:hover p {
+    background-color: #fbaf40;
+}
+
+div.button.odd p, div.button.even:hover p {
+    background-color: #00a67a;
+}
+
+div.button.even .corner, div.button.odd:hover .corner  {
+    border: 15px solid #fbaf40;
+}
+
+div.button.odd .corner, div.button.even:hover .corner {
+    border: 15px solid #00a67a;
 }
 
 div#organizators {
@@ -284,10 +299,6 @@ div.frame.ksi .trcorner, div.frame.ksi .blcorner {
 
 div.frame.ibis .trcorner, div.frame.ibis .blcorner {
     border: 15px solid #00a67a;
-}
-
-div.button .trcorner, div.button .blcorner {
-    border: 15px solid #b7b8b9;
 }
 
 .trcorner {
