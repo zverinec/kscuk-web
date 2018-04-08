@@ -46,7 +46,7 @@
 	</question>
 	<question category="organization" required="true" form="textarea">
 		<text>Máš nějaká stravovací omezení?</text>
-		<info>Aby byli kuchaři informování s dostatečným předstihem.</info>
+		<info>Aby byli kuchaři informováni s dostatečným předstihem.</info>
 	</question>
 
 </qustions>
