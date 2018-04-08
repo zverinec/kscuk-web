@@ -44,5 +44,9 @@
 		<text>Jaké je tvé mobilně-telefonní číslo?</text>
 		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
 	</question>
+	<question category="organization" required="true" form="textarea">
+		<text>Máš nějaká stravovací omezení?</text>
+		<info>Aby byli kuchaři informování s dostatečným předstihem.</info>
+	</question>
 
 </qustions>
