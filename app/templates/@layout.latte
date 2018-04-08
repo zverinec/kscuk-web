@@ -16,8 +16,7 @@
 	<body>
 		<div id="page-name">
 			<!-- h1><a href="{ plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1 -->
-			{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
-			{if $wholeName != "Default:registration" && $presenter->getName() != "Forms" && new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
+			{if new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
 				{var $registrationOpen = true;}
 			{/if}
 		</div>
