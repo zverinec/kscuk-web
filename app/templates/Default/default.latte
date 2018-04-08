@@ -18,13 +18,15 @@
 	<table id="about">
 		<tr>
 			<td>O co jde?</td>
-			<td>K-SCUK je společné soustředění pro řešitele seminářů IBIS a KSI Masarykovy univerzity. Na soustředění
-				bude probíhat nejen zajímavý odborný program, ale i nabitý program doprovodný. Odborný program
-				bude částečně dělený mezi informatiku a biologii, částečně společný. Bude se skládat z přednášek, dílen,
-				diskuzí a alternativních vzdělávacích bloků. Pojeďte s námi zažít týden plný dobrodružství, kamarádství a
-				poznání a třeba zjistíte, že všechny žluté kytky nejsou stejné a že informatika je o počítačích asi jako
+			<td>K-SCUK je společné soustředění pro řešitele seminářů IBIS a KSI Masarykovy univerzity.</td>
+		</tr>
+		<tr>
+			<td>Proč jet?</td>
+			<td> Pojeď s námi zažít týden plný dobrodružství, kamarádství a
+				poznání a třeba zjistíš, že všechny žluté kytky nejsou stejné a že informatika je o počítačích asi jako
 				astronomie o dalekohledech a že ekologie není založena na přivazování se řetězy k branám elektráren a
-				že ...</td>
+				že...
+			</td>
 		</tr>
 		<tr>
 			<td>Kdy?</td>
@@ -32,7 +34,14 @@
 		</tr>
 		<tr n:ifset="$event->place, $event->lodging">
 			<td>Kde?</td>
-			<td>{$event->place|noEscape}, {$event->lodging|noEscape}</td>
+			<td>{$event->place|noEscape}, spaní {$event->lodging|noEscape}.</td>
+		</tr>
+		<tr>
+			<td>Jak?</td>
+			<td>Na soustředění bude probíhat nejen zajímavý odborný program, ale i nabitý program doprovodný.
+				Odborný program bude částečně dělený mezi informatiku a biologii, částečně společný.
+				Bude se skládat z přednášek, dílen, diskuzí a alternativních vzdělávacích bloků.
+			</td>
 		</tr>
 		<tr>
 			<td>Pro koho?</td>
@@ -40,7 +49,7 @@
 		</tr>
 		<tr n:ifset="$event->price">
 			<td>Za kolik?</td>
-			<td>{$event->price|noEscape}</td>
+			<td>{$event->price|noEscape}.</td>
 		</tr>
 	</table>
 	{if isset($registrationOpen)}
