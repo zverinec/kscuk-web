@@ -63,6 +63,10 @@ a {
         font-size: 120% !important;
     }
 
+    #content #about {
+        text-align: left !important;
+    }
+
     #footer {
         justify-content: space-around !important;
     }
