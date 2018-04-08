@@ -2,14 +2,14 @@
  
 {block #content}
 	<script type="text/javascript">
-        $('#menu-about, #menu-organizators').on('click', function(e) {
-            e.preventDefault();
-            console.log(e.target);
-            let target = (e.target.id === "menu-about")? $("#about") : $("#organizators");
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        });
+		$('#menu-about, #menu-organizators').on('click', function(e) {
+			e.preventDefault();
+			console.log(e.target);
+			let target = (e.target.id === "menu-about")? $("#about") : $("#organizators");
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		});
 	</script>
 
 <div id="cover">

@@ -1,67 +1,67 @@
 {php
 
-    $orgs = array(
-        ['seminar' => 'ksi',
-            'photo' => 'honza_horacek.jpg',
-            'name' => 'Honza Horáček',
-            'bio' => 'Má vše pod kontrolou.'
-        ],
-        ['seminar' => 'ksi',
-            'photo' => 'anicka_rechtackova.jpg',
-            'name' => 'Anička Řechtáčková',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ibis',
-            'photo' => 'paja_havlickova.jpg',
-            'name' => 'Pája Havlíčková',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ksi',
-            'photo' => 'dominika_krejci.jpg',
-            'name' => 'Dominika Krejčí',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ksi',
-            'photo' => 'honza_mrazek.jpg',
-            'name' => 'Honza Mrázek',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ibis',
-            'photo' => 'standa_juracka.jpg',
-            'name' => 'Standa Juračka',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ibis',
-            'photo' => 'zuzka_novakova.jpg',
-            'name' => 'Zuzka Nováková',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-        ['seminar' => 'ksi',
-            'photo' => 'viki_vozarova.jpg',
-            'name' => 'Viki Vozárová',
-            'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
-        ],
-    );
+	$orgs = array(
+		['seminar' => 'ksi',
+			'photo' => 'honza_horacek.jpg',
+			'name' => 'Honza Horáček',
+			'bio' => 'Má vše pod kontrolou.'
+		],
+		['seminar' => 'ksi',
+			'photo' => 'anicka_rechtackova.jpg',
+			'name' => 'Anička Řechtáčková',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ibis',
+			'photo' => 'paja_havlickova.jpg',
+			'name' => 'Pája Havlíčková',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ksi',
+			'photo' => 'dominika_krejci.jpg',
+			'name' => 'Dominika Krejčí',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ksi',
+			'photo' => 'honza_mrazek.jpg',
+			'name' => 'Honza Mrázek',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ibis',
+			'photo' => 'standa_juracka.jpg',
+			'name' => 'Standa Juračka',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ibis',
+			'photo' => 'zuzka_novakova.jpg',
+			'name' => 'Zuzka Nováková',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+		['seminar' => 'ksi',
+			'photo' => 'viki_vozarova.jpg',
+			'name' => 'Viki Vozárová',
+			'bio' => 'Lorem ipsum dolor sit amet, consectetuer.'
+		],
+	);
 }
 
 <div id="organizators">
-    <h2>Organizátoři</h2>
+	<h2>Organizátoři</h2>
 
-    <div id="organizatorGrid">
+	<div id="organizatorGrid">
 
-        {foreach $orgs as $org}
-            <div class="organizator">
-                <div class="frame {$org['seminar']}">
-                    <div class="trcorner"></div>
-                    <img src="img/orgs/{$org['photo']}" width="100">
-                    <div class="blcorner"></div>
-                </div>
-                <div class="info">
-                    <div class="name">{$org['name']}</div>
-                    <div class="bio">{$org['bio']}</div>
-                </div>
-            </div>
-        {/foreach}
+		{foreach $orgs as $org}
+			<div class="organizator">
+				<div class="frame {$org['seminar']}">
+					<div class="trcorner"></div>
+					<img src="img/orgs/{$org['photo']}" width="100">
+					<div class="blcorner"></div>
+				</div>
+				<div class="info">
+					<div class="name">{$org['name']}</div>
+					<div class="bio">{$org['bio']}</div>
+				</div>
+			</div>
+		{/foreach}
 
-    </div>
+	</div>
 </div>

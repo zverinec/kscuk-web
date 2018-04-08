@@ -7,28 +7,28 @@
 
 				<p>Vyplň prosím dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu, abychom ti mohli poslat další informace. Údaje použijeme výhradně pro organizaci.</p>
 
-                {if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
+				{if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
 					<p><strong>Registrace účastníků ještě nezačala</strong></p>
-                {elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
+				{elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
 					<p><strong>Registrace účastníků již skončila</strong></p>
-                {else}
-                    {control registration}
-                {/if}
+				{else}
+					{control registration}
+				{/if}
 			</div></div>
 	</div>
 
 	<script>
 		let inputs = document.getElementsByTagName("input");
 		for (let i = 0; i < inputs.length; i++) {
-		    if (inputs[i].type === "checkbox") {
-                inputs[i].addEventListener("click", function (e) {
-                    let label = e.target.parentElement;
-                    if (label.classList.contains("checked")) {
-                        label.classList.remove("checked");
-                    } else {
-                        label.classList.add("checked");
-                    }
-                });
+			if (inputs[i].type === "checkbox") {
+				inputs[i].addEventListener("click", function (e) {
+					let label = e.target.parentElement;
+					if (label.classList.contains("checked")) {
+						label.classList.remove("checked");
+					} else {
+						label.classList.add("checked");
+					}
+				});
 			}
 		}
 	</script>
