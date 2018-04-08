@@ -15,6 +15,8 @@ class DefaultPresenter extends BasePresenter
 
 	public function renderDefault() {}
 
+	public function renderArchiv() {}
+
 	public function renderRegistration() {}
 
 	public function createComponentRegistration()
