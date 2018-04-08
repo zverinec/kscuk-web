@@ -308,18 +308,25 @@ div.button .trcorner, div.button .blcorner {
 
 #footer #logos {
     min-width: 340px;
+    height: 50px;
 }
 #footer #logos a {
+    display: inline-block;
     width: 50px;
+    height: 50px;
+    margin-right: 5%;
+}
+
+#footer #logos a:nth-child(2) {
+    height: 40px;
+}
+
+#footer #logos a:last-child {
+    margin-right: 0;
 }
 
 #footer #logos a img {
     width: 50px;
-    margin-right: 5%;
-}
-
-#footer #logos a:last-child img {
-    margin-right: 0;
 }
 
 #footer #email {
