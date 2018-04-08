@@ -7,6 +7,12 @@
 
 				<p>Vyplň prosím dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu, abychom ti mohli poslat další informace. Údaje použijeme výhradně pro organizaci.</p>
 
+				<div id="flashes">
+					<div class="flash info">
+						Upozorňujeme, že akci je nutné absolvovat v celém jejím rozsahu. Není možné přijet později ani odjet dříve.
+					</div>
+				</div>
+
 				{if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
 					<p><strong>Registrace účastníků ještě nezačala</strong></p>
 				{elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}

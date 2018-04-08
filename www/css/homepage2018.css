@@ -349,10 +349,13 @@ div.frame.ibis .trcorner, div.frame.ibis .blcorner {
 	color: #fff;
 }
 
+.relative {
+	position: relative;
+}
+
 #flashes .flash {
 	padding: 0.5% 5%;
 	margin: 10px 0;
-	position: relative;
 	top: 2.5em;
 	z-index: 1000;
 }
