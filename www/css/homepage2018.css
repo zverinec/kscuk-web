@@ -1,371 +1,371 @@
 ﻿html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 body {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
 }
 
 html, body, div, p, h1, h2, h3, h4, h5, h6, input, textarea {
-    font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    color: #939597;
+	font-weight: 300;
+	color: #939597;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 @media(max-width: 710px) {
-    #header #menu ul#links {
-        margin: auto 0;
-        padding: 0;
-        overflow: hidden;
-        list-style-type: none;
-    }
-    #header #menu ul#links li p#menuButton {
-        display: block !important;
-        font-size: 180%;
-        margin: 0;
-        margin-top: -0.1em;
-        padding: 0 0.3em;
-    }
+	#header #menu ul#links {
+		margin: auto 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	#header #menu ul#links li p#menuButton {
+		display: block !important;
+		font-size: 180%;
+		margin: 0;
+		margin-top: -0.1em;
+		padding: 0 0.3em;
+	}
 
-    #header #menu ul#links li ul {
-        list-style-type: none;
-        display: none;
-        margin-left: -1em;
-        padding-left: 1.4em;
-        z-index: 1;
-    }
-    #header #menu ul#links li:hover p#menuButton {
-        display: none !important;
-    }
-    #header #menu ul#links li:hover ul {
-        display: block;
-    }
-    #header #menu ul#links li:hover ul li {
-        float: none;
-    }
+	#header #menu ul#links li ul {
+		list-style-type: none;
+		display: none;
+		margin-left: -1em;
+		padding-left: 1.4em;
+		z-index: 1;
+	}
+	#header #menu ul#links li:hover p#menuButton {
+		display: none !important;
+	}
+	#header #menu ul#links li:hover ul {
+		display: block;
+	}
+	#header #menu ul#links li:hover ul li {
+		float: none;
+	}
 
-    #cover #tldr {
-        font-size: 120% !important;
-    }
+	#cover #tldr {
+		font-size: 120% !important;
+	}
 
-    #content #about {
-        text-align: left !important;
-    }
+	#content #about {
+		text-align: left !important;
+	}
 
-    #footer {
-        justify-content: space-around !important;
-    }
+	#footer {
+		justify-content: space-around !important;
+	}
 }
 
 @media(max-width: 1139px) {
-    #content {
-        padding: 5%;
-    }
+	#content {
+		padding: 5%;
+	}
 }
 
 @media(max-width: 1299px) and (min-width: 1140px) {
-    #content {
-        padding: 5% 10%;
-    }
+	#content {
+		padding: 5% 10%;
+	}
 }
 
 @media(min-width: 1300px) {
-    #content {
-        padding: 5% 15%;
-    }
+	#content {
+		padding: 5% 15%;
+	}
 }
 
 #container, .container-inner {
-    height: 100%;
-    display: inline;
+	height: 100%;
+	display: inline;
 }
 
 #header #menu #links, #footer {
-    font-size: 130%;
+	font-size: 130%;
 }
 
 #header #menu {
-    width: 90%;
-    padding: 0.5em 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    color: #fff;
-    background-color: #b7b8b9;
+	width: 90%;
+	padding: 0.5em 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	color: #fff;
+	background-color: #b7b8b9;
 }
 
 #header #menuLogo {
-    width: auto;
-    height: 100%;
+	width: auto;
+	height: 100%;
 }
 
 #header #menu ul#links li p#menuButton {
-    display: none;
+	display: none;
 }
 
 #header #menu ul#links {
-    margin: auto 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
+	margin: auto 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
 }
 #header #menu ul#links li ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 #header #menu ul#links li ul li {
-    float: left;
-    padding-left: 1.4em;
+	float: left;
+	padding-left: 1.4em;
 }
 
 #cover {
-    margin-top: -4%;
-    padding: 20% 0 2% 0;
-    background-image: url("../img/cover_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 60%;
+	margin-top: -4%;
+	padding: 20% 0 2% 0;
+	background-image: url("../img/cover_image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 60%;
 }
 
 #cover div {
-    text-align: center;
-    color: #fff;
+	text-align: center;
+	color: #fff;
 }
 
 #cover div#logo {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #cover div#logo img {
-    width: 30%;
+	width: 30%;
 }
 
 #cover div#tldr {
-    margin-top: 16%;
-    font-size: 180%;
+	margin-top: 16%;
+	font-size: 180%;
 }
 
 #cover div#tldr p {
-    margin: 0;
+	margin: 0;
 }
 
 #header #menu {
-    border-bottom: 0.8em solid #fff;
+	border-bottom: 0.8em solid #fff;
 }
 
 #header div.separator {
-    border-top: 0.3em solid #fff;
+	border-top: 0.3em solid #fff;
 }
 
 div.separator {
-    width: 100%;
-    height: 1em;
-    background: linear-gradient(45deg, #fbaf40 50%, #00a67a 50%);
+	width: 100%;
+	height: 1em;
+	background: linear-gradient(45deg, #fbaf40 50%, #00a67a 50%);
 }
 
 #content {
-    background-color: #fff;
-    margin-top: 3em;
-    min-height: calc(100% - 13.5em);
+	background-color: #fff;
+	margin-top: 3em;
+	min-height: calc(100% - 13.5em);
 }
 
 #content table#about {
-    text-align: justify;
+	text-align: justify;
 }
 
 #content table td {
-    padding: 1% 0;
+	padding: 1% 0;
 }
 
 #content table#about tr td:first-of-type {
-    width: 15%;
-    color: #939597;
-    font-size: 130%;
-    vertical-align: text-top;
-    text-align: left;
+	width: 15%;
+	color: #939597;
+	font-size: 130%;
+	vertical-align: text-top;
+	text-align: left;
 }
 
 div.button {
-    display: table;
-    margin: 3em auto 5em auto;
-    padding: 1% 5%;
+	display: table;
+	margin: 3em auto 5em auto;
+	padding: 1% 5%;
 }
 
 div.button p {
-    margin: 0 auto;
-    padding: 0 1em;
-    text-align: center;
-    font-size: 180%;
-    color: #fff;
-    cursor: pointer;
+	margin: 0 auto;
+	padding: 0 1em;
+	text-align: center;
+	font-size: 180%;
+	color: #fff;
+	cursor: pointer;
 }
 
 div.button.even p, div.button.odd:hover p {
-    background-color: #fbaf40;
+	background-color: #fbaf40;
 }
 
 div.button.odd p, div.button.even:hover p {
-    background-color: #00a67a;
+	background-color: #00a67a;
 }
 
 div.button.even .corner, div.button.odd:hover .corner  {
-    border: 15px solid #fbaf40;
+	border: 15px solid #fbaf40;
 }
 
 div.button.odd .corner, div.button.even:hover .corner {
-    border: 15px solid #00a67a;
+	border: 15px solid #00a67a;
 }
 
 div#organizators {
-    margin: 5% auto;
-    text-align: center;
+	margin: 5% auto;
+	text-align: center;
 }
 
 div#organizators h2 {
-    margin-top: 2em;
+	margin-top: 2em;
 }
 
 div#organizatorGrid {
-    display: table;
-    margin: 0 auto;
+	display: table;
+	margin: 0 auto;
 }
 
 div.organizator {
-    min-width: 290px;
-    max-width: 30%;
-    display: inline-table;
-    margin: 2% 1% 2% 0;
+	min-width: 290px;
+	max-width: 30%;
+	display: inline-table;
+	margin: 2% 1% 2% 0;
 
 }
 
 div.organizator div.info {
-    width: 45%;
-    margin-left: 5%;
-    display: inline-block;
-    text-align: left;
+	width: 45%;
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
 }
 
 div.organizator div.name {
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 div.organizator div.bio {
-    color: #939597;
+	color: #939597;
 }
 
 div.frame {
-    display: inline-block;
+	display: inline-block;
 }
 
 div.frame img {
-    margin: 0 auto -5px auto;
+	margin: 0 auto -5px auto;
 }
 
 div.frame.ksi img {
-    border-left: 15px solid #fbaf40;
-    border-right: 15px solid #fbaf40;
+	border-left: 15px solid #fbaf40;
+	border-right: 15px solid #fbaf40;
 }
 
 div.frame.ibis img {
-    border-left: 15px solid #00a67a;
-    border-right: 15px solid #00a67a;
+	border-left: 15px solid #00a67a;
+	border-right: 15px solid #00a67a;
 }
 
 div.frame .trcorner, div.frame .blcorner {
-    width: 100px;
-    height: 0;
+	width: 100px;
+	height: 0;
 }
 
 div.frame.ksi .trcorner, div.frame.ksi .blcorner {
-    border: 15px solid #fbaf40;
+	border: 15px solid #fbaf40;
 }
 
 div.frame.ibis .trcorner, div.frame.ibis .blcorner {
-    border: 15px solid #00a67a;
+	border: 15px solid #00a67a;
 }
 
 .trcorner {
-    border-top: none !important;
-    border-right: 15px solid transparent !important;
+	border-top: none !important;
+	border-right: 15px solid transparent !important;
 }
 
 .blcorner {
-    border-bottom: none !important;
-    border-left: 15px solid transparent !important;
+	border-bottom: none !important;
+	border-left: 15px solid transparent !important;
 }
 
 #footer {
-    width: 90%;
-    padding: 0.5em 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b7b8b9;
+	width: 90%;
+	padding: 0.5em 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #b7b8b9;
 }
 
 #footer #logos {
-    min-width: 340px;
-    height: 50px;
+	min-width: 340px;
+	height: 50px;
 }
 #footer #logos a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-right: 5%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 5%;
 }
 
 #footer #logos a:nth-child(2) {
-    height: 40px;
+	height: 40px;
 }
 
 #footer #logos a:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 #footer #logos a img {
-    width: 50px;
+	width: 50px;
 }
 
 #footer #email {
-    text-align: right;
-    color: #fff;
+	text-align: right;
+	color: #fff;
 }
 
 #flashes .flash {
-    padding: 0.5% 5%;
-    margin: 10px 0;
-    position: relative;
-    top: 2.5em;
-    z-index: 1000;
+	padding: 0.5% 5%;
+	margin: 10px 0;
+	position: relative;
+	top: 2.5em;
+	z-index: 1000;
 }
 
 #flashes .error {
-    color: white;
-    background-color: #b20616;
+	color: white;
+	background-color: #b20616;
 }
 #flashes .success {
-    color: white;
-    background-color: #00a67a;
+	color: white;
+	background-color: #00a67a;
 }
 #flashes .info {
-    color: white;
-    background-color: #fbaf40;
+	color: white;
+	background-color: #fbaf40;
 }
