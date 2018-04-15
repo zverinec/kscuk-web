@@ -41,9 +41,8 @@ input[type=text]:active {
 
 input[type=submit] {
 	display: inline-block;
-	padding: 5px;
-	margin-top: 10px;
 	border: inherit;
+	font-size: 150%;
 }
 
 input[type=submit].button.green:hover, input[type=submit].button.orange:hover {
