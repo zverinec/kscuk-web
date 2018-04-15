@@ -60,16 +60,8 @@
 		</tr>
 	</table>
 	{if isset($registrationOpen)}
-		<a n:href="Default:registration">
-			{if time() % 2 == 0}
-				<div class="button even">
-			{else}
-				<div class="button odd">
-			{/if}
-					<div class="trcorner corner"></div>
-					<p>Chci se zúčastnit!</p>
-					<div class="blcorner corner"></div>
-				</div>
+		<a n:href="Default:registration" class="button {(time() % 2 == 0) ? 'even' : 'odd'}">
+			Chci se zúčastnit!
 		</a>
 	{/if}
 	{include orgs.latte}

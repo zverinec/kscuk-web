@@ -202,35 +202,47 @@ div.separator {
 	text-align: left;
 }
 
-div.button {
+.button {
 	display: table;
 	margin: 3em auto 5em auto;
 	padding: 1% 5%;
-}
-
-div.button p {
-	margin: 0 auto;
 	padding: 0 1em;
 	text-align: center;
 	font-size: 180%;
 	color: #fff;
-	cursor: pointer;
+	position: relative;
 }
 
-div.button.even p, div.button.odd:hover p {
+.button:before {
+	/* Insert upper right corner. */
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-top: 15px solid white;
+	border-left: 15px solid rgba(0,0,0,0);
+}
+
+.button:after {
+	/* Insert lower left corner . */
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 15px solid white;
+	border-right: 15px solid rgba(0,0,0,0);
+}
+
+.button.even, .button.odd:hover {
 	background-color: #fbaf40;
+	border-top: 15px solid #fbaf40;
+	border-bottom: 15px solid #fbaf40;
 }
 
-div.button.odd p, div.button.even:hover p {
+.button.odd, .button.even:hover {
 	background-color: #00a67a;
-}
-
-div.button.even .corner, div.button.odd:hover .corner  {
-	border: 15px solid #fbaf40;
-}
-
-div.button.odd .corner, div.button.even:hover .corner {
-	border: 15px solid #00a67a;
+	border-top: 15px solid #00a67a;
+	border-bottom: 15px solid #00a67a;
 }
 
 div#organizators {
