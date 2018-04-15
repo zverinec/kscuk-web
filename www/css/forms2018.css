@@ -1,12 +1,16 @@
 legend {
 	display: block;
 	font-size: 1.1em;
-	margin: 0;
 }
+
 fieldset {
 	margin-bottom: 10px;
 	border: none;
 	padding: 10px 0 !important;
+}
+
+fieldset p {
+	margin-top: 0px;
 }
 
 fieldset.required legend::after {
