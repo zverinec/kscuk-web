@@ -1,17 +1,14 @@
 legend {
 	display: block;
-	font-size: 1.2em;
-	font-style:italic;
-	margin-bottom: 0;
+	font-size: 1.1em;
+	margin: 0;
 }
 fieldset {
 	margin-bottom: 10px;
-	border: 1px dashed #bdbdbd;
-	padding: 10px;
+	border: none;
+	padding: 10px 0 !important;
 }
-fieldset.required {
-	border-color: #fbaf40; /*#0969A2;*/
-}
+
 fieldset.required legend::after {
 	content: " *";
 	color: #fbaf40; /*#0969A2;*/
@@ -24,6 +21,11 @@ form small {
 	font-size: 0.9em;
 	margin-top: 5px;
 }
+input[type=text], textarea, input[type=password], select {
+	width: 100%;
+	font-family: inherit;
+}
+
 input[type=text], textarea, input[type=password] {
 	border: 1px solid #bdbdbd;
 	padding: 5px 5px;
@@ -32,8 +34,10 @@ input[type=text]:active {
 	border: 1px solid gray;
 }
 input[type=submit] {
+	display: inline-block;
 	padding: 5px;
 	margin-top: 10px;
+	border: inherit;
 }
 input[type=checkbox] {
 	margin-right: 10px;
@@ -44,6 +48,5 @@ label.checked {
 }
 
 textarea {
-	width: 98%;
 	height: 15em;
 }

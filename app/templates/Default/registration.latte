@@ -27,11 +27,14 @@
 		let inputs = document.getElementsByTagName("input");
 		for (let i = 0; i < inputs.length; i++) {
 			if (inputs[i].type === "checkbox") {
+				if (inputs[i].checked) {
+					inputs[i].parentElement.classList.add("checked");
+				}
 				inputs[i].addEventListener("click", function (e) {
 					let label = e.target.parentElement;
-					if (label.classList.contains("checked")) {
+					if (!e.target.checked && label.classList.contains("checked")) {
 						label.classList.remove("checked");
-					} else {
+					} else if (e.target.checked) {
 						label.classList.add("checked");
 					}
 				});
