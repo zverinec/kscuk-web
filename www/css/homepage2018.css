@@ -347,6 +347,9 @@ div.frame.ibis .trcorner, div.frame.ibis .blcorner {
 #footer #logos {
 	min-width: 340px;
 	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 #footer #logos a {
 	display: inline-block;
