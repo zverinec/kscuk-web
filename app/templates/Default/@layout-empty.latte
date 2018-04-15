@@ -16,7 +16,8 @@
 				<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" height="100%" alt="K-SCUK" role="heading">
 			</a>
 			<ul id="links">
-				<li><p id="menuButton">&equiv;</p><ul>
+				<li><p id="menuButton">&equiv;</p>
+					<ul>
 						{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
 						<li><a n:href="Default:#about" id="menu-about">Informace</a></li>
 						<li><a n:href="Default:#organizators" id="menu-organizators">Orgové</a></li>
@@ -28,7 +29,9 @@
 							</li>
 						{/if}
 						<li><a n:href="Default:archiv" {if $wholeName == "Default:archiv"} class="current-page" {/if}>Archiv</a></li>
-					</ul></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 
 		<div class="flashes" id="flashes-main">
