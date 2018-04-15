@@ -30,6 +30,15 @@
 						<li><a n:href="Default:archiv" {if $wholeName == "Default:archiv"} class="current-page" {/if}>Archiv</a></li>
 					</ul></li>
 		</div>
+
+		<div class="flashes" id="flashes-main">
+			{foreach $flashes AS $flash}
+			<div class="flash {$flash->type}">
+				{$flash->message|noescape}
+			</div>
+			{/foreach}
+		</div>
+
 	</div>
 	{block #content}{/block}
 	<div id="footer">

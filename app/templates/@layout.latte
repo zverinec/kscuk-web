@@ -14,22 +14,12 @@
 		{block #header}{/block}
 	</head>
 	<body>
-		<div id="page-name">
-			<!-- h1><a href="{ plink Default:}">Soustředění pro řešitele seminářů KSI a IBIS</a></h1 -->
-			{if new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
-				{var $registrationOpen = true;}
-			{/if}
+		{if new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
+			{var $registrationOpen = true;}
+		{/if}
+		<div id="container">
+
+			{block #body}{/block}
 		</div>
-		<div class="cleaner">&nbsp;</div>
-		<div id="container"><div class="container-inner">
-				<div id="flashes" class="relative">
-					{foreach $flashes AS $flash}
-					<div class="flash {$flash->type}">
-						{$flash->message|noescape}
-					</div>
-					{/foreach}
-				</div>
-				{block #body}{/block}
-		</div></div>
 	</body>
 </html>
