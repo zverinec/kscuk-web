@@ -31,14 +31,24 @@ input[type=text], textarea, input[type=password] {
 	padding: 5px 5px;
 }
 input[type=text]:active {
-	border: 1px solid gray;
+	border: 1px solid #b7b8b9;
 }
+
+select {
+	padding: 0.3em;
+}
+
 input[type=submit] {
 	display: inline-block;
 	padding: 5px;
 	margin-top: 10px;
 	border: inherit;
 }
+
+input[type=submit].button.green:hover, input[type=submit].button.orange:hover {
+	background-color: #b7b8b9;
+}
+
 input[type=checkbox] {
 	margin-right: 10px;
 }
