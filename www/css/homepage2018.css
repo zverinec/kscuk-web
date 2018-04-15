@@ -132,8 +132,11 @@ a:hover {
 }
 
 #header #menuLogo {
-	width: auto;
 	height: 100%;
+}
+
+#header a {
+	line-height: 0;
 }
 
 #header #menu ul#links li p#menuButton {
