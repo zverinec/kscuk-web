@@ -35,11 +35,11 @@ a:hover {
 	color: #fbaf40;
 }
 
-#header #menu a:hover, #footer a:hover, #header #menu a.current-page {
+#header #menu a:hover, #header #menu a.current-page {
 	color: #939597;
 }
 
-#header #menu a, #footer a, a.button, a.button:hover {
+#header #menu a, a.button, a.button:hover {
 	color: #fff;
 }
 
