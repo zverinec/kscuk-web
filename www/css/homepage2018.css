@@ -24,7 +24,27 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: #939597;
+}
+
+a.ksi:hover {
+	color: #fbaf40;
+}
+
+a.ibis:hover {
+	color: #00a67a;
+}
+
+a:hover {
+	color: #000;
+}
+
+#header #menu a:hover, #footer a:hover, #header #menu a.current-page {
+	color: #939597;
+}
+
+#header #menu a, #footer a, a.button, a.button:hover {
+	color: #fff;
 }
 
 @media(max-width: 710px) {

@@ -17,12 +17,17 @@
 			</a>
 			<ul id="links">
 				<li><p id="menuButton">&equiv;</p><ul>
-						<li><a n:href="Default:#about" id="menu-about">O co jde</a></li>
+						{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
+						<li><a n:href="Default:#about" id="menu-about">Informace</a></li>
 						<li><a n:href="Default:#organizators" id="menu-organizators">Orgové</a></li>
 						{if isset($registrationOpen)}
-							<li><a n:href="Default:registration">Zúčastnit se</a></li>
+							<li>
+								<a n:href="Default:registration" {if $wholeName == "Default:registration"} class="current-page" {/if}>
+									Registrace
+								</a>
+							</li>
 						{/if}
-						<li><a n:href="Default:archiv">Archiv</a></li>
+						<li><a n:href="Default:archiv" {if $wholeName == "Default:archiv"} class="current-page" {/if}>Archiv</a></li>
 					</ul></li>
 		</div>
 	</div>
