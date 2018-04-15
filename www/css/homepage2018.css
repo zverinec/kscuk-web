@@ -218,14 +218,18 @@ div.separator {
 	text-align: left;
 }
 
-.button {
+.button-register {
 	display: table;
-	margin: 3em auto 5em auto;
+	margin: 3em auto 5em auto !important;
+	font-size: 180%;
+}
+
+.button {
 	padding: 15px 1em 15px 1em;
 	text-align: center;
-	font-size: 180%;
 	color: #fff;
 	position: relative;
+	cursor: pointer;
 }
 
 .button:before {
