@@ -27,16 +27,12 @@ a {
 	color: #939597;
 }
 
-a.ksi:hover {
-	color: #fbaf40;
-}
-
 a.ibis:hover {
 	color: #00a67a;
 }
 
 a:hover {
-	color: #000;
+	color: #fbaf40;
 }
 
 #header #menu a:hover, #footer a:hover, #header #menu a.current-page {
