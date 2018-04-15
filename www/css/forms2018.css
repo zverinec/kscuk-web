@@ -17,30 +17,36 @@ fieldset.required legend::after {
 	content: " *";
 	color: #fbaf40; /*#0969A2;*/
 }
+
 form p {
 	font-size: smaller;
 }
+
 form small {
 	display: block;
 	font-size: 0.9em;
 	margin-top: 5px;
 }
+
 input[type=text], textarea, input[type=password], select {
 	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
 	font-family: inherit;
 }
 
 input[type=text], textarea, input[type=password] {
 	border: 1px solid #bdbdbd;
-	width: calc(100% - 10px);
-}
-
-select {
+	padding: 5px 5px;
 	width: 100%;
 }
 
 input[type=text]:active {
 	border: 1px solid #b7b8b9;
+}
+
+select {
+	box-sizing: border-box;
 }
 
 input[type=submit] {
