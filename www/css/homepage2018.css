@@ -248,11 +248,11 @@ div.separator {
 	border-right: 15px solid rgba(0,0,0,0);
 }
 
-.button.even, .button.odd:hover {
+.button.orange, .button.green:hover {
 	background-color: #fbaf40;
 }
 
-.button.odd, .button.even:hover {
+.button.green, .button.orange:hover {
 	background-color: #00a67a;
 }
 
