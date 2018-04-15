@@ -205,8 +205,7 @@ div.separator {
 .button {
 	display: table;
 	margin: 3em auto 5em auto;
-	padding: 1% 5%;
-	padding: 0 1em;
+	padding: 15px 1em 15px 1em;
 	text-align: center;
 	font-size: 180%;
 	color: #fff;
@@ -235,14 +234,10 @@ div.separator {
 
 .button.even, .button.odd:hover {
 	background-color: #fbaf40;
-	border-top: 15px solid #fbaf40;
-	border-bottom: 15px solid #fbaf40;
 }
 
 .button.odd, .button.even:hover {
 	background-color: #00a67a;
-	border-top: 15px solid #00a67a;
-	border-bottom: 15px solid #00a67a;
 }
 
 div#organizators {
