@@ -29,24 +29,15 @@ form small {
 }
 
 input[type=text], textarea, input[type=password], select {
-	padding: 5px;
 	box-sizing: border-box;
-	width: 100%;
-	font-family: inherit;
-}
-
-input[type=text], textarea, input[type=password] {
+	background: white;
 	border: 1px solid #bdbdbd;
-	padding: 5px 5px;
+	padding: 5px;
 	width: 100%;
 }
 
-input[type=text]:active {
-	border: 1px solid #b7b8b9;
-}
-
-select {
-	box-sizing: border-box;
+input[type=text]:focus, textarea:focus, input[type=password]:focus, select:focus {
+	border: 1px solid #00a67a;
 }
 
 input[type=submit] {
