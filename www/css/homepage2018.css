@@ -201,7 +201,13 @@ div.separator {
 #content {
 	background-color: #fff;
 	padding-top: calc(5% + 3em);
-	padding-bottom: calc(5% + 60px);
+	padding-bottom: calc(5% + 70px); /* Size of the footer */
+}
+
+@media(max-width: 710px) {
+	#content {
+		padding-bottom: calc(5% + 100px); /* Size of the footer */
+	}
 }
 
 #content table#about {
