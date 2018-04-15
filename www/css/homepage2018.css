@@ -158,7 +158,7 @@ a:hover {
 }
 
 #cover {
-	padding: 20% 0 2% 0;
+	padding: calc(100px + 10%) 0 2% 0;
 	background-image: url("../img/cover_image.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
