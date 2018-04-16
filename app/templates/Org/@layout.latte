@@ -6,13 +6,15 @@
 
 {block #content}
 	{if $presenter->getAction() != "auth"}
-		<ul class="admin-menu">
-			<li><a href="{link Org:default}">Seznam účastníků</a></li>
-			<li><a href="{link Org:download}">Stáhnout zdravotní deklarace</a></li>
-			<li><a href="{link Org:dump}">Stáhnout databázi</a></li>
-			<li><a href="{link Org:reset}" onclick="return (confirm('Určitě chceš vymazat obsah databáze?'))" >Vymazat databázi</a></li>
-			<li class="last"><a href="{link Org:logout}">Odhlásit se</a></li>
-		</ul>
+		<div id="admin-menu">
+			<ul>
+				<li><a href="{link Org:default}">Seznam účastníků</a></li>
+				<li><a href="{link Org:download}">Stáhnout zdravotní deklarace</a></li>
+				<li><a href="{link Org:dump}">Stáhnout databázi</a></li>
+				<li><a href="{link Org:reset}" onclick="return (confirm('Určitě chceš vymazat obsah databáze?'))" >Vymazat databázi</a></li>
+				<li class="last"><a href="{link Org:logout}">Odhlásit se</a></li>
+			</ul>
+		</div>
 	{/if}
 	<div id="content">
 		{block #org-content}{/block}

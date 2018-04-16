@@ -83,23 +83,32 @@ form th {
 
 	border: 3px double gray;
 }
-ul.admin-menu {
-	list-style: none;
-	width: 960px;
+#admin-menu {
+	width: 100%;
 	height: 25px;
+	display: flex;
+	justify-content: center;
+	background-color: #fbaf40;
 }
-ul.admin-menu li {
+
+#admin-menu ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#admin-menu ul li {
 	float: left;
 	margin-right: 25px;
 	padding-right: 25px;
 	border-right: 1px solid white;
 }
-ul.admin-menu li.last {
+#admin-menu ul li.last {
 	border: 0px;
 }
-ul.admin-menu li a {
+#admin-menu ul li a {
 	color: white;
 }
-ul.admin-menu li a:hover {
+#admin-menu ul li a:hover {
 	color: #9E805C;
 }
