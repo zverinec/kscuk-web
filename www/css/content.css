@@ -2,8 +2,8 @@
 	background-color: #fff;
 	padding-right: 5%;
 	padding-left: 5%;
-	padding-top: calc(5% + 3em);
-	padding-bottom: calc(5% + 70px); /* Size of the footer */
+	padding-top: 3em;
+	padding-bottom: calc(3em + 70px); /* Size of the footer */
 }
 
 @media(max-width: 710px) {
@@ -12,7 +12,7 @@
 	}
 
 	#content {
-		padding-bottom: calc(5% + 100px); /* Size of the footer */
+		padding-bottom: calc(3em + 100px); /* Size of the footer */
 	}
 }
 
