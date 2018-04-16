@@ -59,10 +59,14 @@ form th {
 #people th {
 	background: #00a67a;
 	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #people td {
 	border-bottom: 1px dashed #00a67a;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #people p {
