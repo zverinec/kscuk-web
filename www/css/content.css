@@ -1,5 +1,7 @@
 ﻿#content {
 	background-color: #fff;
+	padding-right: 5%;
+	padding-left: 5%;
 	padding-top: calc(5% + 3em);
 	padding-bottom: calc(5% + 70px); /* Size of the footer */
 }
@@ -14,26 +16,22 @@
 	}
 }
 
-@media(max-width: 1139px) {
-	#content {
-		padding: 5%;
-	}
-}
-
 @media(max-width: 1299px) and (min-width: 1140px) {
 	#content {
-		padding: 5% 10%;
+		padding-right: 10%;
+		padding-left: 10%;
 	}
 }
 
 @media(min-width: 1300px) {
 	#content {
-		padding: 5% 15%;
+		padding-right: 15%;
+		padding-left: 15%;
 	}
 }
 
 #container, .container-inner {
-	min-height:100%;
+	min-height: 100%;
 	position: relative;
 }
 
