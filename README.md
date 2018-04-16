@@ -1,8 +1,8 @@
 K-SCUK website
 --------------
 
-Author: Jan Papoušek and Jan Drábek  
-Maintenance: Jan Drábek <me@jandrabek.cz>
+Author: Jan Papoušek, Jan Drábek, Vendula Němcová, Honza Horáček
+Maintenance: <kscuk@fi.muni.cz>
 
 Requirements
 ------------
