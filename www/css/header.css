@@ -45,8 +45,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
-	top: 0;
 	overflow: hidden;
 	color: #fff;
 	background-color: #b7b8b9;
