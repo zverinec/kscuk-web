@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="K-SCUK je společné soustředění pro řešitele seminářů IBIS a KSI Masarykovy univerzity." />
 		<meta name="keywords" content="K-SCUK,KSI,IBIS,KEKS,FIMU,FI,soustředění,Masarykova univerzita" />
-		<meta name="author" content="Jan Drábek, Jan Papoušek" />
+		<meta name="author" content="Jan Drábek, Jan Papoušek, Vendula Němcová, Jan Horáček" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="{$basePath}/css/main.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="{$basePath}/css/header.css" type="text/css" media="screen">
@@ -16,6 +16,9 @@
 		<link rel="stylesheet" href="{$basePath}/css/homepage.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="{$basePath}/css/forms.css" type="text/css" media="screen">
 		<link rel="icon" href="{$basePath}/favicon.ico" />
+		<script src="{$basePath}/js/jquery.min.js" type="text/javascript" xmlns="http://www.w3.org/1999/html"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
 		{block #header}{/block}
 	</head>
 	<body>
@@ -24,7 +27,52 @@
 		{/if}
 		<div id="container">
 
-			{block #body}{/block}
+			<div id="header">
+				<div id="menu">
+					<a n:href="Default:">
+						<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" alt="K-SCUK" role="heading">
+					</a>
+					<ul id="links">
+						<li><p id="menuButton">&equiv;</p>
+							<ul>
+								{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
+								<li><a n:href="Default:#about" id="menu-about">Informace</a></li>
+								<li><a n:href="Default:#organizators" id="menu-organizators">Orgové</a></li>
+								{if isset($registrationOpen)}
+									<li>
+										<a n:href="Default:registration" {if $wholeName == "Default:registration"} class="current-page" {/if}>
+											Registrace
+										</a>
+									</li>
+								{/if}
+								<li><a n:href="Default:archiv" {if $wholeName == "Default:archiv"} class="current-page" {/if}>Archiv</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flashes" id="flashes-main">
+					{foreach $flashes AS $flash}
+						<div class="flash {$flash->type}">
+							{$flash->message|noescape}
+						</div>
+					{/foreach}
+				</div>
+
+			</div>
+			{block #content}{/block}
+			<div id="footer">
+				<div id="logos">
+					<a href="http://ksi.fi.muni.cz" target="_blank"><img id="ksi" src="{$basePath}/img/ksi.svg"></a>
+					<a href="http://ibis.sci.muni.cz/" target="_blank"><img id="ibis" src="{$basePath}/img/ibis.svg"></a>
+					<a href="http://fi.muni.cz" target="_blank"><img id="fi" src="{$basePath}/img/fi.svg"></a>
+					<a href="http://www.sci.muni.cz/" target="_blank"><img id="prf" src="{$basePath}/img/prf.svg"></a>
+					<a href="http://www.muni.cz" target="_blank"><img id="muni" src="{$basePath}/img/mu.svg"></a>
+				</div>
+				<div id="email">
+					k<span style="display:none">loskarlos</span>scuk@fi.muni.cz
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
