@@ -34,7 +34,7 @@
 }
 
 div#organizators {
-	margin: 5% auto;
+	padding: 2em 0;
 	text-align: center;
 }
 
@@ -110,11 +110,15 @@ div.frame.ibis .trcorner, div.frame.ibis .blcorner {
 	border-left: 15px solid transparent !important;
 }
 
-#content table#about {
+#content #about {
+	padding: 2em 0;
+}
+
+#content #about table {
 	text-align: justify;
 }
 
-#content table#about tr td:first-of-type {
+#content #about table tr td:first-of-type {
 	width: 15%;
 	color: #939597;
 	font-size: 130%;

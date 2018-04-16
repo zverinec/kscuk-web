@@ -21,44 +21,46 @@
 </div>
 <div class="separator"></div>
 <div id="content">
-	<table id="about">
-		<tr>
-			<td>O co jde?</td>
-			<td>K-SCUK je společné soustředění pro řešitele seminářů <a href="http://ibis.sci.muni.cz/" class="ibis">
-			IBIS</a> a <a href="https://ksi.fi.muni.cz/">KSI</a> Masarykovy univerzity. Na soustředění
-			se snažíme rozvíjet řešitele seminářů po odborné stránce, abychom si ale od objevování tajů
-			biologie a informatiky také chvíli odpočinuli, do soustředění zařazujeme bohatý zážitkový
-			program. Soustředění je uzpůsobené tak, aby si na své přišli informatici i biologové. Vězte,
-			že u nás se nudit nebudete!</td>
-		</tr>
-		<tr>
-			<td>Proč jet?</td>
-			<td>Zkoušel jsi někdy postavit horkovzdušný balón? Hledat cestu v jeskyni, pájet, jezdit na
-			koni, šít na šicím stroji, nebo třeba na rozcvičku cvičit jógu, zachránit jadernou elektrárnu,
-			poznat, jestli se na kamarády můžeš spolehnout i v krizových situacích? To všechno
-			i mnohá další dobrodružství tě na K-SCUKu mohou potkat. Inspirováni skupinou
-			<a href="https://www.instruktori.cz/">Instruktoři Brno</a> se snažíme rozvíjet nejen odborné
-			znalosti účastníků, ale také jejich osobnost. A to je něco, co stojí minimálně za vyzkoušení!
-			</td>
-		</tr>
-		<tr>
-			<td>Kdy?</td>
-			<td>{if isSet($event->period)}{$event->period|noEscape}{else}K-SCUK bude.{/if}</td>
-		</tr>
-		<tr n:ifset="$event->place, $event->lodging">
-			<td>Kde?</td>
-			<td>{$event->place|noEscape}, spaní {$event->lodging|noEscape}.</td>
-		</tr>
-		<tr>
-			<td>Pro koho?</td>
-			<td>Pro šikovné řešitele seminářů <a href="https://ksi.fi.muni.cz/">KSI</a> a
-			<a href="http://ibis.sci.muni.cz/" class="ibis">IBIS</a>.</td>
-		</tr>
-		<tr n:ifset="$event->price">
-			<td>Za kolik?</td>
-			<td>{$event->price|noEscape}.</td>
-		</tr>
-	</table>
+	<div id="about">
+		<table id="about">
+			<tr>
+				<td>O co jde?</td>
+				<td>K-SCUK je společné soustředění pro řešitele seminářů <a href="http://ibis.sci.muni.cz/" class="ibis">
+						IBIS</a> a <a href="https://ksi.fi.muni.cz/">KSI</a> Masarykovy univerzity. Na soustředění
+					se snažíme rozvíjet řešitele seminářů po odborné stránce, abychom si ale od objevování tajů
+					biologie a informatiky také chvíli odpočinuli, do soustředění zařazujeme bohatý zážitkový
+					program. Soustředění je uzpůsobené tak, aby si na své přišli informatici i biologové. Vězte,
+					že u nás se nudit nebudete!</td>
+			</tr>
+			<tr>
+				<td>Proč jet?</td>
+				<td>Zkoušel jsi někdy postavit horkovzdušný balón? Hledat cestu v jeskyni, pájet, jezdit na
+					koni, šít na šicím stroji, nebo třeba na rozcvičku cvičit jógu, zachránit jadernou elektrárnu,
+					poznat, jestli se na kamarády můžeš spolehnout i v krizových situacích? To všechno
+					i mnohá další dobrodružství tě na K-SCUKu mohou potkat. Inspirováni skupinou
+					<a href="https://www.instruktori.cz/">Instruktoři Brno</a> se snažíme rozvíjet nejen odborné
+					znalosti účastníků, ale také jejich osobnost. A to je něco, co stojí minimálně za vyzkoušení!
+				</td>
+			</tr>
+			<tr>
+				<td>Kdy?</td>
+				<td>{if isSet($event->period)}{$event->period|noEscape}{else}K-SCUK bude.{/if}</td>
+			</tr>
+			<tr n:ifset="$event->place, $event->lodging">
+				<td>Kde?</td>
+				<td>{$event->place|noEscape}, spaní {$event->lodging|noEscape}.</td>
+			</tr>
+			<tr>
+				<td>Pro koho?</td>
+				<td>Pro šikovné řešitele seminářů <a href="https://ksi.fi.muni.cz/">KSI</a> a
+					<a href="http://ibis.sci.muni.cz/" class="ibis">IBIS</a>.</td>
+			</tr>
+			<tr n:ifset="$event->price">
+				<td>Za kolik?</td>
+				<td>{$event->price|noEscape}.</td>
+			</tr>
+		</table>
+	</div>
 	{if isset($registrationOpen)}
 		<a n:href="Default:registration" class="button button-register {(time() % 2 == 0) ? 'orange' : 'green'}">
 			Chci se zúčastnit!
