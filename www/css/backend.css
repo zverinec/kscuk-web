@@ -16,6 +16,7 @@ form th {
 	width: 880px;
 
 }
+
 #side {
 	width: 150px;
 	padding: 10px;
@@ -51,27 +52,22 @@ form th {
 	background: #C41300;
 }
 
-#body {
-	min-height: 200px;
-	background: white;
-	padding: 10px;
-}
-
-#people .detail {
-	background-image: url('/../img/icons/person.png');
-	display: block;
-	width: 16px;
-	height: 16px;
-	border: 0;
+#people {
+	width: 100%;
 }
 
 #people th {
-	background: #0969A2;
+	background: #00a67a;
 	color: white;
 }
 
 #people td {
-	border-bottom: 1px dashed #0969A2;
+	border-bottom: 1px dashed #00a67a;
+}
+
+#people p {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .answers-in-category {
