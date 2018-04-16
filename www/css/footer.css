@@ -9,11 +9,22 @@
 	bottom:0;
 	width: 100%;
 	padding: 0.5em 5%;
+	color: #fff;
+	background-color: #b7b8b9;
+}
+
+#footer #flexed-content {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #b7b8b9;
+}
+
+@media(max-width: 578px) {
+	#footer #flexed-content {
+		justify-content: center !important;
+	}
 }
 
 #footer #logos {
@@ -45,5 +56,20 @@
 
 #footer #email {
 	text-align: right;
+}
+
+#footer #licence {
+	width: 100%;
+	padding: 1em 1em 0.5em 1em;
+	background-color: #b7b8b9;
+	font-size: 70%;
+	text-align: center;
+}
+
+#footer #licence, #licence a {
 	color: #fff;
+}
+
+#footer #licence a:hover {
+	color: #939597;
 }
