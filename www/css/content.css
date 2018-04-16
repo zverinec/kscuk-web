@@ -10,9 +10,11 @@
 	#content #about {
 		text-align: left !important;
 	}
+}
 
+@media(max-width: 919px) {
 	#content {
-		padding-bottom: calc(3em + 100px); /* Size of the footer */
+		padding-bottom: calc(3em + 140px); /* Size of the footer */
 	}
 }
 
