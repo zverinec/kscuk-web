@@ -1,0 +1,26 @@
+﻿#flashes-main {
+	position: absolute;
+	top: 0;
+	margin-top: 75px;
+	width: 100%;
+}
+
+.flashes .flash {
+	padding: 10px;
+	text-align: center;
+}
+
+.flashes .error {
+	color: white;
+	background-color: #b20616;
+}
+
+.flashes .success {
+	color: white;
+	background-color: #00a67a;
+}
+
+.flashes .info {
+	color: white;
+	background-color: #fbaf40;
+}

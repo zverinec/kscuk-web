@@ -1,223 +1,48 @@
-/*====================*/
-/*=== Reset Styles ===*/
-/*====================*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	font-weight:inherit;
-	font-style:inherit;
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
-}
-body {
-	line-height:1;
-	color:black;
-	background:#0C0C0C;	
-}
-table {
-	border-collapse:separate;
-	border-spacing:0;
-}
-caption, th, td {
-	text-align:left;
-	font-weight:normal;
-	vertical-align: middle;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content:"";
-}
-blockquote, q {
-	quotes:"" "";
-}
-table {
+html {
 	width: 100%;
-}
-th {
-	font-weight: bold;
-}
-th, td {
-	line-height: 1.5em;
-	padding: 2px 5px;
-}
-tr.even {
-	background: #ededed;
-}
-/* HTML5 tags */
-header, section, footer,
-aside, nav, article, figure {
-	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-/*===================*/
-/*=== Main Styles ===*/
-/*===================*/
 body {
-	font:14px/1.6 Arial, sans-serif;
-	background: url('../img/body.png');
-	color:#2d3536;
-	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
-a, a:visited {
-	color:#2d3536;
-	text-decoration:none;
-	border-bottom:1px dotted #826a4d;
+
+* {
+	box-sizing: border-box;
 }
-a:hover, a:active {
-	color:#9e805c;
-	text-decoration:none;
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, input, textarea {
+	font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	line-height:1.2;
-	margin-bottom:0.6em;
-    font-style:italic;
-}
-h1 { /* Assume used once for page title */
-	font-size:28px;
-}
-h2 { /* Assume used for page headings */
-	font-size:24px;
-}
-h3 { /* Assume used for sub-headings */
-	font-size:20px;
-	margin-top:0.5em;
-}
-h4 {
-	font-size:1.5em;
-}
-h5 {
-	font-size:1.3em;
-}
-h6 {
-	font-size:1.2em;
-}
-p {
-	margin-bottom:1em;
+	font-weight: 300;
+	color: #939597;
 }
 
-ol, ul {
-	padding-left:30px;
-	margin-bottom:1em;
-}
-b, strong {
-	font-weight:bold;
-}
-i, em {
-	font-style:italic;
-}
-u {
-	text-decoration:underline;
+a {
+	text-decoration: none;
+	color: #939597;
 }
 
-.nivo-directionNav a {
-	display:block;
-	width:30px;
-	height:30px;
-	background:url('../img/slider_arrows.png') no-repeat;
-	text-indent:-9999px;
-	border:0;
+a.ibis:hover {
+	color: #00a67a;
 }
-a.nivo-prevNav :hover {
-	background: transparent url('../img/slider_arrows.png') no-repeat;
+
+a:hover {
+	color: #fbaf40;
 }
-a.nivo-nextNav :hover {
-	background: transparent url('../img/slider_arrows.png') no-repeat;
-	background-position:-30px 0;
+
+#header #menu #links, #footer {
+	font-size: 130%;
 }
-a.nivo-nextNav {
-	background-position:-30px 0;
-	right:15px;
+
+.relative {
+	position: relative;
 }
-a.nivo-prevNav {
-	left:15px;
-}
-legend {
-	display: block;
-	font-size: 1.2em;
-	font-style:italic;
-	margin-bottom: 0;
-}
-fieldset {
-	margin-bottom: 10px;
-	border: 1px dashed #bdbdbd;
-	padding: 10px;
-}
-fieldset.required {
-	border-color: #C41300; /*#0969A2;*/
-}
-fieldset.required legend {
-	color: #C41300; /*#0969A2;*/
-}
-form p {
-	font-size: smaller;
-}
-form small {
-	display: block;
-	font-size: 0.9em;
-	margin-top: 5px;
-}
-input[type=text], textarea, input[type=password] {
-	border: 1px solid #bdbdbd;
-	padding: 5px 5px;
-}
-input[type=text]:active {
-	border: 1px solid gray;
-}
-input[type=submit] {
-	padding: 5px;
-	margin-top: 10px;
-}
-input[type=checkbox] {
-	margin-right: 10px;
-}
-textarea {
-	width: 100%;
-}
-/*========================*/
-/*=== Structure Styles ===*/
-/*========================*/
-.clear {
-	clear: both;
-	visibility: hidden;
-}
-ul.error {
-	display: block;
-	padding: 5px 10px;
-	border: 1px dashed;
-	margin: 10px 0;
-	color: #7B0404;
-	border-color: #7B0404;
-	background-color: #ffeedd;
-	list-style: none;
-}
-#flashes .flash {
-	padding: 5px 10px;
-	border: 1px dashed;
-	margin: 10px 0;
-}
-#flashes .error {
-	color: #7B0404;
-	border-color: #7B0404;
-	background-color: #ffeedd;
-}
-#flashes .success {
-	color: #1E3712;
-	border-color: #1E3712;
-	background-color: #ddffdd
-}
-#flashes .info {
-	color: #0D58A6;
-	border-color: #0D58A6;
-	background-color: #eeeeff;
-}
+

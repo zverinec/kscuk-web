@@ -1,0 +1,87 @@
+﻿#header #menu a:hover, #header #menu a.current-page {
+	color: #939597;
+}
+
+#header #menu a, a.button, a.button:hover {
+	color: #fff;
+}
+
+@media(max-width: 710px) {
+	#header #menu ul#links {
+		margin: auto 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	#header #menu ul#links li p#menuButton {
+		display: block !important;
+		font-size: 180%;
+		margin: 0;
+		margin-top: -0.1em;
+		padding: 0 0.3em;
+	}
+
+	#header #menu ul#links li ul {
+		list-style-type: none;
+		display: none;
+		margin-left: -1em;
+		padding-left: 1.4em;
+		z-index: 1;
+	}
+	#header #menu ul#links li:hover p#menuButton {
+		display: none !important;
+	}
+	#header #menu ul#links li:hover ul {
+		display: block;
+	}
+	#header #menu ul#links li:hover ul li {
+		float: none;
+	}
+}
+
+#header #menu {
+	width: 100%;
+	padding: 1em 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	color: #fff;
+	background-color: #b7b8b9;
+}
+
+#header #menuLogo {
+	height: 100%;
+}
+
+#header a {
+	line-height: 0;
+}
+
+#header #menu ul#links li p#menuButton {
+	display: none;
+}
+
+#header #menu ul#links {
+	margin: auto 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+#header #menu ul#links li ul {
+	list-style-type: none;
+}
+#header #menu ul#links li ul li {
+	float: left;
+	padding-left: 1.4em;
+}
+
+#header #menu {
+	border-bottom: 0.8em solid #fff;
+}
+
+#header div.separator {
+	border-top: 0.3em solid #fff;
+}
