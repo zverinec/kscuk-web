@@ -4,14 +4,17 @@ form th {
 	font-weight: bolder;
 	text-align: right;
 }
+
 #wrapper-body {
 	width: 700px;
 	padding: 10px;
 	background: #444444;
 }
+
 #wrapper-all {
 	margin: 20px auto;
 	width: 880px;
+
 }
 #side {
 	width: 150px;
@@ -20,11 +23,13 @@ form th {
 	padding-left: 0;
 	text-align: center;
 }
+
 #side ul {
 	list-style: none;
 	padding: 0;
 	text-align: left;
 }
+
 #side a {
 	display: block;
 	border: none;
@@ -33,20 +38,25 @@ form th {
 	padding: 5px 10px;
 	color: white;
 }
+
 #side a:hover, #side a:focus {
 	background: #06246F;
 }
+
 #side a.highlighted {
 	background: #FF3E2A;
 }
+
 #side a.highlighted:hover, #side a.highlighted:focus {
 	background: #C41300;
 }
+
 #body {
 	min-height: 200px;
 	background: white;
 	padding: 10px;
 }
+
 #people .detail {
 	background-image: url('/../img/icons/person.png');
 	display: block;
@@ -54,38 +64,45 @@ form th {
 	height: 16px;
 	border: 0;
 }
+
 #people th {
 	background: #0969A2;
 	color: white;
 }
+
 #people td {
 	border-bottom: 1px dashed #0969A2;
 }
+
 .answers-in-category {
 	margin-bottom: 20px;
 }
+
 .answers-in-category th {
 	width: 200px;
 	font-weight: normal;
 }
+
 .answers-in-category .even th {
 	background: #444444;
 	color: white;
 }
+
 #person-image {
 	width: 200px;
 	margin: 10px auto;
 	text-align: center;
 }
+
 #person-image img {
 	max-height: 200px;
 	max-width: 200px;
 
 	border: 3px double gray;
 }
+
 #admin-menu {
 	width: 100%;
-	height: 25px;
 	display: flex;
 	justify-content: center;
 	background-color: #fbaf40;
@@ -94,7 +111,7 @@ form th {
 #admin-menu ul {
 	list-style: none;
 	margin: 0 auto;
-	padding: 0;
+	padding: 10px;
 }
 
 #admin-menu ul li {
@@ -103,12 +120,15 @@ form th {
 	padding-right: 25px;
 	border-right: 1px solid white;
 }
+
 #admin-menu ul li.last {
 	border: 0px;
 }
+
 #admin-menu ul li a {
 	color: white;
 }
+
 #admin-menu ul li a:hover {
 	color: #9E805C;
 }
