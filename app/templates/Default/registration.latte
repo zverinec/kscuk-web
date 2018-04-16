@@ -2,25 +2,23 @@
 
 {block #content}
 	<div id="content">
-		<div class="container-inner2"><div class="container-inner">
-				<h2>Registrace</h2>
+		<h2>Registrace</h2>
 
-				<p>Vyplň prosím dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu, abychom ti mohli poslat další informace. Údaje použijeme výhradně pro organizaci.</p>
+		<p>Vyplň prosím dotazník s údaji, které potřebujeme vědět před konáním K-SCUKu, abychom ti mohli poslat další informace. Údaje použijeme výhradně pro organizaci.</p>
 
-				<div class="flashes">
-					<div class="flash info">
-						Upozorňujeme, že akci je nutné absolvovat v celém jejím rozsahu. Není možné přijet později ani odjet dříve.
-					</div>
-				</div>
+		<div class="flashes">
+			<div class="flash info">
+				Upozorňujeme, že akci je nutné absolvovat v celém jejím rozsahu. Není možné přijet později ani odjet dříve.
+			</div>
+		</div>
 
-				{if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
-					<p><strong>Registrace účastníků ještě nezačala</strong></p>
-				{elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
-					<p><strong>Registrace účastníků již skončila</strong></p>
-				{else}
-					{control registration}
-				{/if}
-			</div></div>
+		{if new \Nette\Utils\DateTime() < \Nette\Utils\DateTime::from($registration->start)}
+			<p><strong>Registrace účastníků ještě nezačala</strong></p>
+		{elseif new \Nette\Utils\DateTime() > \Nette\Utils\DateTime::from($registration->end)}
+			<p><strong>Registrace účastníků již skončila</strong></p>
+		{else}
+			{control registration}
+		{/if}
 	</div>
 
 	<script>
