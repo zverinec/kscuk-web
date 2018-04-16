@@ -9,21 +9,25 @@
 	bottom:0;
 	width: 100%;
 	padding: 0.5em 5%;
-	color: #fff;
-	background-color: #b7b8b9;
-}
-
-#footer #flexed-content {
-	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	color: #fff;
+	background-color: #b7b8b9;
 }
 
-@media(max-width: 578px) {
-	#footer #flexed-content {
+@media(max-width: 919px) {
+	#footer {
 		justify-content: center !important;
+	}
+
+	#footer #texts {
+		margin-top: 1em;
+	}
+
+	#footer #texts #email, #footer #texts #licence {
+		text-align: center !important;
 	}
 }
 
@@ -59,11 +63,9 @@
 }
 
 #footer #licence {
-	width: 100%;
-	padding: 1em 1em 0.5em 1em;
 	background-color: #b7b8b9;
 	font-size: 70%;
-	text-align: center;
+	text-align: right;
 }
 
 #footer #licence, #licence a {
