@@ -1,0 +1,21 @@
+.table-default {
+	width: 100%;
+}
+
+.table-default th {
+	background: #00a67a;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-default td {
+	border-bottom: 1px dashed #00a67a;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.table-default p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

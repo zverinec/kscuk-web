@@ -1,23 +1,9 @@
-#people {
-	width: 100%;
-}
-
-#people th {
-	background: #00a67a;
-	color: white;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#people td {
-	border-bottom: 1px dashed #00a67a;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#people p {
-	margin-top: 0px;
-	margin-bottom: 0px;
+#people .detail {
+	background-image: url('/../img/icons/person.png');
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 0;
 }
 
 .answers-in-category {
@@ -27,11 +13,6 @@
 .answers-in-category th {
 	width: 200px;
 	font-weight: normal;
-}
-
-.answers-in-category .even th {
-	background: #444444;
-	color: white;
 }
 
 #person-image {
