@@ -36,7 +36,7 @@ class OrgPresenter extends BasePresenter
 		parent::startUp();
 		if (!$this->user->isLoggedIn()) {
 			if ($this->getAction() != 'auth') {
-				$this->flashMessage("Neoprávnění přístup do organizátorské sekce!", "error");
+				$this->flashMessage("Neoprávněný přístup do organizátorské sekce!", "error");
 				$this->redirect("auth");
 			}
 		}
