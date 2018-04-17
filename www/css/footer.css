@@ -40,7 +40,7 @@
 	margin-right: 5%;
 }
 
-#footer #logos a:nth-child(2) {
+#footer #logos a#ibis {
 	height: 40px;
 }
 
@@ -48,8 +48,44 @@
 	margin-right: 0;
 }
 
-#footer #logos a img {
-	width: 50px;
+#footer #logos a#ksi {
+	background-image: url("../img/ksi.svg");
+}
+
+#footer #logos a#ksi:hover {
+	background-image: url("../img/ksi-hover.svg");
+}
+
+#footer #logos a#ibis {
+	background-image: url("../img/ibis.svg");
+}
+
+#footer #logos a#ibis:hover {
+	background-image: url("../img/ibis-hover.svg");
+}
+
+#footer #logos a#fi {
+	background-image: url("../img/fi.svg");
+}
+
+#footer #logos a#fi:hover {
+	background-image: url("../img/fi-hover.svg");
+}
+
+#footer #logos a#prf {
+	background-image: url("../img/prf.svg");
+}
+
+#footer #logos a#prf:hover {
+	background-image: url("../img/prf-hover.svg");
+}
+
+#footer #logos a#muni {
+	background-image: url("../img/mu.svg");
+}
+
+#footer #logos a#muni:hover {
+	background-image: url("../img/mu-hover.svg");
 }
 
 #footer #email {
