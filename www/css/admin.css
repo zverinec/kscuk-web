@@ -59,3 +59,11 @@
 #admin-menu ul li a:hover {
 	color: #9E805C;
 }
+
+#frm-people-questionForm {
+	margin-top: 3em;
+}
+
+#frm-people-questionForm input[type=submit] {
+	margin-top: 1em;
+}
