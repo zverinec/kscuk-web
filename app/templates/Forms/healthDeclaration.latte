@@ -1,6 +1,8 @@
-{extends @layout.latte}
+{layout ../@layout.latte}
 
 {block #content}
-	<h1>Zdravotní deklarace</h1>
-	{control healthDeclaration}
+	<div id="content">
+		<h1>Zdravotní deklarace</h1>
+		{control healthDeclaration}
+	</div>
 {/block}
