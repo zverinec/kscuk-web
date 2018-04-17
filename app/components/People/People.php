@@ -74,7 +74,7 @@ class People extends BaseComponent
 			}
 		}
 
-		$form->addSubmit("filter", "Zobrazit")->setHtmlAttribute('class', 'orange');
+		$form->addSubmit("filter", "Zobrazit");
 		$form->onSuccess[] = [$this, 'questionFormSubmitted'];
 
 		return $form;

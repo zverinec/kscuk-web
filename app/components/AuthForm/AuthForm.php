@@ -42,7 +42,7 @@ class AuthForm extends BaseComponent
 		$form = new Form($this, $name);
 
 		$form->addPassword('password', 'Heslo:');
-		$form->addSubmit('login', 'Přihlásit se')->setHtmlAttribute('class', 'orange');
+		$form->addSubmit('login', 'Přihlásit se');
 		$form->onSuccess[] = [$this, 'formSubmitted'];
 
 		return $form;

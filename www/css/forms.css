@@ -43,7 +43,12 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, select:focus
 input[type=submit] {
 	display: inline-block;
 	border: inherit;
-	font-size: 150%;
+	font-size: 180%;
+	background-color: #fbaf40; /* default color */
+}
+
+input[type=submit]:hover {
+	background-color: #00a67a; /* default hover color */
 }
 
 input[type=submit].button.green:hover, input[type=submit].button.orange:hover {
