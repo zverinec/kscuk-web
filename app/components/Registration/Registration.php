@@ -145,7 +145,7 @@ class Registration extends BaseComponent
 				Debugger::log($e, Debugger::EXCEPTION);
 			}
 		}
-		$this->getPresenter()->flashMessage('Děkujeme, že ses přihlásil(a) na K-SCUK. Brzy ti pošleme e-mail s dalším instrukcemi.', 'success');
+		$this->getPresenter()->flashMessage('Děkujeme, že ses přihlásil(a) na K-SCUK. Brzy ti pošleme e-mail s dalším instrukcemi.', 'success');
 		$this->getPresenter()->redirect('Default:default');
 	}
 
