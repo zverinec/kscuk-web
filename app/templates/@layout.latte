@@ -34,7 +34,7 @@
 			<div id="header">
 				<div id="menu">
 					<a n:href="Default:">
-						<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" alt="K-SCUK" role="heading">
+						<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" alt="logo K-SCUKu" role="heading">
 					</a>
 					<ul id="links">
 						<li><p id="menuButton">&equiv;</p>
@@ -55,6 +55,8 @@
 					</ul>
 				</div>
 
+				<h1 style="display: none">{$event->title}</h1>
+
 				<div class="flashes" id="flashes-main">
 					{foreach $flashes AS $flash}
 						<div class="flash {$flash->type}">
@@ -67,11 +69,11 @@
 			{block #content}{/block}
 			<div id="footer">
 				<div id="logos">
-					<a id="ksi" href="http://ksi.fi.muni.cz" target="_blank"></a>
-					<a id="ibis" href="http://ibis.sci.muni.cz/" target="_blank"></a>
-					<a id="fi" href="http://fi.muni.cz" target="_blank"></a>
-					<a id="prf" href="http://www.sci.muni.cz/" target="_blank"></a>
-					<a id="muni" href="http://www.muni.cz" target="_blank"></a>
+					<a id="ksi" href="http://ksi.fi.muni.cz" target="_blank" title="KSI"></a>
+					<a id="ibis" href="http://ibis.sci.muni.cz/" target="_blank" title="IBIS"></a>
+					<a id="fi" href="http://fi.muni.cz" target="_blank" title="FI"></a>
+					<a id="prf" href="http://www.sci.muni.cz/" target="_blank" title="PrF"></a>
+					<a id="muni" href="http://www.muni.cz" target="_blank" title="MUNI"></a>
 				</div>
 				<div id="texts">
 					<div id="email">
