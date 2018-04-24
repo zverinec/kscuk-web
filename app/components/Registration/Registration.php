@@ -116,14 +116,10 @@ class Registration extends BaseComponent
 		if (isset($config->mail)) {
 			try {
 				$mail = new Message();
-				$mail->setSubject('K-SCUK: přihlášený účastník');
+				$mail->setSubject('[K-SCUK] Přihlášený účastník');
 				$mail->setEncoding('UTF-8');
 				$mail->addTo($config->mail);
-				if ($targetMail != null) {
-					$mail->setFrom($targetMail);
-				} else {
-					$mail->setFrom($config->mail);
-				}
+				$mail->setFrom($config->mail);
 				$template = $this->createTemplate();
 				$template->questions = $this->question->findAll();
 				$template->answers = $this->person->findAnswers($registered)->fetchAssoc('id_question');
