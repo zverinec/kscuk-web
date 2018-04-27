@@ -11,7 +11,7 @@ parameters:
 		period: '9.–16. 9. 2018'
 		place: '<a href="https://mapy.cz/s/28VF9">Mohelenský mlýn</a>'
 		lodging: 'v budově na lůžkách'
-		#price: '0 Kč (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
+		price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
