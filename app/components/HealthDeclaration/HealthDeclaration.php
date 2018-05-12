@@ -183,6 +183,7 @@ class HealthDeclaration extends BaseComponent
 		$form->addText("date", "Datum")
 			->setDisabled()
 			->setValue(date("j. n. Y"));
+		$form->addGroup();
 		$form->addSubmit("submitted", "Potvrzuji a souhlasím");
 		$form->onSubmit[] = array($this, "declarationSubmitted");
 
