@@ -67,3 +67,7 @@ label.checked {
 textarea {
 	height: 15em;
 }
+
+#frm-healthDeclaration-declaration textarea {
+	height: 7em;
+}
