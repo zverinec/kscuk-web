@@ -39,17 +39,20 @@
 	list-style: none;
 	margin: 0 auto;
 	padding: 10px;
+	text-align: center;
 }
 
 #admin-menu ul li {
-	float: left;
 	margin-right: 25px;
 	padding-right: 25px;
 	border-right: 1px solid white;
+	display: inline-block;
 }
 
 #admin-menu ul li.last {
 	border: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
 }
 
 #admin-menu ul li a {
