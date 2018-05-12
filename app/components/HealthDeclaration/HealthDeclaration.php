@@ -168,12 +168,14 @@ class HealthDeclaration extends BaseComponent
 		Helpers::addRadioLists($questionList, $form, "profile");
 		$form->addTextArea("profile", NULL, 40, 6);
 
+		/* Food declaration moved to registration in 2018 event.
 		$group = $form->addGroup("Stravovací omezení");
 		$no_food_problems = $form->addCheckbox("no_food_problems", "Žádná stravovací omezení");
 		Helpers::makeGroupRequired($group);
 		$food_problems = $form->addTextArea("food_problems", NULL, 40, 4);
 		$food_problems->addConditionOn($no_food_problems, Form::EQUAL, false)
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
+		*/
 
 		$group = $form->addGroup();
 		$group->setOption("description", Html::el()->setHtml("Činnosti na kurzu jsou bez výjimky dobrovolné, odevzdání vyplněné a podepsané deklarace je však podmínkou aktivní účasti na jednotlivých programech kurzu. Jestliže se během programu projeví onemocnění, omezení nebo problémy, které jsi ve Zdravotní deklaraci neuvedl/a či uvedl/a nepravdivě, organizátoři K-SCUKu nenesou zodpovědnost za případné zdravotní či jiné poškození.<br /><br /><strong>Potvrzuji, že jsem porozuměl všem výše uvedeným skutečnostem včetně zdravotní problematiky.</strong><br /><br />"));
