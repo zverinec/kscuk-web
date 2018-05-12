@@ -107,9 +107,9 @@ class HealthDeclaration extends BaseComponent
 		$gp->addConditionOn($no_gp, Form::EQUAL, false)
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o svém praktickém lékaři.");
 
-		$group = $form->addGroup("Podávání zpráv");
+		$group = $form->addGroup("Krizový kontakt");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", Html::el("")->setHtml("<strong>V případě nutnosti podejte zprávu</strong> (jméno, adresa, telefon)"));
+		$group->setOption("description", Html::el("")->setHtml("Koho informovat, kdyby se ti na akci něco stalo (jméno, adresa, telefon)"));
 		$form->addTextArea("informing", NULL, 40, 4)
 			->setRequired("Vyplň, prosím, informace o podávání zpráv.");
 
