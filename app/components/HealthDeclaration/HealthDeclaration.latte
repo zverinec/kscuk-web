@@ -1,14 +1,18 @@
 {if !empty($email)}
 	{if $finished}
-		<p>Děkujeme za vyplnění zdravotní deklarace. Níže naleznete odkaz na PDF verzi s Vámi vyplněnými odpověďmi. Vytiskněte si ji a podepsanou doneste na soustředění. V případě, že nevlastníte tiskárnu napište nám.</p>
+		<p>Děkujeme za vyplnění zdravotní deklarace. Níže nalezneš odkaz na PDF verzi s vyplněnými
+		odpověďmi. Vytiskni si ji a podepsanou dones na soustředění. V případě, že nevlastníš tiskárnu, napiš nám.</p>
 		{if !empty($code)}
 			<a href="{plink Forms:filledForm,$email,$code}">Stáhnout vyplněnou zdravotní deklaraci</a>
 		{/if}
 	{else}
-		<p>Během K-scuku se setkáš s řadou obvyklých i měně běžných aktivit z oblasti sportu, her a pohybu (nejen) v přírodě. Pro tvou bezpečnost je proto důležité, abychom znali tvůj zdravotní stav a mohli program přizpůsobit tvé fyzické kondici a případným zdravotním omezením. Informace uvedené ve Zdravotní deklaraci chápeme jako důvěrné a slouží pouze pro vnitřní potřebu.</p>
+		<p>Během K-SCUKu se setkáš s řadou obvyklých i měně běžných aktivit z oblasti sportu, her
+		a pohybu (nejen) v přírodě. Pro tvou bezpečnost je proto důležité, abychom znali tvůj
+		zdravotní stav a mohli program přizpůsobit tvé fyzické kondici a případným zdravotním omezením.
+		Informace uvedené ve Zdravotní deklaraci chápeme jako důvěrné a slouží pouze pro vnitřní potřebu.</p>
 		{control declaration}
 	{/if}
 {else}
-	<p>Na některé otázky jsem se již ptali předběžně v přihlášce. Pro účast na akci je ale potřeba vyplnit zdravotní dotazník.</p>
+	<p>Na některé otázky jsme se již ptali předběžně v přihlášce. Pro účast na akci je ale potřeba vyplnit zdravotní dotazník.</p>
 	{control mailForm}
 {/if}

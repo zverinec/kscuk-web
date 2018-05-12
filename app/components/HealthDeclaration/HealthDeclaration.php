@@ -49,12 +49,12 @@ class HealthDeclaration extends BaseComponent
 	public function createComponentMailForm($name)
 	{
 		$form = new Form($this, $name);
-		$group = $form->addGroup("Vaše e-mailová adresa");
+		$group = $form->addGroup("Tvá e-mailová adresa");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", "Použijte e-mailovou adresu, kterou jste zadali v přihlášce.");
+		$group->setOption("description", "Použij e-mailovou adresu, kterou jsi zadal(a) v přihlášce.");
 		$form->addText("email")
 			->setRequired("Zadejte, prosím, svoji e-mailovou adresu.")
-			->addRule(Form::EMAIL, "Zadejte prosím vaši e-mailovou adresu ve tvaru nekdo@nekde.koncovka.");
+			->addRule(Form::EMAIL, "Zadej prosím tvou e-mailovou adresu ve tvaru nekdo@nekde.koncovka.");
 		$form->addGroup();
 		$form->addSubmit("continue", "Pokračovat");
 		$form->onSuccess[] = [$this, 'mailFormSubmitted'];
@@ -97,62 +97,62 @@ class HealthDeclaration extends BaseComponent
 		$group = $form->addGroup("Datum narození");
 		Helpers::makeGroupRequired($group);
 		$form->addText("birth_date")
-			->addRule(Form::FILLED, "Vyplňte, prosím, své datum narození.");
+			->addRule(Form::FILLED, "Vyplň, prosím, své datum narození.");
 
 		$group = $form->addGroup("Praktický lékař");
 		Helpers::makeGroupRequired($group);
 		$no_gp = $form->addCheckbox("no_gp", "Nemám stálého lékaře");
-		$group->setOption("description", Html::el("strong")->setText("Jméno, adresa a telefon Vašeho lékaře"));
+		$group->setOption("description", Html::el("strong")->setText("Jméno, adresa a telefon tvého lékaře"));
 		$gp = $form->addTextArea("gp", NULL, 40, 4);
 		$gp->addConditionOn($no_gp, Form::EQUAL, false)
-			->addRule(Form::FILLED, "Vyplňte, prosím, informace o svém praktickém lékaři.");
+			->addRule(Form::FILLED, "Vyplň, prosím, informace o svém praktickém lékaři.");
 
 		$group = $form->addGroup("Podávání zpráv");
 		Helpers::makeGroupRequired($group);
 		$group->setOption("description", Html::el("")->setHtml("<strong>V případě nutnosti podejte zprávu</strong> (jméno, adresa, telefon)"));
 		$form->addTextArea("informing", NULL, 40, 4)
-			->setRequired("Vyplňte, prosím, informace o podávání zpráv.");
+			->setRequired("Vyplň, prosím, informace o podávání zpráv.");
 
-		$group = $form->addGroup("Vaše současná pohybová aktivita");
+		$group = $form->addGroup("Tvá současná pohybová aktivita");
 		Helpers::makeGroupRequired($group);
 		$group->setOption("description", Html::el("")->setHtml("Aktivita, jak často, přibližná doba (vzdálenost)"));
 		$no_sporting = $form->addCheckbox("no_sporting", "Žádná pohybová aktivita");
 		$sporting = $form->addTextArea("sporting", NULL, 40, 4);
 		$form->addCheckbox("swimming", "Uplavu bezpečně 100 metrů");
 		$sporting->addConditionOn($no_sporting, Form::EQUAL, false)
-			->addRule(Form::FILLED, "Vyplňte, prosím, informace o své pohybové aktivitě.");
+			->addRule(Form::FILLED, "Vyplň, prosím, informace o své pohybové aktivitě.");
 
 		$group = $form->addGroup("Riziko srdečního onemocnění");
 		Helpers::makeGroupRequired($group);
-		$questionList[] = "Vysoký krevní tlak (i léčený)";
-		$questionList[] = "Kouřím, kouřil/a jsem v posledním roce";
+		$questionList[] = "Vysoký krevní tlak (i léčený)";
+		$questionList[] = "Kouřím, kouřil/a jsem v posledním roce";
 		$questionList[] = "Diabetes mellitus (cukrovka)";
-		$questionList[] = "Vysoká hladina cholesterolu nebo tuků v krvi";
+		$questionList[] = "Vysoká hladina cholesterolu nebo tuků v krvi";
 		$questionList[] = "Bolesti na hrudi, obtížné dýchání již při malé námaze";
 		$questionList[] = "Rodinná historie srdečních onemocnění";
 		Helpers::addRadioLists($questionList, $form, "heart");
 
 		$group = $form->addGroup("Léky");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", Html::el("")->setHtml("Uveďte i ty, které užíváte nepravidelně, včetně “prášků na spaní”<br />Název léku, jak často a kolik, proč, současné vedlejší účinky"));
+		$group->setOption("description", Html::el("")->setHtml("Uveď i ty, které užíváš nepravidelně, včetně “prášků na spaní”<br />Název léku, jak často a kolik, proč, současné vedlejší účinky"));
 		$no_medicine = $form->addCheckbox("no_medicine", "Neužívám žádné léky");
 		$medicine = $form->addTextArea("medicine", NULL, 40, 4);
 		$medicine->addConditionOn($no_medicine, Form::EQUAL, false)
-			->addRule(Form::FILLED, "Vyplňte, prosím, informace o používaných lécích.");
+			->addRule(Form::FILLED, "Vyplň, prosím, informace o používaných lécích.");
 
 		$group = $form->addGroup("Alergie");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? jakých a jak?"));
-		$no_allergy = $form->addCheckbox("no_allergy", "Nevím o žádné alergii");
+		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? Jakých a jak?"));
+		$no_allergy = $form->addCheckbox("no_allergy", "Nevím o žádné alergii");
 		$allergy = $form->addTextArea("allergy", NULL, 40, 4);
 		$allergy->addConditionOn($no_allergy, Form::EQUAL, false)
-			->addRule(Form::FILLED, "Vyplňte, prosím, informace o alergiích.");
+			->addRule(Form::FILLED, "Vyplň, prosím, informace o alergiích.");
 
 		$group = $form->addGroup("Zdravotní profil");
-		$group->setOption("description", "Pokud se Vás některé z těchto kategorií týkají, napište prosím, podrobnější informace do volného pole níže (příznaky, omezeni ...).");
+		$group->setOption("description", "Pokud se tě některé z těchto kategorií týkají, napiš prosím, podrobnější informace do volného pole níže (příznaky, omezeni ...).");
 		Helpers::makeGroupRequired($group);
 		$questionList = array();
-		$questionList[] = "1. Pobyt v nemocnici, návštěva pohotovosti v posledním roce";
+		$questionList[] = "1. Pobyt v nemocnici, návštěva pohotovosti v posledním roce";
 		$questionList[] = "2. Infarkt myokardu, angina pectoris, operace srdce";
 		$questionList[] = "3. Jiné srdeční nálezy - vysoký či nízký tlak, porucha rytmu, zánět, šelest‚ …";
 		$questionList[] = "4. Astma, bronchitidy, zánět plic, TBC a jiná plicní onemocnění";
@@ -161,9 +161,9 @@ class HealthDeclaration extends BaseComponent
 		$questionList[] = "7. Křečové stavy";
 		$questionList[] = "8. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody atd., jiné neurózy…)";
 		$questionList[] = "9. Jste nebo byl/a jste v posledních 2 letech v péči psychologa nebo psychiatra? (kontakt na něj)";
-		$questionList[] = "10. Prožil/a jste v poslední době nějakou závažnou životní událost?";
+		$questionList[] = "10. Prožil/a jsi v poslední době nějakou závažnou životní událost?";
 		$questionList[] = "11. Jiné zdravotní problémy, příznaky, omezení, požadavky";
-		$questionList[] = "12. Očkování proti tetanu v posledních 7 letech. ";
+		$questionList[] = "12. Očkování proti tetanu v posledních 7 letech. ";
 		$questionList[] = "13. Těhotenství";
 		Helpers::addRadioLists($questionList, $form, "profile");
 		$form->addTextArea("profile", NULL, 40, 6);
@@ -173,12 +173,12 @@ class HealthDeclaration extends BaseComponent
 		Helpers::makeGroupRequired($group);
 		$food_problems = $form->addTextArea("food_problems", NULL, 40, 4);
 		$food_problems->addConditionOn($no_food_problems, Form::EQUAL, false)
-			->addRule(Form::FILLED, "Vyplňte, prosím, informace o stravovacích omezeních.");
+			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
 
 		$group = $form->addGroup();
-		$group->setOption("description", Html::el()->setHtml("Činnosti na kurzu jsou bez výjimky dobrovolné, odevzdání vyplněné a podepsané deklarace je však podmínkou aktivní účasti na jednotlivých programech kurzu. Jestliže se během programu projeví onemocnění, omezení nebo problémy, které jste ve Zdravotní deklaraci neuvedl/a či uvedl/a nepravdivě, organizátoři K-SCUKu nenesou zodpovědnost za případné zdravotní či jiné poškození.<br /><br /><strong>Potvrzuji, že jsem porozuměl všem výše uvedeným skutečnostem včetně zdravotní problematiky.</strong><br /><br />"));
+		$group->setOption("description", Html::el()->setHtml("Činnosti na kurzu jsou bez výjimky dobrovolné, odevzdání vyplněné a podepsané deklarace je však podmínkou aktivní účasti na jednotlivých programech kurzu. Jestliže se během programu projeví onemocnění, omezení nebo problémy, které jsi ve Zdravotní deklaraci neuvedl/a či uvedl/a nepravdivě, organizátoři K-SCUKu nenesou zodpovědnost za případné zdravotní či jiné poškození.<br /><br /><strong>Potvrzuji, že jsem porozuměl všem výše uvedeným skutečnostem včetně zdravotní problematiky.</strong><br /><br />"));
 		$form->addText("signature", "Jméno zákonného zástupce")
-			->setOption("description", "Jméno zákonného zástupce vyplňte pouze v případě, že je Vám méně než 18 let.");
+			->setOption("description", "Jméno zákonného zástupce vyplň pouze v případě, že je ti méně než 18 let.");
 		$group = $form->addGroup();
 		$form->addText("date", "Datum")
 			->setDisabled()
