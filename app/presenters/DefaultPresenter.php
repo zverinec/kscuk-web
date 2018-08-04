@@ -16,7 +16,7 @@ class DefaultPresenter extends BasePresenter
 
 	public function renderDefault() {}
 
-	public function renderArchiv() {
+	public function renderArchive() {
 
 		$years = [];
 		$files = scandir(__DIR__ . "/../data/archive", SCANDIR_SORT_DESCENDING);
