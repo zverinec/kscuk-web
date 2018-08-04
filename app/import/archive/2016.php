@@ -22,7 +22,6 @@ $year = [
 		."semper rutrum. Nunc dapibus tortor vel mi dapibus sollicitudin. In laoreet, magna id viverra "
 		."tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas sollicitudin.",
 	"gallery" => [
-		"IMG_7810.JPG",
 		"IMG_0162.JPG",
 		"IMG_0172.JPG",
 		"IMG_0259.JPG",
@@ -33,7 +32,8 @@ $year = [
 		"IMG_0864.JPG",
 		"IMG_1099.JPG",
 		"IMG_1215.JPG",
-		"IMG_6540.jpg"
+		"IMG_6540.jpg",
+		"IMG_7810.JPG"
 	],
 	"more-story" => ""
 ];

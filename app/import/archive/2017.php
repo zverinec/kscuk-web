@@ -4,7 +4,7 @@ $year = [
 	"when" => "3.–10. září 2017",
 	"where" => [
 		"place" => "Strážná u Lelekovic",
-		"map" => "https://mapy.cz/s/2UPis"
+		"map" => "https://mapy.cz/s/2UTpG"
 	],
 	"who" => [
 		["person" => "Martina Krasnayová", "team" => "ksi"],
@@ -22,9 +22,6 @@ $year = [
 		."semper rutrum. Nunc dapibus tortor vel mi dapibus sollicitudin. In laoreet, magna id viverra "
 		."tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas sollicitudin.",
 	"gallery" => [
-		"IMG_7223.jpg",
-		"IMG_7304.jpg",
-		"IMG_7418.jpg",
 		"IMG_3856.JPG",
 		"IMG_3870.JPG",
 		"IMG_3956.JPG",
@@ -33,7 +30,10 @@ $year = [
 		"IMG_4179.jpg",
 		"IMG_4216.jpg",
 		"IMG_4267.jpg",
-		"IMG_7167.jpg"
+		"IMG_7167.jpg",
+		"IMG_7223.jpg",
+		"IMG_7304.jpg",
+		"IMG_7418.jpg"
 	],
 	"more-story" => ""
 ];
