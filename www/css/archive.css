@@ -1,4 +1,6 @@
-.year {}
+.year {
+	margin-bottom: 3em;
+}
 
 table.meta {
 	margin-bottom: 1em;
@@ -18,16 +20,46 @@ table.meta tr td:first-of-type {
 }
 
 .gallery {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
 }
 
 .gallery img {
-	margin: 2px;
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
 }
 
-.gallery a {
-	height: 104px;
-}
+.gallery a {}
 
 .more {}
+
+
+@media(min-width: 832px) and (max-width: 1000px) {
+
+	.gallery img {
+		width: 180px;
+		height: 120px;
+	}
+}
+
+@media(min-width: 1500px) and (max-width: 2572px) { /* ~ 290px max sirka */
+	.gallery img {
+		width: 11.2vw;
+		height: 7.47vw;
+	}
+
+	.gallery a {
+		width: 16%;
+	}
+}
+
+@media(min-width: 3530px) {
+	.gallery img {
+		width: 201px;
+		height: 134px;
+	}
+}
