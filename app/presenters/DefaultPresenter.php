@@ -19,10 +19,10 @@ class DefaultPresenter extends BasePresenter
 	public function renderArchiv() {
 
 		$years = [];
-		$files = scandir(__DIR__ . "/../import/archive", SCANDIR_SORT_DESCENDING);
+		$files = scandir(__DIR__ . "/../data/archive", SCANDIR_SORT_DESCENDING);
 
 		foreach ($files as $file) {
-			$file = __DIR__ . "/../import/archive/" . $file;
+			$file = __DIR__ . "/../data/archive/" . $file;
 
 			if (is_file($file)) {
 				$years []= $this->getArchiveYear($file);
