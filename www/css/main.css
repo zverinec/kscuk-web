@@ -30,11 +30,11 @@ a {
 	color: #939597;
 }
 
-a.ibis:hover {
+a.ibis:hover, span.ibis {
 	color: #00a67a;
 }
 
-a:hover {
+a:hover, span.ksi {
 	color: #fbaf40;
 }
 
@@ -45,4 +45,5 @@ a:hover {
 .relative {
 	position: relative;
 }
+
 

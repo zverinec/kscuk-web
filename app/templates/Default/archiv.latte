@@ -2,6 +2,84 @@
 
 {block #content}
 	<div id="content">
-		Archiv momentálně připravujeme.
+		<div class="year">
+			<h2>2016</h2>
+			<table class="meta">
+				<tr>
+					<td>Kdy?</td>
+					<td>11.–18. září 2016</td>
+				</tr>
+				<tr>
+					<td>Kde?</td>
+					<td><a href="https://mapy.cz/s/28VF9">Mohelenský mlýn</a></td>
+				</tr>
+				<tr>
+					<td>Kdo?</td>
+					<td>
+						<span class="ksi">Honza Horáček</span>,
+						<span class="ksi">Honza Mrázek</span>,
+						<span class="ibis">Lukáš Chrást</span>,
+						<span class="ibis">Pavla Havlíčková</span>,
+						<span class="ksi">Dominika Krejčí</span>,
+						<span class="ksi">Tom Effenberger</span>,
+						<span class="ksi">Henrich Heno Lauko</span>,
+						<span class="ksi">Martin Tíman Hanžl</span>,
+						<span class="ksi">Jiří Novotný</span>
+					</td>
+				</tr>
+			</table>
+			<div class="story">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Duis condimentum augue id magna semper rutrum. Nunc dapibus tortor vel mi dapibus sollicitudin. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas sollicitudin.
+			</div>
+			<div class="gallery">
+				<a href="{$basePath}/img/archive/2016/IMG_0162.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0162.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0172.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0172.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0259.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0259.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0341.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0341.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0618.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0618.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0787.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0787.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0861.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0861.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_0864.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_0864.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_1099.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_1099.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_1215.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_1215.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_6540.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_6540.JPG" height="100">
+				</a>
+				<a href="{$basePath}/img/archive/2016/IMG_7810.JPG">
+					<img src="{$basePath}/img/archive/2016/IMG_7810.JPG" height="100">
+				</a>
+			</div>
+			<div class="more">
+			</div>
+		</div>
+
+
+		<script src="{$basePath}/js/lightgallery.min.js"></script>
+		<script src="{$basePath}/js/lg-thumbnail.min.js"></script>
+		<script type="text/javascript">
+			$('.gallery').each(function () {
+				lightGallery(this);
+			});
+		</script>
 	</div>
 {/block}

@@ -1,0 +1,33 @@
+.year {}
+
+table.meta {
+	margin-bottom: 1em;
+}
+
+table.meta tr td:first-of-type {
+	width: 10%;
+	color: #000;
+	font-size: 110%;
+	vertical-align: text-top;
+	text-align: left;
+}
+
+.story {
+	text-align: justify;
+	margin-bottom: 2em;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery img {
+	margin: 2px;
+}
+
+.gallery a {
+	height: 104px;
+}
+
+.more {}
