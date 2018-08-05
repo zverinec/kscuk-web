@@ -41,9 +41,11 @@
 
 			<div id="header">
 				<div id="menu">
-					<a n:href="Default:">
-						<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" alt="logo K-SCUKu" role="heading">
-					</a>
+					<h1>
+						<a n:href="Default:">
+							<img id="menuLogo" src="{$basePath}/img/kscuk-logo-menu.svg" alt="{$event->title}">
+						</a>
+					</h1>
 					<ul id="links">
 						<li><p id="menuButton">&equiv;</p>
 							<ul>
@@ -62,8 +64,6 @@
 						</li>
 					</ul>
 				</div>
-
-				<h1 style="display: none">{$event->title}</h1>
 
 				<div class="flashes" id="flashes-main">
 					{foreach $flashes AS $flash}
