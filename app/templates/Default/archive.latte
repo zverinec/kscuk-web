@@ -19,7 +19,7 @@
 						<td>Kdo?</td>
 						<td>
 							{foreach $year["who"] as $who}
-								<span class="{$who["team"]}">{$who["person"]}</span>,
+								<span class="{$who["team"]}">{$who["person"]}</span>{if !$iterator->isLast()},{/if}
 							{/foreach}
 						</td>
 					</tr>
