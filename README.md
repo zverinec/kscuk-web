@@ -36,3 +36,10 @@ Health declaration:
 
   - If there are multiple same e-mail addresses it will fail, solution: correct in database
   - Link: /forms/health-declaration
+
+Add past event to archive:
+
+  - Prepare php file with data in /app/data/archive, with the year number as filename. Copy the data structure from some existing file. (JSON doesn't permit breaking long lines for readability, sorry.)
+  - Choose up to 12 photos (but ideally exactly 12) to illustrate the event. Use /archive-image-optimizer.py to get copies of acceptable size and thumbnails. The script can be run from commandline, with a path to the photo directory as an optional first argument. (If you don't provide any path, the script will ask. Make sure your photo directory is accessible and writable.)
+  - Create new directory in /www/img/archive, with the year number as dirname. Move the obtained photos into it.
+  - That's all. Please check the website to see if the php structure didn't contain any errors.
