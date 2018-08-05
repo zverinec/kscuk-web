@@ -50,42 +50,47 @@
 
 #footer #logos a#ksi {
 	background-image: url("../img/ksi.svg");
+	background-position: 0 0;
 }
 
 #footer #logos a#ksi:hover {
-	background-image: url("../img/ksi-hover.svg");
+	background-position: 100% 0;
 }
 
 #footer #logos a#ibis {
 	background-image: url("../img/ibis.svg");
+	background-position: 0 0;
 }
 
 #footer #logos a#ibis:hover {
-	background-image: url("../img/ibis-hover.svg");
+	background-position: 100% 0;
 }
 
 #footer #logos a#fi {
 	background-image: url("../img/fi.svg");
+	background-position: 0 0;
 }
 
 #footer #logos a#fi:hover {
-	background-image: url("../img/fi-hover.svg");
+	background-position: 100% 0;
 }
 
 #footer #logos a#prf {
 	background-image: url("../img/prf.svg");
+	background-position: 0 0;
 }
 
 #footer #logos a#prf:hover {
-	background-image: url("../img/prf-hover.svg");
+	background-position: 100% 0;
 }
 
 #footer #logos a#muni {
 	background-image: url("../img/mu.svg");
+	background-position: 0 0;
 }
 
 #footer #logos a#muni:hover {
-	background-image: url("../img/mu-hover.svg");
+	background-position: 100% 0;
 }
 
 #footer #email {
