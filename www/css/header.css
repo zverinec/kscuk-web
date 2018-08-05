@@ -86,6 +86,39 @@
 	border-bottom: 0.8em solid #fff;
 }
 
+#secondary-menu {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #fbaf40;
+}
+
+#secondary-menu ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+
+#secondary-menu ul li {
+	padding: 0 25px;
+	display: inline-block;
+}
+
+#secondary-menu ul li.last, #secondary-menu ul li:last-child {
+	border: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+#secondary-menu ul li a {
+	color: white;
+}
+
+#secondary-menu ul li a:hover {
+	color: #939597;
+}
+
 #header div.separator {
 	border-top: 0.3em solid #fff;
 }

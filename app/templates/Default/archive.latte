@@ -1,6 +1,13 @@
 {layout ../@layout.latte}
 
 {block #content}
+	<div id="secondary-menu">
+		<ul>
+		{foreach $years as $year}
+			<li><a href="#{$year["year"]}">{$year["year"]}</a></li>
+		{/foreach}
+		</ul>
+	</div>
 	<div id="content">
 
 		{foreach $years as $year}
@@ -42,6 +49,17 @@
 
 	</div>
 
+
+	<script type="text/javascript">
+		$('#secondary-menu li a').on('click', function(e) {
+			e.preventDefault();
+			console.log(e.target);
+			let target = $("#"+e.target.textContent);
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		});
+	</script>
 
 	<script src="{$basePath}/js/lightgallery.min.js"></script>
 	<script src="{$basePath}/js/lg-thumbnail.min.js"></script>
