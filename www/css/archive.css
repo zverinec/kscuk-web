@@ -1,5 +1,9 @@
 .year {
-	margin-bottom: 3em;
+	padding: 2em 0;
+}
+
+.year:first-child {
+	padding: 0 0 2em 0;
 }
 
 table.meta {
