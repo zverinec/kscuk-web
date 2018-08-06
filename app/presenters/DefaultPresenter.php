@@ -19,7 +19,7 @@ class DefaultPresenter extends BasePresenter
 	public function renderArchive() {
 
 		$years = [];
-		$files = glob(__DIR__ . "/../data/archive/*.php", GLOB_BRACE);
+		$files = array_reverse(glob(__DIR__ . "/../data/archive/*.php"));
 
 		foreach ($files as $file) {
 			$years []= $this->getArchiveYear($file);
