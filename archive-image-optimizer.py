@@ -75,6 +75,7 @@ def process_images(files, directory):
         image.close()
 
 
-directory = get_dir()
-make_output_dir(directory)
-process_images(get_files(directory), directory)
+if __name__ == '__main__':
+    directory = get_dir()
+    make_output_dir(directory)
+    process_images(get_files(directory), directory)
