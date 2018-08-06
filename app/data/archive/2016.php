@@ -7,6 +7,7 @@ $year = [
 		"map" => "https://mapy.cz/s/28VF9"
 	],
 	"who" => [
+		["person" => "Martina Tinka Krasnayová", "team" => "ksi"],
 		["person" => "Honza Horáček", "team" => "ksi"],
 		["person" => "Honza Mrázek", "team" => "ksi"],
 		["person" => "Lukáš Chrást", "team" => "ibis"],
