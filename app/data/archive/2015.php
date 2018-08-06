@@ -18,10 +18,10 @@ $year = [
 		["person" => "Lukáš Chrást", "team" => "ibis"],
 		["person" => "Anička", "team" => "ibis"],
 	],
-	"story" => "Mohleno, Jihlava, hra o čas, RSA key signing párty, projekty, "
+	"story" => "Mohelno, Jihlava, hra o čas, RSA key signing párty, projekty, "
 		."Los Karlos, galavečer, eurofólie, poprvé v nové budově mlýna, "
 		."megahrátky, informatické i biologické projekty, hra epidemie, "
-		." přespání v přírodě, ctvrčci. KSI a KEKS.",
+		." přespání v přírodě, cvrčci. KSI a KEKS.",
 	"gallery" => [
 		"DSC_0227.JPG",
 		"DSC_0301.JPG",

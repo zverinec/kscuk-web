@@ -21,7 +21,7 @@ $year = [
 		."Honza) v kuchyni. Jaro, léto, podzim a zima, které se střídají pro toho, "
 		."kdo to tak vnímá. Vysílačky, vysílačky všude, radioorienťák, patchwork, "
 		."K-SCUK deka, šití, kůň, který utekl, šarády, výsadek, noční exponenciální"
-		." hra, jaderná elektrárna, předměty rezistetntní proti časoprostorovým trhlinám, "
+		." hra, jaderná elektrárna, předměty rezistentní proti časoprostorovým trhlinám, "
 		."formální popis uzlů, neuronové sítě, Free Your Func, terénní přednášky, "
 		."genetika, bezdrátové technologie, výroba barefoot sandálů. Poprvé IBIS."
 		." A samozřejmě KSI.",
