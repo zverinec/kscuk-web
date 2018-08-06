@@ -18,10 +18,11 @@ $year = [
 		["person" => "Martin Tíman Hanžl", "team" => "ksi"],
 		["person" => "Jiří Novotný", "team" => "ksi"]
 	],
-	"story" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet pharetra "
-		."semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Duis condimentum augue id magna "
-		."semper rutrum. Nunc dapibus tortor vel mi dapibus sollicitudin. In laoreet, magna id viverra "
-		."tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas sollicitudin.",
+	"story" => "Zdravosimulace, Tomovy tématické večerníčky, KTTK (K-SCUK "
+		."Terrain Training Kit), oživení plná vody, legenda, Kvazistacionární "
+		."centrum pro učení a kooperaci, escaope game, lana, svazování účastníků, "
+		."Maara jako garant kuchyně, který zajistí, že „jídlo se stane”, tajuplný "
+		." deník, mapování, nové logo K-SCUKu. KSI a KEKS.",
 	"gallery" => [
 		"IMG_0162.JPG",
 		"IMG_0172.JPG",
