@@ -16,7 +16,8 @@ $year = [
 		["person" => "Tom Effenberger", "team" => "ksi"],
 		["person" => "Henrich Heňo Lauko", "team" => "ksi"],
 		["person" => "Martin Tíman Hanžl", "team" => "ksi"],
-		["person" => "Jiří Novotný", "team" => "ksi"]
+		["person" => "Jiří Novotný", "team" => "ksi"],
+		["person" => "Dominik Gmiterko", "team" => "ksi"],
 	],
 	"story" => "Zdravosimulace, Tomovy tématické večerníčky, KTTK (K-SCUK "
 		."Terrain Training Kit), oživení plná vody, legenda, Kvazistacionární "
