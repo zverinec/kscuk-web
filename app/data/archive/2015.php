@@ -9,14 +9,14 @@ $year = [
 	"who" => [
 		["person" => "Honza Drábek", "team" => "ksi"],
 		["person" => "Jiří Maara Marek", "team" => "ksi"],
-		["person" => "Marta", "team" => "ibis"],
+		["person" => "Marta Drábková", "team" => "ibis"],
 		["person" => "Martina Tinka Krasnayová", "team" => "ksi"],
 		["person" => "Martin Tíman Hanžl", "team" => "ksi"],
 		["person" => "Honza Mrázek", "team" => "ksi"],
 		["person" => "Henrich Heňo Lauko", "team" => "ksi"],
 		["person" => "Tom Effenberger", "team" => "ksi"],
 		["person" => "Lukáš Chrást", "team" => "ibis"],
-		["person" => "Anička", "team" => "ibis"],
+		["person" => "Anička Blahová", "team" => "ibis"],
 	],
 	"story" => "Mohelno, Jihlava, hra o čas, RSA key signing párty, projekty, "
 		."Los Karlos, galavečer, eurofólie, poprvé v nové budově mlýna, "
