@@ -15,6 +15,7 @@
         "dg/mysql-dump": "1.4.0",
         "alchemy/zippy": "0.4.*",
         "mpdf/mpdf": "7.0.*",
-        "nextras/mail-panel": "^2.3"
+        "nextras/mail-panel": "^2.3",
+        "maennchen/zipstream-php": "^0.5.2"
     }
 }

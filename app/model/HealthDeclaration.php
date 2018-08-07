@@ -13,6 +13,10 @@ class HealthDeclaration extends AbstractModel
 		}
 		return $this->getConnection()->dataSource("SELECT * FROM [health_declaration] WHERE [email] = %s",$email);
 	}
+
+	public function getAll() {
+		return $this->getConnection()->dataSource("SELECT * FROM [health_declaration]");
+	}
 	
 	public function save($data) {
 		if(!is_array($data) && ! ($data instanceof ArrayHash)) {
