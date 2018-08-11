@@ -9,7 +9,7 @@ $year = [
 	"who" => [
 		["person" => "Jiří Maara Marek", "team" => "ksi"],
 		["person" => "Tom Effenberger", "team" => "ksi"],
-		["person" => "Evka", "team" => "ibis"],
+		["person" => "Evka Krásenská", "team" => "ibis"],
 		["person" => "Lukáš Chrást", "team" => "ibis"],
 		["person" => "Tom Jadrný", "team" => "ksi"],
 		["person" => "Honza Mrázek", "team" => "ksi"],
