@@ -8,7 +8,8 @@
 	padding: 11% 0 2% 0;
 	background-image: url("../img/cover_image.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	-webkit-background-size: cover;
+			background-size: cover;
 }
 
 #cover div {
