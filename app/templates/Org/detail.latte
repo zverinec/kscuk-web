@@ -23,4 +23,10 @@
 		{/foreach}
 		</table>
 	{/foreach}
+	<h2>Zdravodeklarace</h2>
+	{if $healthDeclarationFilled}
+		<a href="{plink Forms:filledFormOrg, $email}" target="_blank">Otevřít</a>
+	{else}
+		—
+	{/if}
 {/block}

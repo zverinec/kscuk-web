@@ -143,6 +143,11 @@ class OrgPresenter extends BasePresenter
 			'interesting' => 'Zvídavé otázky',
 			'organization' => 'Organizační záležitosti'
 		);
+
+		$email = $this->person->findEmailById($person);
+		$hd = $this->healthDeclaration->findByEmail($email);
+		$this->getTemplate()->healthDeclarationFilled = count($hd) > 0 ? true : false;
+		$this->getTemplate()->email = $email;
 	}
 
 	public function createComponentAuthForm()
