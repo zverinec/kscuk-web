@@ -22,6 +22,11 @@ class Person extends AbstractModel
 		return $source;
 	}
 
+	public function findEmailById($id_registered) {
+		$source = $this->getConnection()->dataSource("SELECT [answer].[answer] FROM [answer] INNER JOIN [question] USING([id_question]) WHERE [question] LIKE %~like~ AND [id_registered] = %s", "e-mail", $id_registered);
+		return $source->fetchSingle("answer");
+	}
+
 	/** @return DibiDataSource */
 	public function findAnswers($person = NULL, $category = NULL) {
 		if (empty($category)) {
