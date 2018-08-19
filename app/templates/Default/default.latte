@@ -61,10 +61,14 @@
 			</tr>
 		</table>
 	</div>
+	{var $color = (time() % 2 == 0) ? 'orange' : 'green'}
 	{if isset($registrationOpen)}
-		<a n:href="Default:registration" class="button button-register {(time() % 2 == 0) ? 'orange' : 'green'}">
+		<a n:href="Default:registration" class="button button-register {$color}">
 			Chci se zúčastnit!
 		</a>
+	{/if}
+	{if strlen($event->status) > 0}
+		<div id="status" class="{$color}">{$event->status}</div>
 	{/if}
 	{include orgs.latte}
 </div>

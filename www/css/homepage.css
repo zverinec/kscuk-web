@@ -125,3 +125,16 @@ div.frame.ibis .trcorner, div.frame.ibis .blcorner {
 	vertical-align: text-top;
 	text-align: left;
 }
+
+#status {
+	text-align: center;
+	font-size: 180%;
+}
+
+#status.green {
+	color: #00a67a;
+}
+
+#status.orange {
+	color: #fbaf40;
+}
