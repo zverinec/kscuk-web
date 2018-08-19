@@ -12,10 +12,15 @@
 				{/if}
 			</th>
 			{/foreach}
+			{if $showHealthDeclarations}
+				<th>
+					Zdravodeklarace
+				</th>
+			{/if}
 		</tr>
-	{foreach $people AS $answers}
+	{foreach $people AS $id_registered => $answers}
 		<tr{if $iterator->isEven()} class="even"{/if}>
-			<td><a href="{plink Org:detail, end($answers)->id_registered}" class="detail">&nbsp;</a></td>
+			<td><a href="{plink Org:detail, $id_registered}" class="detail">&nbsp;</a></td>
 			{foreach $questions AS $question}
 				<td>
 					{if !empty($answers[$question->id_question])}
@@ -23,6 +28,15 @@
 					{/if}
 				</td>
 			{/foreach}
+			{if $showHealthDeclarations}
+				<td>
+					{if $healthDeclarations[$id_registered]}
+						<a href="{plink Forms:filledFormOrg, $emails[$id_registered]}" target="_blank">Otevřít</a>
+					{else}
+						—
+					{/if}
+				</td>
+			{/if}
 		</tr>
 	{/foreach}
 	</table>
