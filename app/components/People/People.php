@@ -60,6 +60,7 @@ class People extends BaseComponent
 		if (empty($this->questions)) {
 			$this->getTemplate()->questions = $this->question->findAll('personal')->fetchAssoc('id_question');
 			$people = $this->person->findAnswers(NULL, 'personal')->orderBy('id_registered', 'DESC')->fetchAssoc('id_registered,id_question');
+			$this->showHealthDeclarations = true;
 		} else {
 			$this->getTemplate()->questions = $this->question->findAll()->where('id_question IN %l', explode(';', $this->questions))->fetchAssoc('id_question');
 			$people = $this->person->findAnswers(NULL, NULL)->where('id_question IN %l', explode(';', $this->questions))->orderBy('id_registered', 'DESC')->fetchAssoc('id_registered,id_question');
