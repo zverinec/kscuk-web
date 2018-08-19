@@ -16,7 +16,9 @@ $year = [
 		["person" => "Hanka Lara Kozubíková", "team" => "?"],
 		["person" => "Hanka Jirků", "team" => "?"],
 	],
-	"story" => "TODO",
+	"story" => "S Evropskou unií, ale bez KEKSu. Běhací šachy, běhací hanojské"
+		."věže, zkoušky s handicapy, Dukovany, Den D. Šest budoucích orgů mezi"
+		." účastníky.",
 	"gallery" => [
 		"IMG_000.jpg",
 		"IMG_001.jpg",

@@ -20,7 +20,7 @@ $year = [
 		["person" => "Bára Pelánková", "team" => "ksi"],
 		["person" => "Honza Budka", "team" => "ksi"],
 	],
-	"story" => "TODO",
+	"story" => "Vymyšlení textu je ponecháno čtenáři jako domácí cvičení.",
 	"gallery" => [
 		"IMG_000.jpg",
 		"IMG_001.jpg",

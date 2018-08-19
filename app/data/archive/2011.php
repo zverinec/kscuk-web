@@ -21,7 +21,10 @@ $year = [
 		["person" => "Mária Běhalová", "team" => "ibis"],
 		["person" => "Terka Procházková", "team" => "ibis"],
 	],
-	"story" => "TODO",
+	"story" => "Lanové centrum, empatie, zápasy v argumentaci, volejbal poslepu,"
+		." vzájemné krmení poslepu, transkripce DNA, TED večerníčky, rozcvička"
+		." ve spacáku, šifry, mutace, souboje s papírovými koulemi na gumě, "
+		."ztroskotání lodi.",
 	"gallery" => [
 		"IMG_000.jpg",
 		"IMG_001.jpg",

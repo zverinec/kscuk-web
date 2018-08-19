@@ -21,7 +21,9 @@ $year = [
 		["person" => "Sven Dražan", "team" => "ksi"],
 		["person" => "Hanka Jirků", "team" => "?"],
 	],
-	"story" => "TODO",
+	"story" => "Cesta na Mars. Horkovzdušným balónem. Ping pong, frisbee, "
+		."žonglování s jablky a šermířské zápasy. Prales, jeskyně, krádež "
+		."v galerii, projekty a stop motion.",
 	"gallery" => [
 		"IMG_000.jpg",
 		"IMG_001.jpg",

@@ -19,7 +19,11 @@ $year = [
 		["person" => "Evka Krásenská", "team" => "ibis"],
 		["person" => "Radek Pelánek", "team" => "ksi"],
 	],
-	"story" => "TODO",
+	"story" => "Institut pro záchranu světa. Logický turnaj, běhání, "
+		."skalní bojovka s papírovými koulemi, běhání, Úžasné divadlo Fyziky, "
+		."běhání, stavění a programování robotů, běhání. Do pádu meteoritu na "
+		."Zem zbývají pouhé tři hodiny! Největší borec a lapač. Nebo aspoň "
+		."pěkná dóza na těstoviny.",
 	"gallery" => [
 		"IMG_000.jpg",
 		"IMG_001.jpg",
