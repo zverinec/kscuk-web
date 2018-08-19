@@ -38,6 +38,10 @@ a:hover, span.ksi {
 	color: #fbaf40;
 }
 
+span.kafe {
+	color: #a7754f;
+}
+
 #header #menu #links, #footer {
 	font-size: 130%;
 }
