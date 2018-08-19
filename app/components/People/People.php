@@ -4,7 +4,7 @@ namespace App\Components;
 use App\Model\Person;
 use App\Model\Question;
 use Nette\Application\UI\Form;
-use App\Model\HealthDeclaration;
+use App\Model\HealthDeclaration AS HealthDeclarationModel;
 use App\Components\IHealthDeclarationFactory;
 
 class People extends BaseComponent
@@ -16,7 +16,7 @@ class People extends BaseComponent
 	/** @persistent */
 	public $printable;
 
-	/** @var HealthDeclaration */
+	/** @var HealthDeclarationModel */
 	public $healthDeclaration;
 	/** @var IHealthDeclarationFactory */
 	public $healthDeclarationFactory;
@@ -26,7 +26,7 @@ class People extends BaseComponent
 	/** @var Person */
 	private $person;
 
-	public function __construct(Person $person, Question $question, HealthDeclaration $healthDeclaration,
+	public function __construct(Person $person, Question $question, HealthDeclarationModel $healthDeclaration,
 								IHealthDeclarationFactory $healthDeclarationFactory)
 	{
 		$this->person = $person;
