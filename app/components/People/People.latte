@@ -20,7 +20,7 @@
 		</tr>
 	{foreach $people AS $id_registered => $answers}
 		<tr{if $iterator->isEven()} class="even"{/if}>
-			<td><a href="{plink Org:detail, $id_registered}" class="detail">&nbsp;</a></td>
+			<td><a href="{plink Org:detail, $id_registered}" class="detail">&hookrightarrow;</a></td>
 			{foreach $questions AS $question}
 				<td>
 					{if !empty($answers[$question->id_question])}
