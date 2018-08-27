@@ -30,15 +30,18 @@ $year = [
 		." sklenici najít, ale místo, kam jsme ji schovali, pravděpodobně "
 		."přestalo existovat.",
 	"gallery" => [
-		"04200017.001.0.jpg",
-		"04200017.002.0.jpg",
-		"04200017.003.0.jpg",
-		"04200017.004.0.jpg",
-		"04200017.005.0.jpg",
-		"04200017.006.0.jpg",
-		"04200017.007.0.jpg",
-		"04200017.008.0.jpg",
-		"04200017.009.0.jpg",
+		"100_4188.jpg",
+		"100_4241.jpg",
+		"100_4255.jpg",
+		"100_4257.jpg",
+		"100_4298.jpg",
+		"100_4394.jpg",
+		"100_4458.jpg",
+		"CIMG6271.jpg",
+		"DSCN0478.jpg",
+		"DSCN0592.jpg",
+		"IMG_3517.jpg",
+		"IMG_4450.jpg",
 	],
 	"more-story" => ""
 ];
