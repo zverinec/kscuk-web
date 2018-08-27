@@ -17,7 +17,7 @@ $year = [
 		["person" => "Iva Svačinová", "team" => "ibis"],
 		["person" => "Petra Svačinová", "team" => "ibis"],
 		["person" => "Jana Tůmová", "team" => "ksi"],
-		["person" => "Bára Pelánková", "team" => "ksi"],
+		["person" => "Bára Pelánková", "team" => "ibis"],
 		["person" => "Honza Budka", "team" => "ksi"],
 	],
 	"story" => "Vymyšlení textu je ponecháno čtenáři jako domácí cvičení.",
