@@ -14,12 +14,12 @@ $year = [
 		["person" => "Jana Fabriková", "team" => "ksi"],
 		["person" => "Ondra Bouda", "team" => "ksi"],
 		["person" => "Pavel Troubil", "team" => "ksi"],
-		["person" => "Petr Jarušek", "team" => "?"],
+		["person" => "Petr Jarušek", "team" => "ksi"],
 		["person" => "Petra Svačilová", "team" => "ibis"],
 		["person" => "Terka Doležalová", "team" => "ksi"],
 		["person" => "Terka Náhliková", "team" => "ibis"],
 		["person" => "Sven Dražan", "team" => "ksi"],
-		["person" => "Hanka Jirků", "team" => "?"],
+		["person" => "Hanka Jirků", "team" => "kafe"],
 	],
 	"story" => "Cesta na Mars. Horkovzdušným balónem. Ping pong, frisbee, "
 		."žonglování s jablky a šermířské zápasy. Prales, jeskyně, krádež "

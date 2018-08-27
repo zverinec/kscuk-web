@@ -10,11 +10,11 @@ $year = [
 		["person" => "Ondra Bouda", "team" => "ksi"],
 		["person" => "Jana Tůmová", "team" => "ksi"],
 		["person" => "Jana Fabriková", "team" => "ksi"],
-		["person" => "Zuzka Petruchová", "team" => "?"],
+		["person" => "Zuzka Petruchová", "team" => "ksi"],
 		["person" => "Honza Drábek", "team" => "ksi"],
 		["person" => "Jiří Maara Marek", "team" => "ksi"],
 		["person" => "Hanka Lara Kozubíková", "team" => "?"],
-		["person" => "Hanka Jirků", "team" => "?"],
+		["person" => "Hanka Jirků", "team" => "kafe"],
 	],
 	"story" => "S Evropskou unií, ale bez KEKSu. Běhací šachy, běhací hanojské"
 		."věže, zkoušky s handicapy, Dukovany, Den D. Šest budoucích orgů mezi"

@@ -8,7 +8,7 @@ $year = [
 	],
 	"who" => [
 		["person" => "Radek Pelánek", "team" => "ksi"],
-		["person" => "Pavel Šimeček", "team" => "?"],
+		["person" => "Pavel Šimeček", "team" => "ksi"],
 		["person" => "Ondráš Přibyla", "team" => "kafe"],
 		["person" => "Vojta Procházka", "team" => "kafe"],
 		["person" => "Terka Náhliková", "team" => "ibis"],
@@ -18,7 +18,7 @@ $year = [
 		["person" => "Petra Svačinová", "team" => "ibis"],
 		["person" => "Jana Tůmová", "team" => "ksi"],
 		["person" => "Bára Pelánková", "team" => "ibis"],
-		["person" => "Honza Budka", "team" => "ksi"],
+		["person" => "Honza Budka", "team" => "ibis"],
 	],
 	"story" => "Vymyšlení textu je ponecháno čtenáři jako domácí cvičení.",
 	"gallery" => [

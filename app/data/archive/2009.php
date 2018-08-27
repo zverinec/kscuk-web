@@ -15,7 +15,7 @@ $year = [
 		["person" => "Petra Svačinová", "team" => "ibis"],
 		["person" => "Jan Papi Papoušek", "team" => "ksi"],
 		["person" => "Terka Doležalová", "team" => "ksi"],
-		["person" => "Hanka Jirků", "team" => "?"],
+		["person" => "Hanka Jirků", "team" => "kafe"],
 		["person" => "Evka Krásenská", "team" => "ibis"],
 		["person" => "Radek Pelánek", "team" => "ksi"],
 	],
