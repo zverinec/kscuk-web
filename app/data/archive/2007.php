@@ -18,7 +18,17 @@ $year = [
 		["person" => "Jana Tůmová", "team" => "ksi"],
 		["person" => "Jana Fabriková", "team" => "ksi"],
 	],
-	"story" => "Vymyšlení textu je ponecháno čtenáři jako domácí cvičení.",
+	"story" => "První ročník K-SCUKu. Proběhl na Kaprálově mlýně. "
+		."Organizátorský tým měl nemalý průnik s členy spolku Instruktoři Brno "
+		."a velká část programu vycházela buď ze zážitkových her Instruktorů "
+		."nebo z autorských her Radka Pelánka, který akci šéfoval a táhnul. "
+		."Na tomto ročníku K-SCUKu se podílely semináře KSI (informatika), "
+		."KEKS (ekologie) a KaFe (fyzika). Přednášky probíhaly ve 3 paralelních"
+		." bězích a účastníci se mohly účasnit libovolných přednášek bez ohledu "
+		."na svůj původní seminář. Na akci jsme zakopali sklenici s našimi "
+		."odhady, jak bude svět vypadat za 10 let. V roce 2017 jsme se pokusili"
+		." sklenici najít, ale místo, kam jsme ji schovali, pravděpodobně "
+		."přestalo existovat.",
 	"gallery" => [
 		"04200017.001.0.jpg",
 		"04200017.002.0.jpg",
