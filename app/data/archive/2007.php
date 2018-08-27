@@ -1,7 +1,7 @@
 <?php
 $year = [
 	"year" => 2007,
-	"when" => "2007",
+	"when" => "9.–16. září 2007",
 	"where" => [
 		"place" => "Kaprálův mlýn",
 		"map" => "https://mapy.cz/s/2WOvV"
