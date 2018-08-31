@@ -13,7 +13,7 @@ Installation
 ------------
 1. Clone this repository
 2. Run composer update from the repository root
-3. Make /temp and /log and /www/storage writable (recursively)
+3. Make /temp and /log and /www/storage and /vendor/mpdf/mpdf/tmp writable (recursively)
 4. Create /app/config/config.local.neon according to to /app/config/config.neon (overload database info, admin credentials and mailer if neede)
 5. Run it!
 
