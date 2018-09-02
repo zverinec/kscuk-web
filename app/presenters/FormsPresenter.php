@@ -25,10 +25,11 @@ class FormsPresenter extends BasePresenter
 	public function renderFilledForm($email, $code)
 	{
 		$values = $this->getHealthDeclaration($email);
+		$foodProblems = $this->getFoodProblems($email);
 		if ($code != $values["code"]) {
 			throw new BadRequestException('Wrong code', 404);
 		}
-		$this->sendAsPDF($values);
+		$this->sendAsPDF($values, $foodProblems);
 	}
 
 	public function renderFilledFormOrg($email)
@@ -38,7 +39,8 @@ class FormsPresenter extends BasePresenter
 			$this->redirect("Org:auth");
 		}
 		$values = $this->getHealthDeclaration($email);
-		$this->sendAsPDF($values);
+		$foodProblems = $this->getFoodProblems($email);
+		$this->sendAsPDF($values, $foodProblems);
 	}
 
 	public function createComponentHealthDeclaration()
@@ -52,10 +54,17 @@ class FormsPresenter extends BasePresenter
 		return $values[0];
 	}
 
-	private function sendAsPDF($values) {
+	private function getFoodProblems($email) {
+		$answers= $this->person->findByEmail($email);
+		return $answers["Máš nějaká stravovací omezení?"]; // Question name may change!
+	}
+
+	private function sendAsPDF($values, $foodProblems) {
 		$template = $this->createTemplate();
 		$template->setFile(__DIR__ . "/../templates/filledForm.latte");
 		$template->v = $values;
+		$template->foodProblems = $foodProblems;
+
 		$pdf = new PDFResponse($template);
 		$pdf->outputName = Strings::webalize($values["name"]) . ".pdf";
 		$pdf->outputDestination = PDFResponse::OUTPUT_INLINE;
