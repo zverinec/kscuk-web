@@ -100,6 +100,8 @@ class OrgPresenter extends BasePresenter
 			$template = $this->createTemplate();
 			$template->setFile(__DIR__ . "/../templates/filledForm.latte");
 			$template->v = $d;
+			$answers= $this->person->findByEmail($d["email"]);
+			$template->foodProblems = $answers["Máš nějaká stravovací omezení?"]; // Question name may change!
 			$pdf = new PDFResponse($template);
 			$pdf->outputName = Strings::webalize($d["name"]) . ".pdf";
 			$pdf->outputDestination = PDFResponse::OUTPUT_STRING;
