@@ -22,6 +22,18 @@ $year = [
 		." na hradě, Just dance, slovní fotbal ve třídě PSPACE, IBIS v novém "
 		."se Zuzkou ve vedení. Termit. A samozřejmě KSI.",
 	"gallery" => [
+		"IMG_1721.JPG",
+		"IMG_1943.JPG",
+		"IMG_2760.JPG",
+		"IMG_3099.JPG",
+		"IMG_3291.JPG",
+		"IMG_3487.JPG",
+		"IMG_3811.JPG",
+		"IMG_3834.JPG",
+		"IMG_4109.JPG",
+		"IMG_4225.JPG",
+		"IMG_4296.JPG",
+		"IMG_4837.JPG",
 	],
 	"more-story" => ""
 ];
