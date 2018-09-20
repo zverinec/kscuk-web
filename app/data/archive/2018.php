@@ -16,7 +16,7 @@ $year = [
 		["person" => "Standa Juračka", "team" => "ibis"],
 		["person" => "Zuzka Nováková", "team" => "ibis"],
 	],
-	"story" => "Mlýn, divadlo, kíšťata, požární poplach, Darwin v kuchyni, "
+	"story" => "Mlýn, divadlo, klíšťata, požární poplach, Darwin v kuchyni, "
 		."Kamasutra race, Rescue Mission, čajovna, tancování, šerm, přeplavávání"
 		." Mohelna, „Uhel syslům mojí pecí včelám neutavím“ a další šifry, oběd"
 		." na hradě, Just dance, slovní fotbal ve třídě PSPACE, IBIS v novém "
