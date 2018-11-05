@@ -9,13 +9,14 @@ parameters:
 	event:
 		title: 'K-SCUK'
 		#period: '9.–16. 9. 2018'
-		place: '<a href="https://mapy.cz/s/28VF9">Mohelenský mlýn</a>'
-		lodging: 'v budově na lůžkách'
-		price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
+		#place: '<a href="https://mapy.cz/s/28VF9">Mohelenský mlýn</a>'
+		#lodging: 'v budově na lůžkách'
+		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
+		price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2019 bude. Více informací přidáme datum.'
-		status: 'K-SCUK 2018 již proběhl, ale další se určitě připravuje!'
+		status: 'K-SCUK 2019 se připravuje!'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
