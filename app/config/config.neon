@@ -8,9 +8,9 @@ parameters:
 			mail: test@dispostable.com
 	event:
 		title: 'K-SCUK'
-		#period: '9.–16. 9. 2018'
-		#place: '<a href="https://mapy.cz/s/28VF9">Mohelenský mlýn</a>'
-		#lodging: 'v budově na lůžkách'
+		period: '7.–14. 9. 2019'
+		place: '<a href="https://mapy.cz/s/2WNjr">Dobrá voda u Třebíče</a>'
+		lodging: 'v budově na lůžkách'
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
