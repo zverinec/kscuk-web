@@ -6,7 +6,7 @@ Maintenance: <kscuk@fi.muni.cz>
 
 Requirements
 ------------
- - PHP >= 5.3
+ - PHP >= 7
  - Composer
 
 Installation
