@@ -61,6 +61,12 @@
 	width: 50px;
 	height: 50px;
 	margin-right: 5%;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+
+#footer #logos a:hover {
+	background-position: 100% 50%;
 }
 
 #footer #logos a#ibis {
@@ -73,47 +79,28 @@
 
 #footer #logos a#ksi {
 	background-image: url("../img/ksi.svg");
-	background-position: 0 0;
-}
-
-#footer #logos a#ksi:hover {
-	background-position: 100% 0;
 }
 
 #footer #logos a#ibis {
 	background-image: url("../img/ibis.svg");
-	background-position: 0 0;
 }
 
-#footer #logos a#ibis:hover {
-	background-position: 100% 0;
+#footer #logos a#fi,
+#footer #logos a#prf,
+#footer #logos a#muni {
+	background-size: 200% auto;
 }
 
 #footer #logos a#fi {
 	background-image: url("../img/fi.svg");
-	background-position: 0 0;
-}
-
-#footer #logos a#fi:hover {
-	background-position: 100% 0;
 }
 
 #footer #logos a#prf {
 	background-image: url("../img/prf.svg");
-	background-position: 0 0;
-}
-
-#footer #logos a#prf:hover {
-	background-position: 100% 0;
 }
 
 #footer #logos a#muni {
-	background-image: url("../img/mu.svg");
-	background-position: 0 0;
-}
-
-#footer #logos a#muni:hover {
-	background-position: 100% 0;
+	background-image: url("../img/muni.svg");
 }
 
 #footer #email {
