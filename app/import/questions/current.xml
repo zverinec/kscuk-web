@@ -24,9 +24,6 @@
 		<choices>
 			<choice>IBIS</choice>
 			<choice>KSI</choice>
-			<choice>InterSoB</choice>
-			<choice>InterLos</choice>
-			<choice>Poznej FI!</choice>
 			<choice>minulý K-SCUK</choice>
 		</choices>
 	</question>
