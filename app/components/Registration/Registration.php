@@ -276,6 +276,15 @@ class Registration extends BaseComponent
 					break;
 			}
 		}
+
+		if (end($this->categories) == $this->category && $this->skipPhoto == true) {
+
+			$form->addGroup("Zpracování osobních údajů")->setOption("description", "Souhlas je kdykoli zpětně odvolatelný e-mailem na kscuk@fi.muni.cz.");
+
+			$form->addCheckbox("gdpr", "Souhlasím se zpracováním uvedených osobních údajů pro účely konání akce K-SCUK.")
+				->setRequired("Souhlas se zpracováním osobních údajů je nezbytný.");
+		}
+
 		$form->addGroup();
 
 		$form->addHidden('category');
