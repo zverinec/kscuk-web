@@ -293,7 +293,11 @@ class Registration extends BaseComponent
 			$form->addSubmit('back', 'Zpět')->setHtmlAttribute("class", "orange")
 				->setValidationScope(FALSE);
 		}
-		$form->addSubmit('continue', 'Pokračovat')->setHtmlAttribute("class", "green");
+		if ($this->nextCategory($category) !== NULL) {
+			$form->addSubmit('continue', 'Pokračovat')->setHtmlAttribute("class", "green");
+		} else {
+			$form->addSubmit('continue', 'Závazně odeslat')->setHtmlAttribute("class", "green");
+		}
 		if (end($this->categories) == $this->category && $this->skipPhoto == true) {
 			$form->onSubmit[] = array($this, 'imageFormSubmitted');
 		} else {
