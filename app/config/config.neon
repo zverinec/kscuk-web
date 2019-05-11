@@ -16,7 +16,7 @@ parameters:
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2019 bude. Více informací přidáme datum.'
-		status: 'K-SCUK 2019 se připravuje!'
+		#status: 'K-SCUK 2019 se připravuje!'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
