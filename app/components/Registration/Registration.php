@@ -65,6 +65,10 @@ class Registration extends BaseComponent
 
 	public function imageFormSubmitted(Form $form)
 	{
+		if ($form['back']->isSubmittedBy()) {
+			return $this->questionFormSubmitted($form);
+		}
+
 		// If photo form was skipped, than there are some things left in the form
 		if ($this->skipPhoto) {
 			$this->storeAnswers($form);
