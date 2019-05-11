@@ -65,6 +65,10 @@ class Registration extends BaseComponent
 
 	public function imageFormSubmitted(Form $form)
 	{
+		if ($form['back']->isSubmittedBy()) {
+			return $this->questionFormSubmitted($form);
+		}
+
 		// If photo form was skipped, than there are some things left in the form
 		if ($this->skipPhoto) {
 			$this->storeAnswers($form);
@@ -276,18 +280,28 @@ class Registration extends BaseComponent
 					break;
 			}
 		}
+
+		if (end($this->categories) == $this->category && $this->skipPhoto == true) {
+
+			$form->addGroup("Zpracování osobních údajů")->setOption("description", "Souhlas je kdykoli zpětně odvolatelný e-mailem na kscuk@fi.muni.cz.");
+
+			$form->addCheckbox("gdpr", "Souhlasím se zpracováním uvedených osobních údajů pro účely konání akce K-SCUK.")
+				->setRequired("Souhlas se zpracováním osobních údajů je nezbytný.");
+		}
+
 		$form->addGroup();
 
 		$form->addHidden('category');
 
-		if ($this->previousCategory($category) != NULL) {
+		if ($this->previousCategory($category) !== NULL) {
 			$form->addSubmit('back', 'Zpět')->setHtmlAttribute("class", "orange")
 				->setValidationScope(FALSE);
 		}
-		$form->addSubmit('continue', 'Pokračovat')->setHtmlAttribute("class", "green");
-		if (end($this->categories) == $this->category && $this->skipPhoto == true) {
+		if ($this->nextCategory($category) === NULL && $this->skipPhoto === true) {
+			$form->addSubmit('continue', 'Závazně odeslat')->setHtmlAttribute("class", "green");
 			$form->onSubmit[] = array($this, 'imageFormSubmitted');
 		} else {
+			$form->addSubmit('continue', 'Pokračovat')->setHtmlAttribute("class", "green");
 			$form->onSubmit[] = array($this, 'questionFormSubmitted');
 		}
 
