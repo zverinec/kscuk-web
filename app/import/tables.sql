@@ -48,8 +48,9 @@ CREATE TABLE `health_declaration` (
   `no_allergy` tinyint(1) NOT NULL,
   `allergy` text NOT NULL,
   `signature` text NOT NULL,
+/* Food declaration moved to registration in 2018 event.
   `food_problems` text NOT NULL,
-  `no_food_problems` tinyint(1) NOT NULL,
+  `no_food_problems` tinyint(1) NOT NULL, */
   `heart1` tinyint(1) NOT NULL,
   `heart2` tinyint(1) NOT NULL,
   `heart3` tinyint(1) NOT NULL,
