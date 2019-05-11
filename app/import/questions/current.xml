@@ -29,12 +29,18 @@
 	</question>
 
 	<question category="interesting" required="true" form="textarea">
-		<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co považuješ za své silné stránky...</text>
+		<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co
+		považuješ za své silné stránky...</text>
 		<info>Prostě něco krátkého o tobě samém. :-)</info>
 	</question>
 	<question category="interesting" form="textarea">
 		<text>Máš zkušenosti s podobnými akcemi?</text>
-		<info>Účastnil(a) jsi se nějakého soustředění? Zážitkovky? Larpu? Jsi skaut? Prostě ať víme, s čím na K-SCUK přicházíš.</info>
+		<info>Účastnil(a) jsi se nějakého soustředění? Zážitkovky? Larpu?
+		Jsi skaut? Prostě ať víme, s čím na K-SCUK přicházíš.</info>
+	</question>
+	<question category="interesting" form="textarea">
+		<text>Co od K-SCUKu očekáváš?</text>
+		<info>Abychom věděli, s čím do akce jdeš!</info>
 	</question>
 
 	<question category="organization" required="true" form="text">
