@@ -15,7 +15,13 @@ $year = [
 		["person" => "Zuzka Nováková", "team" => "ibis"],
 		["person" => "Tomáš Janovič", "team" => "ibis"],
 	],
-	"story" => "",
+	"story" => "Procházka po Třebíči, „Tu prezenčku podepište každý den třikrát!“, "
+		."KSI i IBIS, binární sčítačka, logaritmické právítko i toxické dráhy, "
+		."rádia, vysílačky, lovení Quackmana a noční hon za čokoládavými vajíčky, "
+		."kurz time managementu, speciální přednáška nejen o gastrulaci, epické "
+		."divadlo o telefonátu, vázách a prodejkyních hrnců, půlnoční macarena "
+		."v plavkách, celer, víc celeru, ještě víc luštěnin, nejvíc gumových "
+		."kachniček, Darwin a Heňo v kuchyni.",
 	"gallery" => [
 	],
 	"more-story" => ""
