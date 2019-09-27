@@ -23,6 +23,18 @@ $year = [
 		."v plavkách, celer, víc celeru, ještě víc luštěnin, nejvíc gumových "
 		."kachniček, Darwin a Heňo v kuchyni.",
 	"gallery" => [
+		"DSC_7330.jpg",
+		"DSC_7533.jpg",
+		"DSC_7766.jpg",
+		"DSC_7929.jpg",
+		"IMG_9196.jpg",
+		"IMG_9318.jpg",
+		"DSC_7358.jpg",
+		"DSC_7761.jpg",
+		"DSC_7845.jpg",
+		"IMG_8971.jpg",
+		"IMG_9279.jpg",
+		"IMG_9792.jpg",
 	],
 	"more-story" => ""
 ];
