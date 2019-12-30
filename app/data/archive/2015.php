@@ -20,7 +20,7 @@ $year = [
 	],
 	"story" => "Mohelno, Jihlava, hra o čas, RSA key signing párty, projekty, "
 		."Los Karlos, galavečer, eurofólie, poprvé v nové budově mlýna, "
-		."megahrátky, informatické i biologické projekty, hra epidemie, "
+		."megahrátky, informatické i biologické projekty, hra epidemie, "
 		." přespání v přírodě, cvrčci. KSI a KEKS.",
 	"gallery" => [
 		"DSC_0227.JPG",

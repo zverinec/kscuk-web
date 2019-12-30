@@ -25,7 +25,7 @@ $year = [
 		."Na tomto ročníku K-SCUKu se podílely semináře KSI (informatika), "
 		."KEKS (ekologie) a KaFe (fyzika). Přednášky probíhaly ve 3 paralelních"
 		." bězích a účastníci se mohly účasnit libovolných přednášek bez ohledu "
-		."na svůj původní seminář. Na akci jsme zakopali sklenici s našimi "
+		."na svůj původní seminář. Na akci jsme zakopali sklenici s našimi "
 		."odhady, jak bude svět vypadat za 10 let. V roce 2017 jsme se pokusili"
 		." sklenici najít, ale místo, kam jsme ji schovali, pravděpodobně "
 		."přestalo existovat.",
