@@ -21,7 +21,8 @@ $year = [
 		."kurz time managementu, speciální přednáška nejen o gastrulaci, epické "
 		."divadlo o telefonátu, vázách a prodejkyních hrnců, půlnoční macarena "
 		."v plavkách, celer, víc celeru, ještě víc luštěnin, nejvíc gumových "
-		."kachniček, Darwin a Heňo v kuchyni.",
+		."kachniček, Darwin a Heňo v kuchyni. A nakonec, jako vánoční dárek, "
+		."<a target='_blank' href='https://drive.google.com/file/d/1gSGyHdRhpNG1Adi5vgGPz0oGaEfj-dTk/view?usp=sharing'>vědecký článek o kachničkách</a>.",
 	"gallery" => [
 		"DSC_7330.jpg",
 		"DSC_7533.jpg",
