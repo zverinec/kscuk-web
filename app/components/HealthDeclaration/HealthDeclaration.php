@@ -142,7 +142,7 @@ class HealthDeclaration extends BaseComponent
 
 		$group = $form->addGroup("Alergie");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? Jakých a jak?"));
+		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? Jakých a jak? Buď co nejspecifičtější."));
 		$no_allergy = $form->addCheckbox("no_allergy", "Nevím o žádné alergii");
 		$allergy = $form->addTextArea("allergy", NULL, 40, 4);
 		$allergy->addConditionOn($no_allergy, Form::EQUAL, false)
@@ -168,14 +168,13 @@ class HealthDeclaration extends BaseComponent
 		Helpers::addRadioLists($questionList, $form, "profile");
 		$form->addTextArea("profile", NULL, 40, 6);
 
-		/* Food declaration moved to registration in 2018 event.
 		$group = $form->addGroup("Stravovací omezení");
-		$no_food_problems = $form->addCheckbox("no_food_problems", "Žádná stravovací omezení");
 		Helpers::makeGroupRequired($group);
+		$group->setOption("description", Html::el("")->setHtml("Jaké jídla nebo potraviny ti nechutnají nebo nedělají dobře?"));
+		$no_food_problems = $form->addCheckbox("no_food_problems", "Žádná stravovací omezení");
 		$food_problems = $form->addTextArea("food_problems", NULL, 40, 4);
 		$food_problems->addConditionOn($no_food_problems, Form::EQUAL, false)
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
-		*/
 
 		$group = $form->addGroup();
 		$group->setOption("description", Html::el()->setHtml("Činnosti na kurzu jsou bez výjimky dobrovolné, odevzdání vyplněné a podepsané deklarace je však podmínkou aktivní účasti na jednotlivých programech kurzu. Jestliže se během programu projeví onemocnění, omezení nebo problémy, které jsi ve Zdravotní deklaraci neuvedl/a či uvedl/a nepravdivě, organizátoři K-SCUKu nenesou zodpovědnost za případné zdravotní či jiné poškození.<br /><br /><strong>Potvrzuji, že jsem porozuměl všem výše uvedeným skutečnostem včetně zdravotní problematiky.</strong><br /><br />"));
