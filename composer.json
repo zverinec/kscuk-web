@@ -16,5 +16,10 @@
         "mpdf/mpdf": "7.0.*",
         "nextras/mail-panel": "^2.3",
         "maennchen/zipstream-php": "^0.5.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.0.33"
+        }
     }
 }
