@@ -8,12 +8,12 @@
         }
     ],
     "require": {
-        "nette/nette": "2.4.*",
-        "dibi/dibi": "3.2.*",
-        "texy/texy": "2.9.*",
-        "jkuchar/pdfresponse": "0.4.*",
-        "dg/mysql-dump": "1.5.*",
-        "mpdf/mpdf": "7.0.*",
+        "nette/nette": "^2.4",
+        "dibi/dibi": "^3.2",
+        "texy/texy": "^2.9",
+        "jkuchar/pdfresponse": "^0.4",
+        "dg/mysql-dump": "^1.5",
+        "mpdf/mpdf": "^7.0",
         "nextras/mail-panel": "^2.3",
         "maennchen/zipstream-php": "^0.5"
     },
