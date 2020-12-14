@@ -4,7 +4,7 @@ $year = [
 	"when" => "6.–13. září 2014",
 	"where" => [
 		"place" => "Fara Bedřichov",
-		"map" => "https://en.mapy.cz/s/2Vmt5"
+		"map" => "https://mapy.cz/s/2Vmt5"
 	],
 	"who" => [
 		["person" => "Jiří Maara Marek", "team" => "ksi"],
