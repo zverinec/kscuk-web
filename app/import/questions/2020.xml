@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qustions>
 	<question category="personal" required="true" form="text">
-		<text>Jaké je tvé jméno a příjmení?</text>
+		<text>Jaké je tvé jméno a příjmení?</text>
 		<info></info>
 	</question>
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
+			<choice>2000</choice>
+			<choice>2001</choice>
 			<choice>2002</choice>
 			<choice>2003</choice>
 			<choice>2004</choice>
 			<choice>2005</choice>
-			<choice>2006</choice>
-			<choice>2007</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
@@ -31,42 +31,36 @@
 	<question category="interesting" required="true" form="textarea">
 		<text>Co podnikáš ve svém volném čase? Čemu by ses chtěl věnovat, co
 		považuješ za své silné stránky...</text>
-		<info>Prostě něco krátkého o tobě samém. :-)</info>
+		<info>Prostě něco krátkého o tobě samém. :-)</info>
 	</question>
 	<question category="interesting" form="textarea">
 		<text>Máš zkušenosti s podobnými akcemi?</text>
 		<info>Účastnil(a) jsi se nějakého soustředění? Zážitkovky? Larpu?
-		Jsi skaut? Prostě ať víme, s čím na K-SCUK přicházíš.</info>
+		Jsi skaut? Prostě ať víme, s čím na K-SCUK přicházíš.</info>
 	</question>
 	<question category="interesting" form="textarea">
 		<text>Co od K-SCUKu očekáváš?</text>
 		<info>Abychom věděli, s čím do akce jdeš!</info>
 	</question>
 	<question category="interesting" required="true" form="textarea">
-		<text>Jaká je tvoje superschopnost?</text>
-		<info>Ať už je to žonglování, schopnost počítat dvojité integrály
-		z hlavy, nebo napodobit zvuk trumpety.</info>
-	</question>
-	<question category="interesting" form="text">
-		<text>Máš písničku, která tě vytáhne z postele?</text>
-		<info>Která to je?</info>
-	</question>
+        <text>Jaká je tvoje superschopnost?</text>
+		<info>Ať už je to žonglování, schopnost počítat dvojité integrály z hlavy, nebo napodobit zvuk trumpety.</info>
+    </question>
+    <question category="interesting" form="textarea">
+        <text>Máš účet na Facebooku? Pokud chceš, můžeš nám sem poslat link na svůj profil a my tě přidáme do KSCUK-ové skupiny.</text>
+		<info>V této skupině najdeš v průběhu leta různé pikošky ze zákulisí organizování K-SCUKu, nebo se například můžeš domluvit s jinými účastníky již před akcí, aby jste nemuseli cestovat na K-SCUK sami.</info>
+    </question>
 
 	<question category="organization" required="true" form="text">
 		<text>Jaká je tvá e-mailová adresa?</text>
-		<info>Použijeme ji pro zaslání dalších informací o K-SCUKu.</info>
+		<info>Použijeme ji pro zaslání dalších informací o K-SCUKu.</info>
 	</question>
 	<question category="organization" required="true" form="text">
 		<text>Jaké je tvé mobilně-telefonní číslo?</text>
-		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
+		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
 	</question>
 	<question category="organization" required="true" form="textarea">
-		<text>Máš nějaké potravinové alergie nebo intolerance, či jiná zdravotní
-		stravovací omezení?</text>
-		<info>Aby byli kuchaři informováni s dostatečným předstihem.</info>
-	</question>
-	<question category="organization" required="true" form="textarea">
-		<text>Máš nějaké potraviny/jídla, která ti opravdu nechutnají?</text>
+		<text>Máš nějaká stravovací omezení?</text>
 		<info>Aby byli kuchaři informováni s dostatečným předstihem.</info>
 	</question>
 </qustions>

@@ -30,8 +30,8 @@ parameters:
 		deletable: false
 		categories:
 			personal: "0"
-			organization: "1"
-			interesting: "2"
+			interesting: "1"
+			organization: "2"
 		photo: false
 		sendMailToAttendee: false
 
