@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qustions>
 	<question category="personal" required="true" form="text">
-		<text>Jaké je tvé jméno a příjmení?</text>
+		<text>Jaké je tvé jméno a příjmení?</text>
 		<info></info>
 	</question>
 	<question category="personal" required="true" form="selectbox">
