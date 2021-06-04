@@ -60,6 +60,17 @@
 		<text>Jaké je tvé mobilně-telefonní číslo?</text>
 		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
 	</question>
+	<question category="organization" required="true" form="selectbox">
+		<text>Jaká je tvá velikost trička?</text>
+		<choices>
+			<choice>XS</choice>
+			<choice>S</choice>
+			<choice>M</choice>
+			<choice>L</choice>
+			<choice>XL</choice>
+			<choice>XXL</choice>
+		</choices>
+	</question>
 	<question category="organization" required="true" form="textarea">
 		<text>Máš nějaké potravinové alergie nebo intolerance, či jiná zdravotní
 		stravovací omezení?</text>
