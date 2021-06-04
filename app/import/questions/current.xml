@@ -42,11 +42,6 @@
 		<text>Co od K-SCUKu očekáváš?</text>
 		<info>Abychom věděli, s čím do akce jdeš!</info>
 	</question>
-	<question category="interesting" required="true" form="textarea">
-		<text>Jaká je tvoje superschopnost?</text>
-		<info>Ať už je to žonglování, schopnost počítat dvojité integrály
-		z hlavy, nebo napodobit zvuk trumpety.</info>
-	</question>
 	<question category="interesting" form="text">
 		<text>Máš písničku, která tě vytáhne z postele?</text>
 		<info>Která to je?</info>
@@ -61,7 +56,7 @@
 		<info>Použijeme jej jen v případě nouze, ale je opravdu velmi důležité.</info>
 	</question>
 	<question category="organization" required="true" form="selectbox">
-		<text>Jaká je tvá velikost trička?</text>
+		<text>Jaká je tvá preferovaná velikost trička?</text>
 		<choices>
 			<choice>XS</choice>
 			<choice>S</choice>
