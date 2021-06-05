@@ -13,7 +13,7 @@ parameters:
 		lodging: 'v budově na lůžkách ve vlastních spacácích'
 		price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
-		#status: ''
+		status: ''
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2019 bude. Více informací přidáme datum.'
