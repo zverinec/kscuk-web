@@ -7,14 +7,14 @@ CREATE TABLE `question` (
 	`category` ENUM('personal', 'interesting', 'organization') NOT NULL,
 	`form_type` ENUM('checkbox', 'text', 'radiobox', 'selectbox', 'textarea') NOT NULL,
 	`choices` TEXT NULL COMMENT 'jednotlive moznosti se oddeluji svislitkem',
-	`inserted` TIMESTAMP NOT NULL COMMENT 'cas, kdy byla polozka vlozena do systemu'
+	`inserted` TIMESTAMP NOT NULL DEFAULT NOW() COMMENT 'cas, kdy byla polozka vlozena do systemu'
 ) ENGINE = InnoDB COMMENT = 'Otazky' COLLATE = utf8_czech_ci;
 
 
 DROP TABLE IF EXISTS `registered`;
 CREATE TABLE `registered` (
 	`id_registered` INT(25) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'identifikator',
-	`inserted` TIMESTAMP NOT NULL COMMENT 'cas, kdy byla polozka vlozena do systemu'
+	`inserted` TIMESTAMP NOT NULL DEFAULT NOW() COMMENT 'cas, kdy byla polozka vlozena do systemu'
 ) ENGINE = InnoDB COMMENT = 'Registrovani' COLLATE = utf8_czech_ci;
 
 DROP TABLE IF EXISTS `answer`;
@@ -23,7 +23,7 @@ CREATE TABLE `answer` (
 	`id_question` INT(25) UNSIGNED NOT NULL,
 	`id_registered` INT(25) UNSIGNED NOT NULL,
 	`answer` TEXT NULL,
-	`inserted` TIMESTAMP NOT NULL COMMENT 'cas, kdy byla polozka vlozena do systemu',
+	`inserted` TIMESTAMP NOT NULL DEFAULT NOW() COMMENT 'cas, kdy byla polozka vlozena do systemu',
 	FOREIGN KEY (`id_question`) REFERENCES  `question` (`id_question`) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (`id_registered`) REFERENCES  `registered` (`id_registered`) ON DELETE CASCADE ON UPDATE CASCADE,
 	UNIQUE(`id_question`, `id_registered`)
