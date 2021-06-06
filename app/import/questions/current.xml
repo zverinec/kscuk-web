@@ -7,6 +7,8 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
+			<choice>2000</choice>
+			<choice>2001</choice>
 			<choice>2002</choice>
 			<choice>2003</choice>
 			<choice>2004</choice>
