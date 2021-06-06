@@ -14,7 +14,7 @@ parameters:
 		price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
 		#status: ''
-		status: 'Kapacita pro řešitele KSI je naplněna, přijímáme řešitele IBIS, další řešitelé KSI se stávají náhradníky!'
+		status: 'Kapacita pro řešitele KSI je naplněna, přijímáme řešitele IBIS, nově přihlášení řešitelé KSI se stávají náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2019 bude. Více informací přidáme datum.'
