@@ -14,9 +14,9 @@ parameters:
 		price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
 		#status: ''
-		status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
+		#status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
-		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
+		status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2019 bude. Více informací přidáme datum.'
 		#status: 'K-SCUK 2021 se připravuje!'
 		#status: 'K-SCUK 2020 proběhl.'
@@ -27,7 +27,7 @@ parameters:
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
 		start: "2021-06-05 18:00:00"
-		end: "2021-09-04 0:00:00"
+		end: "2021-08-22 0:00:00"
 		deletable: false
 		categories:
 			personal: "0"
