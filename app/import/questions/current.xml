@@ -29,7 +29,7 @@
 		</choices>
 	</question>
 
-<question category="personal" form="checkbox">
+	<question category="personal" form="checkbox">
 		<text>Zvažuješ studium na MU?</text>
 		<choices>
 			<choice>Je to má primární volba.</choice>
