@@ -7,7 +7,6 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
-			<choice>2000</choice>
 			<choice>2001</choice>
 			<choice>2002</choice>
 			<choice>2003</choice>
@@ -27,6 +26,15 @@
 			<choice>IBIS</choice>
 			<choice>KSI</choice>
 			<choice>minulý K-SCUK</choice>
+		</choices>
+	</question>
+
+<question category="personal" form="checkbox">
+		<text>Zvažuješ studium na MU?</text>
+		<choices>
+			<choice>Je to má primární volba.</choice>
+			<choice>Zvažuji, ale ne na prvním místě.</choice>
+			<choice>Už jsem rozhodnutý/á pro jinou školu.</choice>
 		</choices>
 	</question>
 
