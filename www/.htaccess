@@ -15,6 +15,6 @@ RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|sh|tar\.gz)$ index.php [L]
 	AddHandler cgi-script .sh
 	AuthType Basic
 	AuthName "Restricted Content!"
-	AuthUserFile /etc/apache2/.htpasswd
+	AuthUserFile htpasswds/kscuk.htpasswd
 	Require valid-user
 </FilesMatch>
