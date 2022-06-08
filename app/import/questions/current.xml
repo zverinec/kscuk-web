@@ -14,6 +14,7 @@
 			<choice>2005</choice>
 			<choice>2006</choice>
 			<choice>2007</choice>
+			<choice>2008</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
