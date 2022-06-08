@@ -38,7 +38,7 @@ class Import extends AbstractModel
 				'info' => (string)$question->info,
 				'category' => (string)$question['category'],
 				'form_type' => (string)$question['form'],
-				'choices' => (string)implode($choices, '|'),
+				'choices' => (string)implode('|', $choices),
 				'required' => (bool)(isset($question['required']) && $question['required'] == 'true' ? 1 : 0)
 			))->execute();
 		}
