@@ -14,11 +14,10 @@ parameters:
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
 		price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
-		#status: ''
 		#status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
-		status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
+		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
 		#status: 'K-SCUK 2021 se připravuje!'
 		#status: 'K-SCUK 2021 proběhl.'
 
