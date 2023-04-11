@@ -8,26 +8,26 @@ parameters:
 			mail: test@dispostable.com
 	event:
 		title: 'K-SCUK'
-		period: '3.–10. 9. 2022'
-		place: '<a href="https://mapy.cz/s/casabulumu">Táborová základna Junior</a>'
+		period: '9.–16. 9. 2023'
+		place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
 		lodging: 'v budově na lůžkách'
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
-		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
-		price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
+		price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
+		#price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
 		#status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
-		#status: 'K-SCUK 2021 se připravuje!'
-		status: 'K-SCUK 2022 proběhl.'
+		status: 'K-SCUK 2023 se připravuje!'
+		#status: 'K-SCUK 2022 proběhl.'
 
 	# Registration settings
 	# - Categories: order (the numbers after :) must be sequence starting from 0
 	# - Dates in YYYY-mm-dd hh:mm:ss format
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
-		start: "2022-06-09 09:00:00"
-		end: "2022-09-02 23:59:59"
+		start: "2023-06-09 09:00:00"
+		end: "2023-09-08 23:59:59"
 		deletable: false
 		categories:
 			personal: "0"
