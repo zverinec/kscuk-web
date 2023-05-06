@@ -12,13 +12,14 @@ parameters:
 		place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
 		lodging: 'v budově na lůžkách'
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
-		price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
+		#price: 'Nejspíš zadarmo, ale než budeme mít příslíbeny peníze od MU, nic neslibujeme'
+		price: 'Zadarmo.'
 		#price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
 		#status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
-		status: 'K-SCUK 2023 se připravuje!'
+		#status: 'K-SCUK 2023 se připravuje!'
 		#status: 'K-SCUK 2022 proběhl.'
 
 	# Registration settings
@@ -26,7 +27,7 @@ parameters:
 	# - Dates in YYYY-mm-dd hh:mm:ss format
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
-		start: "2023-06-09 09:00:00"
+		start: "2023-05-06 12:40:00"
 		end: "2023-09-08 23:59:59"
 		deletable: false
 		categories:
