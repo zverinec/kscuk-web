@@ -34,7 +34,7 @@ K-SCUK website
      have this (needed for proper behaviour of health declaration)
  * Create new database (or empty the old one).
    - E.g. via <https://kscuk.fi.muni.cz/org>
- * Prepare [app/config.neon](app/config.neon) according to comments.
+ * Prepare [app/config/config.neon](app/config/config.neon) according to comments.
    Do not forget to set:
       - Registration start and end and other events detail
       - Admin password and address of K-SCUK mailbox
