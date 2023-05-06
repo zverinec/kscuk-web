@@ -41,8 +41,27 @@ K-SCUK website
       - Database access
  * Run it ;-) (tables, views etc will be created automatically)
 
+### Update date, about, status and other info on front page
+
+ * Edit [app/config/config.neon](app/config/config.neon).
+
+### Update orgs on front page
+
+ * Update [app/templates/Default/orgs.latte](app/templates/Default/orgs.latte)
+ * In case you need to upload new photo, upload it to
+   [www/img/orgs](www/img/orgs)
+
+### Add new year to archive
+
+ * Create new directory in [www/img/archive](www/img/archive)
+ * Upload 1080p images to [www/img/archive/20??](www/img/archive/20??)
+ * run `archive-image-optimizer.py` to create thumbnails of images, place
+   results in [www/img/archive/20??](www/img/archive/20??)
+ * Create and fill [app/data/archive/20??.php](app/data/archive/20??.php)
+
 ### Health declaration
 
+ * Questions are hardcoded.
  * If there are multiple same e-mail addresses it will fail,
    solution: correct in database.
  * Link: `/forms/health-declaration`
