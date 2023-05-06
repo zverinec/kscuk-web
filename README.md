@@ -24,14 +24,15 @@ K-SCUK website
 
 ### Prepare for new event
 
- * Create new database (or empty the old one).
- * Prepare questions in /app/import/questions.xml. BEWARE:
+ * Prepare submission questions in <app/import/questions/current.xml>. BEWARE:
    - question with name has to contain "jméno a příjmení" and no other
      question should have this (needed for proper behaviour of health
      declaration).
    - question with e-mail has to contain "e-mail" and no other question should
      have this (needed for proper behaviour of health declaration)
- * Prepare /app/config.neon according to comments. Do not forget to set:
+ * Create new database (or empty the old one).
+   - E.g. via <https://kscuk.fi.muni.cz/org>
+ * Prepare <app/config.neon> according to comments. Do not forget to set:
       - Registration start and end and other events detail
       - Admin password and address of K-SCUK mailbox
       - Database access
