@@ -7,7 +7,6 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
-			<choice>2001</choice>
 			<choice>2002</choice>
 			<choice>2003</choice>
 			<choice>2004</choice>
@@ -15,6 +14,7 @@
 			<choice>2006</choice>
 			<choice>2007</choice>
 			<choice>2008</choice>
+			<choice>2009</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
@@ -53,6 +53,13 @@
 		<text>Co od K-SCUKu očekáváš?</text>
 		<info>Abychom věděli, s čím do akce jdeš!</info>
 	</question>
+	<question category="interesting" required="true" form="textarea">
+		<text>Podívej se do Archivu minulých ročníků K-SCUKu, přečti si krátký
+		popisek minulého ročníku (nebo klidně i předchozích). Co z popisku tě
+		nejvíce zaujalo a proč?</text>
+		<info>Co z uvedeného bys chtěl nejvíce zažít? Co si pod takovým
+		popisem akce představíš?</info>
+	</question>
 	<question category="interesting" form="text">
 		<text>Máš písničku, která tě vytáhne z postele?</text>
 		<info>Která to je?</info>
@@ -77,10 +84,19 @@
 			<choice>XXL</choice>
 		</choices>
 	</question>
+	<question category="organization" required="true" form="selectbox">
+		<text>Jaký střih trička preferuješ?</text>
+		<choices>
+			<choice>Dámský</choice>
+			<choice>Pánský</choice>
+		</choices>
+	</question>
 	<question category="organization" required="true" form="textarea">
 		<text>Máš nějaké potravinové alergie nebo intolerance, či jiná zdravotní
 		stravovací omezení?</text>
-		<info>Aby byli kuchaři informováni s dostatečným předstihem.</info>
+		<info> Prosím, uveď i závažnost tohoto omezení, pokus se být co nejvíce
+		konkrétní. Např. vadí ti i stopy daného alergenu v jiných potravinách nebo
+		třeba v koření?</info>
 	</question>
 	<question category="organization" required="true" form="textarea">
 		<text>Máš nějaké potraviny/jídla, která ti opravdu nechutnají?</text>
