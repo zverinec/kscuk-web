@@ -28,7 +28,7 @@ parameters:
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
 		start: "2023-05-06 12:40:00"
-		end: "2023-09-08 23:59:59"
+		end: "2023-05-20 10:05:59"
 		deletable: false
 		categories:
 			personal: "0"
