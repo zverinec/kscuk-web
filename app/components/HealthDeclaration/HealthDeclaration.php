@@ -142,7 +142,7 @@ class HealthDeclaration extends BaseComponent
 
 		$group = $form->addGroup("Alergie");
 		Helpers::makeGroupRequired($group);
-		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? Jakých a jak? Buď co nejspecifičtější."));
+		$group->setOption("description", Html::el("")->setHtml("Na jakou látku, jaká reakce, je nutno použít léků? Jakých a jak? Buď co nejspecifičtější. Pokud se jedná o alergii potravinovou, uveď zda ti vadí i stopy této potraviny v jiném jídle."));
 		$no_allergy = $form->addCheckbox("no_allergy", "Nevím o žádné alergii");
 		$allergy = $form->addTextArea("allergy", NULL, 40, 4);
 		$allergy->addConditionOn($no_allergy, Form::EQUAL, false)
