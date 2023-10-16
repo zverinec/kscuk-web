@@ -4,7 +4,6 @@ namespace App\Components;
 interface IAuthFormFactory
 {
 
-	/** @return AuthForm */
-	public function create();
- 
+	public function create(): AuthForm;
+
 }

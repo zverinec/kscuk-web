@@ -11,14 +11,17 @@ K-SCUK website
 
 ## Installation
 
+ 0. Install `composer global require kiwicom/loopbind` for local deployment.
  1. Clone this repository.
- 2. Run composer update from the repository root.
+ 2. Run composer install/update from the repository root.
  3. Make `/temp` and `/log` and `/www/storage` and `/vendor/mpdf/mpdf/tmp`
     writable (recursively).
  4. Create `/app/config/config.local.neon` according to to
     `/app/config/config.neon` (overload database info, admin credentials and
     mailer if neede).
- 5. Run it!
+ 5. Prepare mapping `loopbind apply`
+ 6. Run docker `docker-compose up -d`
+ 7. Access [https://kscuk.test](https://kscuk.test) or [https://kscuk.test:8080](https://kscuk.test:8080) for database access, use `kscuk` and `password1234` credentials. 
 
 ## Usage
 
@@ -56,6 +59,7 @@ K-SCUK website
  * Questions are hardcoded.
  * If there are multiple same e-mail addresses it will fail,
    solution: correct in database.
+ * Beware if the food alergies question changes it needs to be changed in the code 2x.
  * Link: `/forms/health-declaration`
 
 ### Add past event to archive

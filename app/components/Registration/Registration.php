@@ -16,6 +16,8 @@ use Nette\Utils\DateTime;
 use Nette\Utils\Html;
 use Nette\Utils\Strings;
 use Tracy\Debugger;
+use function json_decode;
+use function json_encode;
 
 class Registration extends BaseComponent
 {
@@ -48,8 +50,9 @@ class Registration extends BaseComponent
 		$this->mailer = $mailer;
 
 		$config = $parameters->getRegistration();
-		$this->categoriesRev = ArrayHash::from($config->categories);
-		$this->categories = array_keys(iterator_to_array(ArrayHash::from($config->categories)));
+        $categories = json_decode(json_encode($config->categories), true);
+		$this->categoriesRev = ArrayHash::from($categories);
+		$this->categories = array_keys(iterator_to_array(ArrayHash::from($categories)));
 		$this->skipPhoto = !((bool)$config->photo);
 	}
 
@@ -75,7 +78,7 @@ class Registration extends BaseComponent
 		}
 		$session = $this->session;
 		foreach ($this->categories AS $category) {
-			if (empty($session[$category])) {
+			if (empty((string) $session[$category])) {
 				$this->getPresenter()->flashMessage('Bohužel jsi vyplňoval(a) formulář moc dlouho a nejsme schopni tě na K-SCUK přihlásit. Zkus to prosím ještě jednou, a pokud se tento problém bude opakovat, napiš nám e-mail.', 'error');
 				$this->redirect('this');
 			}
@@ -97,13 +100,13 @@ class Registration extends BaseComponent
 		}
 		$targetMail = null;
 		foreach ($this->question->findAll() AS $question) {
-			if (empty($session[$question->id_question])) {
+			if (empty($session[(string) $question->id_question])) {
 				continue;
 			}
 			if ($question->form_type == 'checkbox') {
-				$answer = implode('|', $session[$question->id_question]);
+				$answer = implode('|', $session[(string) $question->id_question]);
 			} else {
-				$answer = $session[$question->id_question];
+				$answer = $session[(string) $question->id_question];
 			}
 			if (strpos(strtolower($question->question), 'e-mail') !== FALSE) {
 				$targetMail = $answer;
@@ -295,7 +298,7 @@ class Registration extends BaseComponent
 
 		if ($this->previousCategory($category) !== NULL) {
 			$form->addSubmit('back', 'Zpět')->setHtmlAttribute("class", "orange")
-				->setValidationScope(FALSE);
+				->setValidationScope(NULL);
 		}
 		if ($this->nextCategory($category) === NULL && $this->skipPhoto === true) {
 			$form->addSubmit('continue', 'Závazně odeslat')->setHtmlAttribute("class", "green");
@@ -330,7 +333,7 @@ class Registration extends BaseComponent
 	private function getStoredAnswer($id)
 	{
 		$session = $this->session;
-		return isset($session[$id]) ? $session[$id] : NULL;
+		return isset($session[(string) $id]) ? $session[(string) $id] : NULL;
 	}
 
 	private function storeAnswers(Form $form)
@@ -355,9 +358,9 @@ class Registration extends BaseComponent
 		}
 		$session = $this->session;
 		foreach ($toSave AS $key => $value) {
-			$session[$key] = $value;
+			$session[(string) $key] = $value;
 		}
-		$session[$values['category']] = TRUE;
+		$session[(string) $values['category']] = TRUE;
 	}
 
 	private function getCategory()

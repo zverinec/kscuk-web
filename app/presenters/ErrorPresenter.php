@@ -19,7 +19,7 @@ class ErrorPresenter extends Presenter
 
 
 	/**
-	 * @param  Exception
+	 * @param  \Exception
 	 * @return void
 	 */
 	public function renderDefault($exception)

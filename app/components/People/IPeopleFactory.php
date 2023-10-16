@@ -4,7 +4,6 @@ namespace App\Components;
 interface IPeopleFactory
 {
 
-	/** @return People */
-	public function create();
- 
+	public function create(): People;
+
 }

@@ -7,17 +7,17 @@ use Nette\InvalidArgumentException;
 abstract class AbstractModel
 {
 
-	/** @var Dibi\Connection */
+	/** @var Connection */
 	private $connection;
 
-	public function __construct(\Dibi\Connection $connection)
+	public function __construct(Connection $connection)
 	{
 		$this->connection = $connection;
 	}
 
 	/**
 	 *
-	 * @return Dibi\Connection
+	 * @return Connection
 	 */
 	protected final function getConnection()
 	{

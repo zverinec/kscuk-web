@@ -1,7 +1,7 @@
 <?php
 namespace App\Model;
 
-use DibiDataSource;
+use Dibi\DataSource;
 use Nette\InvalidArgumentException;
 
 class Person extends AbstractModel
@@ -12,7 +12,7 @@ class Person extends AbstractModel
 			->execute(TRUE);
 		return $this->getConnection()->getInsertId();
 	}
-	
+
 	public function findByEmail($email) {
 		if(empty($email)) {
 			throw new InvalidArgumentException;
@@ -27,7 +27,7 @@ class Person extends AbstractModel
 		return $source->fetchSingle("answer");
 	}
 
-	/** @return DibiDataSource */
+	/** @return DataSource */
 	public function findAnswers($person = NULL, $category = NULL) {
 		if (empty($category)) {
 			$source = $this->getConnection()->dataSource("SELECT [answer].*, category FROM [answer] INNER JOIN [question] USING([id_question])");

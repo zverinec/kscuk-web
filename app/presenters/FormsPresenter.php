@@ -56,7 +56,8 @@ class FormsPresenter extends BasePresenter
 
 	private function getFoodProblems($email) {
 		$answers= $this->person->findByEmail($email);
-		return $answers["Máš nějaká stravovací omezení?"]; // Question name may change!
+        bdump(array_keys($answers));
+		return $answers["Máš nějaká stravovací omezení?"] ?? $answers["Máš nějaké potravinové alergie nebo intolerance, či jiná zdravotní\n\t\tstravovací omezení?"]; // Question name may change!
 	}
 
 	private function sendAsPDF($values, $foodProblems) {

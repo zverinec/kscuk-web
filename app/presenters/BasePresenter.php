@@ -7,6 +7,7 @@ use App\Utils\Helpers;
 use App\Utils\Parameters;
 use Nette\Application\BadRequestException;
 use Nette\Application\UI\Presenter;
+use Nette\Application\UI\Template;
 
 class BasePresenter extends Presenter
 {
@@ -30,7 +31,7 @@ class BasePresenter extends Presenter
 		parent::startup();
 	}
 
-	protected function createTemplate()
+	protected function createTemplate(): Template
 	{
 		$template = parent::createTemplate();
 

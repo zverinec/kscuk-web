@@ -8,10 +8,10 @@
 	</div>
 	{/if}
 
-	{foreach $questions AS $name => $category}
+	{foreach $questions as $name => $category}
 		<h2>{$categories[$name]}</h2>
 		<table class="answers-in-category table-default">
-		{foreach $category AS $question}
+		{foreach $category as $question}
 			<tr{if $iterator->isEven()} class="even"{/if}>
 
 			<th>{$question->question}</th>

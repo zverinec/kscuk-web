@@ -35,7 +35,7 @@
 	</head>
 	<body>
 		{if new \Nette\Utils\DateTime() >= \Nette\Utils\DateTime::from($registration->start) && new \Nette\Utils\DateTime() <= \Nette\Utils\DateTime::from($registration->end)}
-			{var $registrationOpen = true;}
+			{var $registrationOpen = true}
 		{/if}
 		<div id="container">
 
@@ -49,7 +49,7 @@
 					<ul id="links">
 						<li><button id="menu-button">&equiv;</button>
 							<ul>
-								{php $wholeName = $presenter->getName().":".$presenter->getAction(); }
+								{php $wholeName = $presenter->getName().":".$presenter->getAction()}
 								<li><a n:href="Default:#about" id="menu-about">Informace</a></li>
 								<li><a n:href="Default:#organizators" id="menu-organizators">Orgové</a></li>
 								{if isset($registrationOpen)}
@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="flashes" id="flashes-main">
-					{foreach $flashes AS $flash}
+					{foreach $flashes as $flash}
 						<div class="flash {$flash->type}">
 							{$flash->message|noescape}
 						</div>

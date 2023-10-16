@@ -1,5 +1,5 @@
 {layout ../@layout.latte}
- 
+
 {block #content}
 	<script type="text/javascript">
 		$('#menu-about, #menu-organizators').on('click', function(e) {
@@ -16,7 +16,7 @@
 	<div id="logo"><img src="{$basePath}/img/kscuk-logo-white.svg" alt="logo K-SCUKu"></div>
 	<div id="tldr">
 		<p>KSI & IBIS</p>
-		<p>{if isSet($event->period)}{$event->period|noEscape}{else}K-SCUK bude.{/if}</p>
+		<p>{if isSet($event->period)}{$event->period|noescape}{else}K-SCUK bude.{/if}</p>
 	</div>
 </div>
 <div class="separator"></div>
@@ -44,11 +44,11 @@
 			</tr>
 			<tr>
 				<td>Kdy?</td>
-				<td>{if isSet($event->period)}{$event->period|noEscape}{else}K-SCUK bude.{/if}</td>
+				<td>{if isSet($event->period)}{$event->period|noescape}{else}K-SCUK bude.{/if}</td>
 			</tr>
 			<tr n:ifset="$event->place, $event->lodging">
 				<td>Kde?</td>
-				<td>{$event->place|noEscape}, spaní {$event->lodging|noEscape}.</td>
+				<td>{$event->place|noescape}, spaní {$event->lodging|noescape}.</td>
 			</tr>
 			<tr>
 				<td>Pro koho?</td>
@@ -57,7 +57,7 @@
 			</tr>
 			<tr n:ifset="$event->price">
 				<td>Za kolik?</td>
-				<td>{$event->price|noEscape}.</td>
+				<td>{$event->price|noescape}.</td>
 			</tr>
 		</table>
 	</div>

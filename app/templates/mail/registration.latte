@@ -13,7 +13,7 @@
 
 <hr />
 
-{foreach $questions AS $question}
+{foreach $questions as $question}
 	<h3>{$question->question}</h3>
 	{if !empty($answers[$question->id_question])}
 		{$answers[$question->id_question]->answer|texy|noescape}

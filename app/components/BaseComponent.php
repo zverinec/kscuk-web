@@ -3,7 +3,7 @@ namespace App\Components;
 
 use App\Utils\Helpers;
 use Nette\Application\UI\Control;
-use Nette\Templating\ITemplate;
+use Nette\Application\UI\Template;
 
 abstract class BaseComponent extends Control
 {
@@ -43,7 +43,7 @@ abstract class BaseComponent extends Control
 		return str_replace('.php','', basename($reflector->getFileName()));
 	}
 
-	protected function createTemplate($class = NULL)
+	protected function createTemplate($class = NULL): Template
 	{
 		$template = $this->getControlTemplate($this->getBaseName(),$class);
 		return $template;
@@ -54,7 +54,7 @@ abstract class BaseComponent extends Control
 	 *
 	 * @param string $name Filename of template without extensions
 	 * @param string $class Class name of template to use (e.g. FileTemplate)
-	 * @return ITemplate
+	 * @return Template
 	 */
 	protected function getControlTemplate($name, $class = NULL)
 	{

@@ -12,6 +12,7 @@ use App\Components\IHealthDeclarationFactory;
 use App\Model\HealthDeclaration;
 use PdfResponse\PdfResponse;
 use Mpdf\Output\Destination;
+use ZipStream\OperationMode;
 use ZipStream\ZipStream;
 use Nette\Utils\Strings;
 
@@ -94,14 +95,14 @@ class OrgPresenter extends BasePresenter
 		$hd = $this->healthDeclaration;
 		$declarations = $hd->getAll()->fetchAll();
 
-		$zip = new ZipStream('health_declarations.zip', array(ZipStream::OPTION_SEND_HTTP_HEADERS => true));
+		$zip = new ZipStream(OperationMode::NORMAL, outputName: 'health_declarations.zip', sendHttpHeaders: true);
 
 		foreach ($declarations as $d) {
 			$template = $this->createTemplate();
 			$template->setFile(__DIR__ . "/../templates/filledForm.latte");
 			$template->v = $d;
 			$answers= $this->person->findByEmail($d["email"]);
-			$template->foodProblems = $answers["Máš nějaká stravovací omezení?"]; // Question name may change!
+			$template->foodProblems = $answers["Máš nějaká stravovací omezení?"] ?? $answers["Máš nějaké potravinové alergie nebo intolerance, či jiná zdravotní\n\t\tstravovací omezení?"]; // Question name may change!
 			$pdf = new PDFResponse($template);
 			$pdf->outputName = Strings::webalize($d["name"]) . ".pdf";
 			$pdf->outputDestination = PDFResponse::OUTPUT_STRING;

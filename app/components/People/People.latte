@@ -2,13 +2,13 @@
 <table id="people" class="table-default" cellspacing="0">
 		<tr>
 			<th></th>
-			{foreach $questions AS $question}
+			{foreach $questions as $question}
 			<th>
 				{if empty($printable)}
 					{=\Nette\Utils\Strings::truncate($question->question, 15)}
 				{else}
 					{$question->question}
-					
+
 				{/if}
 			</th>
 			{/foreach}
@@ -18,10 +18,10 @@
 				</th>
 			{/if}
 		</tr>
-	{foreach $people AS $id_registered => $answers}
+	{foreach $people as $id_registered => $answers}
 		<tr{if $iterator->isEven()} class="even"{/if}>
 			<td><a href="{plink Org:detail, $id_registered}" class="detail">&hookrightarrow;</a></td>
-			{foreach $questions AS $question}
+			{foreach $questions as $question}
 				<td>
 					{if !empty($answers[$question->id_question])}
 						{$answers[$question->id_question]->answer|texy|noescape}

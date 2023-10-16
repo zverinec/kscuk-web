@@ -1,11 +1,20 @@
 <?php
+
+use Dibi\Connection;
+use App\Model\Import;
+
 require __DIR__ . '/../vendor/autoload.php';
 
-use Nette\Application\Routers\Route;
+use Nette\Bootstrap\Configurator;
 
-$configurator = new Nette\Configurator;
+$configurator = new Configurator;
 
-$configurator->enableDebugger(__DIR__ . '/../log');
+$remoteIP = $_SERVER['REMOTE_ADDR'];
+$allowedIP = array("127.0.0.1", "::1", "192.168.99.1", "172.24.0.1", "172.20.0.1", "192.168.0.1");
+$configurator->setDebugMode(in_array($remoteIP, $allowedIP));
+$configurator->enableTracy(__DIR__ . '/../log');
+
+
 
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
@@ -18,20 +27,13 @@ $configurator->addConfig(__DIR__ . '/config/config.local.neon');
 
 $container = $configurator->createContainer();
 
-// Turn on HTTPS when request is secured
-/** @var Request $httpRequest */
-$httpRequest = $container->getByType('Nette\\Http\\Request');
-if ($httpRequest->isSecured()) {
-       Route::$defaultFlags = Route::SECURED;
-}
-
 // Setup router
 $container->addService('router', App\RouterFactory::createRouter());
 
 // Auto import when needed
-$tables = $container->getByType('\\Dibi\Connection')->getDatabaseInfo()->getTables();
+$tables = $container->getByType(Connection::class)->getDatabaseInfo()->getTables();
 if (empty($tables)) {
-	$import =$container->getByType('\\App\\Model\\Import');
+	$import =$container->getByType(Import::class);
 	$import->installDatabase();
 }
 return $container;

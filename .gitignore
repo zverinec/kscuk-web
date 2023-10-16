@@ -2,9 +2,12 @@
 !/www/storage/people/.placeholder
 !/www/storage/health-declaration/.placeholder
 /temp/
+!/temp/.keep
 /log/
+!/log/.keep
 /vendor/
 /app/config/config.local.neon
 /.idea/
 composer.lock
 *.swp
+.mysql/
