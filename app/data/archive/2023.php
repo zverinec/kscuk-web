@@ -1,7 +1,7 @@
 <?php
 $year = [
 	"year" => 2023,
-	"when" => "9.–14. září 2022",
+	"when" => "9.–14. září 2023",
 	"where" => [
 		"place" => "Dobrá voda u Třebíče",
 		"map" => "https://mapy.cz/s/mujezoleju"
@@ -30,7 +30,7 @@ $year = [
         ."mločí písně."
 		."<p>Ročník byl realizován díky podpoře Ministerstva školství, mládeže a "
 		."tělovýchovy, dotace na podporu nadaných žáků základních a středních "
-		."škol v roce 2021.</p>",
+		."škol v roce 2023.</p>",
 	"gallery" => [
         "IMG_08007.JPG",
         "IMG_09224.JPG",

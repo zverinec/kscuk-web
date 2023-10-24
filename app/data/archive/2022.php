@@ -27,7 +27,7 @@ $year = [
         ."Spousta italského přízvuku. A nakonec velká oslavná pouť."
 		."<p>Ročník byl realizován díky podpoře Ministerstva školství, mládeže a "
 		."tělovýchovy, dotace na podporu nadaných žáků základních a středních "
-		."škol v roce 2021.</p>",
+		."škol v roce 2022.</p>",
 	"gallery" => [
         "IMG_0923.JPG",
         "IMG_1797.JPG",
