@@ -8,7 +8,7 @@ parameters:
 			mail: test@dispostable.com
 	event:
 		title: 'K-SCUK'
-		period: '8.–16. 14. 2024'
+		period: '8.–14. 9. 2024'
 		#place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
 		place: '<a href="http://www.sdruzenipetrov.cz/tzjunior/">u Vranovské přehrady, spaní v budově na lůžkách</a>'
 		lodging: 'v budově na lůžkách'
