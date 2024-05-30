@@ -8,12 +8,13 @@ parameters:
 			mail: test@dispostable.com
 	event:
 		title: 'K-SCUK'
-		period: '9.–16. 9. 2024'
-		place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
+		period: '8.–16. 14. 2024'
+		#place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
+		place: '<a href="http://www.sdruzenipetrov.cz/tzjunior/">u Vranovské přehrady, spaní v budově na lůžkách</a>'
 		lodging: 'v budově na lůžkách'
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
-		#price: 'Nejspíš zadarmo, ale než budeme mít přislíbeny peníze od MU, nic neslibujeme'
-		price: 'Zadarmo'
+		price: 'Nejspíš zadarmo, ale než budeme mít přislíbeny peníze od MU, nic neslibujeme'
+		#price: 'Zadarmo'
 		#price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
 		#status: 'Kapacita soustředění je naplněna, přijímáme náhradníky!'
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
