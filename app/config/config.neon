@@ -22,7 +22,8 @@ parameters:
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
-		status: 'K-SCUK 2024 se připravuje!'
+		#status: 'K-SCUK 2024 se připravuje!'
+		status: 'Přihlašování momentálně není možné kvůli technickým problémům. Na řešení pracujeme.'
 		#status: 'K-SCUK 2023 proběhl.'
 
 	# Registration settings
