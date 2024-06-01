@@ -22,8 +22,8 @@ parameters:
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
-		#status: 'K-SCUK 2024 se připravuje!'
-		status: 'Přihlašování momentálně není možné kvůli technickým problémům. Na řešení pracujeme.'
+		status: 'K-SCUK 2024 se připravuje!'
+		#status: 'Přihlašování momentálně není možné kvůli technickým problémům. Na řešení pracujeme.'
 		#status: 'K-SCUK 2023 proběhl.'
 
 	# Registration settings
@@ -32,7 +32,7 @@ parameters:
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
 		start: "2024-06-01 12:00:00"
-		end: "2024-06-02 02:00:00"
+		end: "2024-06-18 02:00:00"
 		deletable: false
 		categories:
 			personal: "0"
