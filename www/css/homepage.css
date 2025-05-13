@@ -6,7 +6,7 @@
 
 #cover {
 	padding: 11% 0 2% 0;
-	background-image: url("../img/cover_image.jpg");
+	background-image: url("../img/cover_image_min.jpg");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 			background-size: cover;
