@@ -6,7 +6,7 @@
 
 #cover {
 	padding: 11% 0 2% 0;
-	background-image: url("../img/cover_image.jpg");
+	background-image: url("../img/cover_image_min.jpg");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 			background-size: cover;
@@ -23,6 +23,7 @@
 
 #cover div#logo img {
 	width: 30%;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
 }
 
 #cover div#tldr {
