@@ -17,7 +17,7 @@ $year = [
 		["person" => "Ivča Kasprzaková", "team" => "ksi"],
 	],
   "story" => "Podruhé na břehu Vranovské přehrady. Neuváženě podaná "
-        ."grantová žádost, kvůli které se stáváme se zaměstnanci "
+        ."grantová žádost, kvůli které se stáváme zaměstnanci "
         ."inovativní dopravní firmy EAAD. Výzkum balónků a balónů všech "
         ."tvarů a způsobilostí. Letecký souboj vzducholodí a výcvik v "
         ."pečení nejlepších létajících vaflí. Hledání nejlepšího "

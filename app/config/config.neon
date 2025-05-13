@@ -8,13 +8,13 @@ parameters:
 			mail: test@dispostable.com
 	event:
 		title: 'K-SCUK'
-		period: '7.–14. 9. 2024'
-		#place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
-		place: '<a href="http://www.sdruzenipetrov.cz/tzjunior/">Táborová základna Junior</a> u Vranovské přehrady</a>'
+		period: '6.–13. 9. 2025'
+		place: '<a href="http://dobravoda.abahoa.cz/">Dobrá Voda u Třebíče</a>'
+		#place: '<a href="http://www.sdruzenipetrov.cz/tzjunior/">Táborová základna Junior</a> u Vranovské přehrady</a>'
 		lodging: 'v budově na lůžkách'
 		#price: 'Zadarmo (financováno <a href="http://www.muni.cz">Masarykovou univerzitou</a>)'
 		#price: 'Nejspíš zadarmo, případně za symbolický poplatek v závislosti na výši podpory od MU'
-		price: 'Poplatek za soustředění bude maximálně 1 000 Kč. Jedná se o příspěvek na stravování a jeho výši upřesníme před konáním soustředění'
+		#price: 'Poplatek za soustředění bude maximálně 1 000 Kč. Jedná se o příspěvek na stravování a jeho výši upřesníme před konáním soustředění'
 		#price: 'Nejspíš zadarmo, ale než budeme mít přislíbeny peníze od MU, nic neslibujeme'
 		#price: 'Zadarmo'
 		#price: 'Zadarmo. K-SCUK vznikl díky podpoře Ministerstva školství, mládeže a tělovýchovy, dotace na podporu nadaných žáků základních a středních škol v roce 2022 (projekt č. 0038/7/NAD/2022)'
@@ -22,7 +22,7 @@ parameters:
 		#status: 'Kapacita soustředění je naplněna, těšíme se na akci!'
 		#status: 'Přihlašování na K-SCUK již bylo ukončeno!'
 		#status: 'K-SCUK 2022 bude. Více informací přidáme koncem školního roku.'
-		status: 'K-SCUK 2024 se připravuje!'
+		status: 'K-SCUK 2025 se připravuje!'
 		#status: 'Přihlašování momentálně není možné kvůli technickým problémům. Na řešení pracujeme.'
 		#status: 'K-SCUK 2023 proběhl.'
 
