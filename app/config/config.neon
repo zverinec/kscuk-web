@@ -39,7 +39,7 @@ parameters:
 			interesting: "1"
 			organization: "2"
 		photo: false
-		sendMailToAttendee: false
+		sendMailToAttendee: true
 
 php:
 	date.timezone: Europe/Prague
