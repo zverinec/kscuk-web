@@ -176,6 +176,10 @@ class HealthDeclaration extends BaseComponent
 		$food_problems->addConditionOn($no_food_problems, Form::EQUAL, false)
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
 
+		$group = $form->addGroup("Jiná omezení");
+		$group->setOption("description", Html::el("")->setHtml("Na K-SCUKu se mohou objevit programy zaměřené na citlivější témata jako je pohřeb, smrt, životní cíle, emoce, vztahy či povídání na téma pohlavního styku. Budeme se snažit dotýkat témat citlivě, umíme si ale představit, že pro někoho, kdo některé téma zrovna v životě intenzivně řeší, to může být náročné. Proto: je něco co bychom o tvé situaci měli vědět / co nám chceš vzkázat?"));
+		$form->addTextArea("other_problems", NULL, 40, 4);
+
 		$group = $form->addGroup();
 		$group->setOption("description", Html::el()->setHtml("Činnosti na kurzu jsou bez výjimky dobrovolné, odevzdání vyplněné a podepsané deklarace je však podmínkou aktivní účasti na jednotlivých programech kurzu. Jestliže se během programu projeví onemocnění, omezení nebo problémy, které jsi ve Zdravotní deklaraci neuvedl/a či uvedl/a nepravdivě, organizátoři K-SCUKu nenesou zodpovědnost za případné zdravotní či jiné poškození.<br /><br /><strong>Potvrzuji, že jsem porozuměl všem výše uvedeným skutečnostem včetně zdravotní problematiky.</strong><br /><br />"));
 		$form->addText("signature", "Jméno zákonného zástupce")
