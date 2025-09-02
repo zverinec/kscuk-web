@@ -177,7 +177,7 @@ class HealthDeclaration extends BaseComponent
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
 
 		$group = $form->addGroup("Jiná omezení");
-		$group->setOption("description", Html::el("")->setHtml("Na K-SCUKu se mohou objevit programy zaměřené na citlivější témata jako je pohřeb, smrt, životní cíle, emoce, vztahy či povídání na téma pohlavního styku. Budeme se snažit dotýkat témat citlivě, umíme si ale představit, že pro někoho, kdo některé téma zrovna v životě intenzivně řeší, to může být náročné. Proto: je něco co bychom o tvé situaci měli vědět / co nám chceš vzkázat?"));
+		$group->setOption("description", Html::el("")->setHtml("Na K-SCUKu se mohou objevit programy zaměřené na témata jako jsou emoce, vztahy, životní cíle, zranění a úrazy, pohřeb, smrt či povídání o sexu. Tématům se snažíme věnovat citlivě. I tak se může stát, že pro někoho, kdo některé z témat zrovna v životě intenzivně řeší, může být program náročný nebo nepříjemný.\nProto: je některé z těchto témat pro Tebe obzvlášť citlivé a nebylo by Ti příjemné být mu vystaven? Je něco co bychom o Tvé situaci měli vědět nebo co nám chceš vzkázat?"));
 		$form->addTextArea("other_problems", NULL, 40, 4);
 
 		$group = $form->addGroup();
