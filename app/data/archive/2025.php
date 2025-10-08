@@ -28,8 +28,8 @@ $year = [
         ."(samozřejmě s banány). První banán letí do vesmíru! Nebo ne? "
         ."Úspěšný start firmy Naše banány České banány a nakonec společné "
         ."zneškodnění nebezpečné bomby za pomoci Velkého špagetového monstra."
-		."<p>Ročník byl realizován s podporou Fakulty informatiky a Přírodovědecké "
-    ."fakulty Masarykovy univerzity.</p>",
+		."<p>Ročník byl realizován s podporou Fakulty informatiky MU, Přírodovědecké "
+    ."fakulty MU a Lexical Computing.</p>",
 	"gallery" => [
         "046-IMG_3506.JPG",
         "106-IMG_5913.JPG",
