@@ -32,7 +32,7 @@ parameters:
 	# - Dates in YYYY-mm-dd hh:mm:ss format
 	# - Photos = FALSE - users won't be ask to load photo
 	registration:
-		start: "2026-05-11 09:55:00"
+		start: "2026-05-12 09:55:00"
 		end: "2026-05-15 23:59:59"
 		deletable: false
 		categories:
