@@ -7,6 +7,7 @@
 	<question category="personal" required="true" form="selectbox">
 		<text>Od kterého roku jsi na světě?</text>
 		<choices>
+			<choice>2004</choice>
 			<choice>2005</choice>
 			<choice>2006</choice>
 			<choice>2007</choice>
@@ -15,7 +16,6 @@
 			<choice>2010</choice>
 			<choice>2011</choice>
 			<choice>2012</choice>
-			<choice>2013</choice>
 		</choices>
 	</question>
 	<question category="personal" required="true" form="text">
