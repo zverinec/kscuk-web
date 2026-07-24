@@ -31,7 +31,7 @@ class BasePresenter extends Presenter
 		parent::startup();
 	}
 
-	protected function createTemplate(): Template
+	protected function createTemplate(?string $class = null): Template
 	{
 		$template = parent::createTemplate();
 

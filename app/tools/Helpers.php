@@ -16,7 +16,7 @@ class Helpers
 			throw new InvalidArgumentException("helper");
 		}
 		switch ($helper) {
-			case "texy": return array(get_class(), 'texyHelper');
+			case "texy": return array(__CLASS__, 'texyHelper');
 				break;
 			default:
 				throw new InvalidStateException("The helper [$helper] does not exist.");

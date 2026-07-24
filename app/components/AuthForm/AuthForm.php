@@ -24,7 +24,7 @@ class AuthForm extends BaseComponent
 			throw new InvalidStateException("The destination is not set.");
 		}
 		try {
-			$this->user->login(NULL, $form['password']->getValue());
+			$this->user->login('', $form['password']->getValue());
 			$this->getPresenter()->redirect($this->destination);
 		} catch (AuthenticationException $e) {
 			$this->getPresenter()->flashMessage('Přihlášení se nezdařilo!', 'error');

@@ -10,7 +10,8 @@
     "require": {
         "php": ">=8.2",
         "nette/nette": "^3.2",
-        "dibi/dibi": "^5.0",
+        "nette/application": "~3.2.0",
+        "dibi/dibi": "~5.0.0",
         "texy/texy": "^3.1",
         "jkuchar/pdfresponse": "^0.6",
         "dg/mysql-dump": "^1.5",
