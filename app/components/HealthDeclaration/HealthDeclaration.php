@@ -156,16 +156,16 @@ class HealthDeclaration extends BaseComponent
 		Helpers::makeGroupRequired($group);
 		$questionList = array();
 		$questionList[] = "1. Pobyt v nemocnici, návštěva pohotovosti v posledním roce";
-		$questionList[] = "4. Astma, bronchitidy, zánět plic, TBC a jiná plicní onemocnění";
-		$questionList[] = "5. Problémy či onemocnění páteře a pohybového aparátu";
-		$questionList[] = "6. Infekční onemocnění";
-		$questionList[] = "7. Křečové stavy";
-		$questionList[] = "8. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody, pohled na krev atd., jiné neurózy…)";
-		$questionList[] = "9. Jste nebo byl/a jste v posledních 2 letech v péči psychologa nebo psychiatra? (kontakt na něj)";
-		$questionList[] = "10. Prožil/a jsi v poslední době nějakou závažnou životní událost?";
-		$questionList[] = "11. Jiné zdravotní problémy, příznaky, omezení, požadavky";
-		$questionList[] = "12. Očkování proti tetanu v posledních 7 letech. ";
-		$questionList[] = "13. Těhotenství";
+		$questionList[] = "2. Astma, bronchitidy, zánět plic, TBC a jiná plicní onemocnění";
+		$questionList[] = "3. Problémy či onemocnění páteře a pohybového aparátu";
+		$questionList[] = "4. Infekční onemocnění";
+		$questionList[] = "5. Křečové stavy";
+		$questionList[] = "6. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody, pohled na krev atd., jiné neurózy…)";
+		$questionList[] = "7. Jste nebo byl/a jste v posledních 2 letech v péči psychologa nebo psychiatra? (kontakt na něj)";
+		$questionList[] = "8. Prožil/a jsi v poslední době nějakou závažnou životní událost?";
+		$questionList[] = "9. Jiné zdravotní problémy, příznaky, omezení, požadavky";
+		$questionList[] = "10. Očkování proti tetanu v posledních 7 letech. ";
+		$questionList[] = "11. Těhotenství";
 		Helpers::addRadioLists($questionList, $form, "profile");
 		$form->addTextArea("profile", NULL, 40, 6);
 
