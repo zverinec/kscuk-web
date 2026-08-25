@@ -133,7 +133,7 @@ class HealthDeclaration extends BaseComponent
 		$questionList[] = "Infarkt myokardu, angina pectoris, operace srdce";
 		$questionList[] = "Jiné srdeční nálezy - vysoký či nízký tlak, porucha rytmu, zánět, šelest‚ … (podrobněji popiš níže)";
 		Helpers::addRadioLists($questionList, $form, "heart");
-		$form->addTextArea("heartprofile", NULL, 40, 6);
+		$form->addTextArea("heart", NULL, 40, 6);
 
 		$group = $form->addGroup("Léky");
 		Helpers::makeGroupRequired($group);
