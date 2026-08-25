@@ -130,7 +130,10 @@ class HealthDeclaration extends BaseComponent
 		$questionList[] = "Vysoká hladina cholesterolu nebo tuků v krvi";
 		$questionList[] = "Bolesti na hrudi, obtížné dýchání již při malé námaze";
 		$questionList[] = "Rodinná historie srdečních onemocnění";
+		$questionList[] = "Infarkt myokardu, angina pectoris, operace srdce";
+		$questionList[] = "Jiné srdeční nálezy - vysoký či nízký tlak, porucha rytmu, zánět, šelest‚ … (podrobněji popiš níže)";
 		Helpers::addRadioLists($questionList, $form, "heart");
+		$form->addTextArea("heartprofile", NULL, 40, 6);
 
 		$group = $form->addGroup("Léky");
 		Helpers::makeGroupRequired($group);
@@ -153,13 +156,11 @@ class HealthDeclaration extends BaseComponent
 		Helpers::makeGroupRequired($group);
 		$questionList = array();
 		$questionList[] = "1. Pobyt v nemocnici, návštěva pohotovosti v posledním roce";
-		$questionList[] = "2. Infarkt myokardu, angina pectoris, operace srdce";
-		$questionList[] = "3. Jiné srdeční nálezy - vysoký či nízký tlak, porucha rytmu, zánět, šelest‚ …";
 		$questionList[] = "4. Astma, bronchitidy, zánět plic, TBC a jiná plicní onemocnění";
 		$questionList[] = "5. Problémy či onemocnění páteře a pohybového aparátu";
 		$questionList[] = "6. Infekční onemocnění";
 		$questionList[] = "7. Křečové stavy";
-		$questionList[] = "8. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody atd., jiné neurózy…)";
+		$questionList[] = "8. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody, pohled na krev atd., jiné neurózy…)";
 		$questionList[] = "9. Jste nebo byl/a jste v posledních 2 letech v péči psychologa nebo psychiatra? (kontakt na něj)";
 		$questionList[] = "10. Prožil/a jsi v poslední době nějakou závažnou životní událost?";
 		$questionList[] = "11. Jiné zdravotní problémy, příznaky, omezení, požadavky";
@@ -177,7 +178,7 @@ class HealthDeclaration extends BaseComponent
 			->addRule(Form::FILLED, "Vyplň, prosím, informace o stravovacích omezeních.");
 
 		$group = $form->addGroup("Jiná omezení");
-		$group->setOption("description", Html::el("")->setHtml("Na K-SCUKu se mohou objevit programy zaměřené na témata jako jsou emoce, vztahy, životní cíle, zranění a úrazy, pohřeb, smrt či povídání o sexu. Tématům se snažíme věnovat citlivě. I tak se může stát, že pro někoho, kdo některé z témat zrovna v životě intenzivně řeší, může být program náročný nebo nepříjemný.\nProto: je některé z těchto témat pro Tebe obzvlášť citlivé a nebylo by Ti příjemné být mu vystaven? Je něco co bychom o Tvé situaci měli vědět nebo co nám chceš vzkázat?"));
+		$group->setOption("description", Html::el("")->setHtml("Na K-SCUKu se mohou objevit programy zaměřené na témata jako jsou emoce, vztahy, zranění a úrazy, válka, smrt, hazard, náboženství či povídání o sexu. Tématům se snažíme věnovat citlivě. I tak se může stát, že pro někoho, kdo některé z témat zrovna v životě intenzivně řeší, může být program náročný nebo nepříjemný.\nProto: je některé z těchto témat pro Tebe obzvlášť citlivé a nebylo by Ti příjemné být mu vystaven? Je něco co bychom o Tvé situaci měli vědět nebo co nám chceš vzkázat?"));
 		$form->addTextArea("other_problems", NULL, 40, 4);
 
 		$group = $form->addGroup();
