@@ -160,7 +160,7 @@ class HealthDeclaration extends BaseComponent
 		$questionList[] = "3. Problémy či onemocnění páteře a pohybového aparátu";
 		$questionList[] = "4. Infekční onemocnění";
 		$questionList[] = "5. Křečové stavy";
-		$questionList[] = "6. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody, pohled na krev atd., jiné neurózy…)";
+		$questionList[] = "6. Psychické obtíže (strach z uzavřeného prostoru, výšek, vody, pohledu na krev atd., jiné neurózy…)";
 		$questionList[] = "7. Jste nebo byl/a jste v posledních 2 letech v péči psychologa nebo psychiatra? (kontakt na něj)";
 		$questionList[] = "8. Prožil/a jsi v poslední době nějakou závažnou životní událost?";
 		$questionList[] = "9. Jiné zdravotní problémy, příznaky, omezení, požadavky";
