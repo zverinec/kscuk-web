@@ -27,7 +27,8 @@ $year = [
         ."nočními odpaly nejen pyrotechniky. Zachraňování rakety, barevná "
         ."tlačítka a chlazení motoru. Komunikační workshop. Honza a Elí v "
         ."kuchyni. A samozřejmě mloci, velemloci, víc mloků, Mlokoř a další "
-        ."mločí písně."
+        ."mločí písně. "
+        ."Fotí Anička Ř."
 		."<p>Ročník byl realizován díky podpoře Ministerstva školství, mládeže a "
 		."tělovýchovy, dotace na podporu nadaných žáků základních a středních "
 		."škol v roce 2023.</p>",

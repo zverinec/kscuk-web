@@ -27,7 +27,8 @@ $year = [
         ."a nakonec i nález jejich legendárního prototypu horkovzdušného "
         ."balónu. Bagr. A na závěr opěvovaná tlaková níž přinesla povodně, "
         ."které zasáhly celou republiku. Navzdory tomu jsme ale všichni "
-        ."zvládli zdárně odplout, totiž odletět."
+        ."zvládli zdárně odplout, totiž odletět. "
+        ."Fotí Anička Ř."
 		."<p>Ročník byl realizován díky podpoře Ministerstva školství, mládeže a "
 		."tělovýchovy, dotace na podporu nadaných žáků základních a středních "
 		."škol v roce 2024.</p>",

@@ -27,7 +27,8 @@ $year = [
         ."Zákeřné banány v okolí Dobré Vody. Lekce vaření a stavby věže "
         ."(samozřejmě s banány). První banán letí do vesmíru! Nebo ne? "
         ."Úspěšný start firmy Naše banány České banány a nakonec společné "
-        ."zneškodnění nebezpečné bomby za pomoci Velkého špagetového monstra."
+        ."zneškodnění nebezpečné bomby za pomoci Velkého špagetového monstra. "
+        ."Fotí Anička Ř."
 		."<p>Ročník byl realizován s podporou Fakulty informatiky MU, Přírodovědecké "
     ."fakulty MU a Lexical Computing.</p>",
 	"gallery" => [
