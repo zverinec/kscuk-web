@@ -37,7 +37,7 @@
 				<div class="gallery">
 					{foreach $year["gallery"] as $img}
 						<a href="{$basePath}/img/archive/{$year["year"]}/{$img}">
-							{php $thumbnail = pathinfo($img, PATHINFO_FILENAME) . "-thumb." . pathinfo($img, PATHINFO_EXTENSION)}
+							{php $thumbnail = pathinfo($img, PATHINFO_FILENAME) . "-thumb." . strtolower(pathinfo($img, PATHINFO_EXTENSION))}
 							<img src="{$basePath}/img/archive/{$year["year"]}/{$thumbnail}">
 						</a>
 					{/foreach}
